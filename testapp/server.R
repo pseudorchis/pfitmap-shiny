@@ -44,8 +44,8 @@ genomes <- cp %>% select(tdomain:tstrain) %>% distinct()
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  output$matrix <- renderTable({
-    genomes %>%
+  dataInput <- reactive({
+    data = genomes %>%
       group_by_(.dots = c(as.symbol(input$taxon_rank))) %>%
       summarise(ngenomes = n()) %>%
       ungroup() %>%
@@ -56,8 +56,21 @@ shinyServer(function(input, output) {
           ungroup(),
         by=c(input$taxon_rank)
       ) %>%
-      mutate_('taxon' = input$taxon_rank, 'protein' = input$protein_rank) %>%
+      mutate_('taxon' = input$taxon_rank, 'protein' = input$protein_rank)
+  })
+
+  output$matrix <- renderTable({
+    dataInput() %>%
       select(taxon, protein, ngenomes, nproteins) %>%
       spread(protein, nproteins)
+  })
+  
+  output$summaryplot <- renderPlot({
+    ggplot(dataInput(), aes(x=taxon, y=nproteins, colour=protein)) +
+      geom_point() +
+      theme(
+        axis.text.x = element_text(angle=60, hjust=1)
+      ) +
+      scale_y_log10()
   })
 })
