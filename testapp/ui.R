@@ -15,31 +15,37 @@ shinyUI(
     # Application title
     titlePanel("Pfitmap testapp"),
     
-    # Sidebar with a slider input for number of bins 
-    sidebarLayout(
-      sidebarPanel(
-	selectInput(
-	  'taxon_rank', 'Taxon rank', 
-	  c(
-	    'Domain' = 'tdomain', 'Kingdom' = 'tkingdom', 'Phylum' = 'tphylum',
-	    'Class' = 'tclass', 'Order' = 'torder', 'Family' = 'tfamily',
-	    'Genus' = 'tgenus', 'Species' = 'tspecies', 'Strain' = 'tstrain'
-	  )
-	),
-	selectInput(
-	  'protein_rank', 'Protein rank', 
-	  c(
-	    'Superfamily' = 'psuperfamily', 'Family' = 'pfamily', 
-	    'Class' = 'pclass', 'Subclass' = 'psubclass', 'Group' = 'pgroup'
-	  )
-	)
+    # Dropboxes for grouping at the top
+    fluidRow(
+      column(
+        6,
+        selectInput(
+          'taxon_rank', 'Taxon rank', 
+          c(
+            'Domain' = 'tdomain', 'Kingdom' = 'tkingdom', 'Phylum' = 'tphylum',
+            'Class' = 'tclass', 'Order' = 'torder', 'Family' = 'tfamily',
+            'Genus' = 'tgenus', 'Species' = 'tspecies', 'Strain' = 'tstrain'
+          )
+        )
       ),
-      
-      # Show a plot of the generated distribution
-      mainPanel(
-	tableOutput("matrix"),
-	plotOutput("summaryplot")
+      column(
+        6,
+        selectInput(
+          'protein_rank', 'Protein rank', 
+          c(
+            'Superfamily' = 'psuperfamily', 'Family' = 'pfamily', 
+            'Class' = 'pclass', 'Subclass' = 'psubclass', 'Group' = 'pgroup'
+          )
+        )
       )
+    ),
+      
+    # Show a plot of the generated distribution
+    fluidRow(
+        tableOutput("matrix")
+    ),
+    fluidRow(
+        plotOutput("summaryplot")
     )
   )
 )
