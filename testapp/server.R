@@ -14,7 +14,7 @@ library(tidyr)
 library(ggplot2)
 
 # Initialize tables from disk
-cp = read_tsv(
+cp <- read_tsv(
   '../data/test/classified_proteins.10000.tsv',
   col_types = cols(
     .default = col_character(),
@@ -24,11 +24,11 @@ cp = read_tsv(
     score = col_double()
   )
 )
-genomes = cp %>% select(tdomain:tstrain) %>% distinct()
+genomes <- cp %>% select(tdomain:tstrain) %>% distinct()
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  tdomain_pfamily <- genomes %>%
+  data <- genomes %>%
     group_by(tdomain) %>%
     summarise(ngenomes = n()) %>%
     ungroup() %>%
@@ -41,7 +41,7 @@ shinyServer(function(input, output) {
     )
   
   output$distPlot <- renderPlot({
-    tphylum_pfamily %>% 
+    data %>% 
       transmute(
         taxon=tdomain,
         protein=sprintf("%s:%s", psuperfamily, pfamily), 
