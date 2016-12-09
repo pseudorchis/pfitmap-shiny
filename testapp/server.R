@@ -51,13 +51,13 @@ shinyServer(function(input, output) {
       ungroup() %>%
       inner_join(
         cp %>%
-          group_by_(.dots = lapply(c(input$taxon_rank, 'psuperfamily', 'pfamily'), as.symbol)) %>%
+          group_by_(.dots = lapply(c(input$taxon_rank, input$protein_rank), as.symbol)) %>%
           summarise(nproteins=n()) %>%
           ungroup(),
         by=c(input$taxon_rank)
       ) %>%
-      mutate_('taxon' = input$taxon_rank) %>%
-      ggplot(aes(x=taxon, y=nproteins, fill=nproteins)) + 
+      mutate_('taxon' = input$taxon_rank, 'protein' = input$protein_rank) %>%
+      ggplot(aes(x=taxon, y=nproteins, fill=protein)) + 
         geom_bar(stat='identity') +
         theme(
           axis.text.x = element_text(angle=60, hjust=1)

@@ -25,6 +25,13 @@ shinyUI(fluidPage(
       	  'Class' = 'tclass', 'Order' = 'torder', 'Family' = 'tfamily',
       	  'Genus' = 'tgenus', 'Species' = 'tspecies', 'Strain' = 'tstrain'
       	)
+      ),
+      selectInput(
+        'protein_rank', 'Protein rank', 
+      	c(
+      	  'Superfamily' = 'psuperfamily', 'Family' = 'pfamily', 
+      	  'Class' = 'pclass', 'Subclass' = 'psubclass', 'Group' = 'pgroup'
+      	)
       )
     ),
     
