@@ -13,16 +13,19 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("Pfitmap testapp"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
-       sliderInput("bins",
-                   "Number of bins:",
-                   min = 1,
-                   max = 50,
-                   value = 30)
+      selectInput(
+        'taxon_rank', 'Taxon rank', 
+      	c(
+      	  'Domain' = 'tdomain', 'Kingdom' = 'tkingdom', 'Phylum' = 'tphylum',
+      	  'Class' = 'tclass', 'Order' = 'torder', 'Family' = 'tfamily',
+      	  'Genus' = 'tgenus', 'Species' = 'tspecies', 'Strain' = 'tstrain'
+      	)
+      )
     ),
     
     # Show a plot of the generated distribution
