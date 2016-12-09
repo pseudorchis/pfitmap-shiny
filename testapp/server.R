@@ -13,20 +13,21 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 
+# Initialize tables from disk
+cp = read_tsv(
+  '../data/test/classified_proteins.10000.tsv',
+  col_types = cols(
+    .default = col_character(),
+    profile_length = col_integer(), align_length = col_integer(),
+    align_start = col_integer(), align_end = col_integer(),
+    prop_matching = col_double(), e_value = col_double(),
+    score = col_double()
+  )
+)
+genomes = cp %>% select(tdomain:tstrain) %>% distinct()
+
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  cp = read_tsv(
-    '../data/test/classified_proteins.10000.tsv',
-    col_types = cols(
-      .default = col_character(),
-      profile_length = col_integer(), align_length = col_integer(),
-      align_start = col_integer(), align_end = col_integer(),
-      prop_matching = col_double(), e_value = col_double(),
-      score = col_double()
-    )
-  )
-  genomes = cp %>% select(tdomain:tstrain) %>% distinct()
-  
   tdomain_pfamily <- genomes %>%
     group_by(tdomain) %>%
     summarise(ngenomes = n()) %>%
