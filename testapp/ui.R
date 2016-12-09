@@ -39,6 +39,17 @@ shinyUI(
         )
       )
     ),
+    
+    # A row below to control which protein groups appear in the matrix
+    fluidRow(
+      column(
+        6,
+        selectInput(
+          'psuperfamilies', 'Protein superfamily',
+          c('', psuperfamilies), multiple=T
+        )
+      )
+    ),
       
     # Show a plot of the generated distribution
     fluidRow(
