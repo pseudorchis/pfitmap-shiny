@@ -2,6 +2,8 @@ sessionname pfitmap-shiny
 setenv ROOT $PWD
 chdir data
 screen -t data
+chdir $ROOT/src/js
+screen -t js
 chdir $ROOT
 screen -t man
 screen -t rstudio
