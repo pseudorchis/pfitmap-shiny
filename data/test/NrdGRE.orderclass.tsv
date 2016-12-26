@@ -1,816 +1,816 @@
-tdomain	tphylum	tclass	torder	pclass	n_protein	n_org
-Archaea	NA	NA	NA	NrdD	9	29
-Archaea	NA	NA	NA	NrdJ	20	29
-Archaea	NA	NA	NA	NrdA	2	29
-Archaea	Candidatus Bathyarchaeota	NA	NA	NrdD	18	14
-Archaea	Candidatus Bathyarchaeota	NA	NA	NrdJ	4	14
-Archaea	Candidatus Korarchaeota	NA	NA	NrdJ	2	2
-Archaea	Candidatus Korarchaeota	NA	NA	NrdD	2	2
-Archaea	Candidatus Lokiarchaeota	NA	NA	NrdD	2	1
-Archaea	Candidatus Lokiarchaeota	NA	NA	NrdJ	2	1
-Archaea	Candidatus Micrarchaeota	NA	NA	NrdJ	1	1
-Archaea	Candidatus Nanohaloarchaeota	Nanohaloarchaea	NA	NrdJ	2	3
-Archaea	Candidatus Nanohaloarchaeota	Nanohaloarchaea	NA	NrdA	2	3
-Archaea	Candidatus Parvarchaeota	NA	NA	NrdJ	1	2
-Archaea	Candidatus Thorarchaeota	NA	NA	NrdJ	1	3
-Archaea	Candidatus Thorarchaeota	NA	NA	NrdA	1	3
-Archaea	Candidatus Thorarchaeota	NA	NA	NrdD	1	3
-Archaea	Crenarchaeota	NA	NA	NrdJ	1	1
-Archaea	Crenarchaeota	Thermoprotei	Acidilobales	NrdJ	14	9
-Archaea	Crenarchaeota	Thermoprotei	Desulfurococcales	NrdD	25	29
-Archaea	Crenarchaeota	Thermoprotei	Desulfurococcales	NrdJ	11	29
-Archaea	Crenarchaeota	Thermoprotei	Fervidicoccales	NrdD	1	1
-Archaea	Crenarchaeota	Thermoprotei	Fervidicoccales	NrdJ	1	1
-Archaea	Crenarchaeota	Thermoprotei	Sulfolobales	NrdJ	53	35
-Archaea	Crenarchaeota	Thermoprotei	Thermoproteales	NrdJ	24	41
-Archaea	Crenarchaeota	Thermoprotei	Thermoproteales	NrdD	13	41
-Archaea	Euryarchaeota	NA	NA	NrdD	12	62
-Archaea	Euryarchaeota	NA	NA	NrdJ	24	62
-Archaea	Euryarchaeota	NA	NA	NrdA	1	62
-Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	NrdJ	14	13
-Archaea	Euryarchaeota	Archaeoglobi	Archaeoglobales	NrdD	4	13
-Archaea	Euryarchaeota	Candidatus Thalassoarchaea	NA	NrdA	1	2
-Archaea	Euryarchaeota	Hadesarchaea	NA	NrdD	3	4
-Archaea	Euryarchaeota	Hadesarchaea	NA	NrdJ	2	4
-Archaea	Euryarchaeota	Halobacteria	Halobacteriales	NrdJ	77	81
-Archaea	Euryarchaeota	Halobacteria	Halobacteriales	NrdA	36	81
-Archaea	Euryarchaeota	Halobacteria	Halobacteriales	NrdD	5	81
-Archaea	Euryarchaeota	Halobacteria	Haloferacales	NrdJ	96	93
-Archaea	Euryarchaeota	Halobacteria	Haloferacales	NrdA	49	93
-Archaea	Euryarchaeota	Halobacteria	Natrialbales	NrdJ	72	72
-Archaea	Euryarchaeota	Halobacteria	Natrialbales	NrdA	15	72
-Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales	NrdJ	10	39
-Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales	NrdD	59	39
-Archaea	Euryarchaeota	Methanococci	Methanococcales	NrdD	34	31
-Archaea	Euryarchaeota	Methanomicrobia	NA	NrdJ	7	8
-Archaea	Euryarchaeota	Methanomicrobia	Methanocellales	NrdJ	2	5
-Archaea	Euryarchaeota	Methanomicrobia	Methanocellales	NrdD	5	5
-Archaea	Euryarchaeota	Methanomicrobia	Methanomicrobiales	NrdD	33	37
-Archaea	Euryarchaeota	Methanomicrobia	Methanomicrobiales	NrdJ	43	37
-Archaea	Euryarchaeota	Methanomicrobia	Methanosarcinales	NrdD	154	74
-Archaea	Euryarchaeota	Methanomicrobia	Methanosarcinales	NrdJ	126	74
-Archaea	Euryarchaeota	Thermococci	Thermococcales	NrdJ	66	46
-Archaea	Euryarchaeota	Thermococci	Thermococcales	NrdD	43	46
-Archaea	Euryarchaeota	Thermoplasmata	NA	NrdJ	2	1
-Archaea	Euryarchaeota	Thermoplasmata	Methanomassiliicoccales	NrdJ	7	9
-Archaea	Euryarchaeota	Thermoplasmata	Methanomassiliicoccales	NrdD	5	9
-Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	NrdJ	25	27
-Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	NrdD	4	27
-Archaea	Euryarchaeota	Thermoplasmata	Thermoplasmatales	NrdA	1	27
-Archaea	Nanoarchaeota	NA	Nanoarchaeales	NrdD	1	3
-Archaea	Nanoarchaeota	NA	Nanoarchaeales	NrdJ	2	3
-Archaea	Thaumarchaeota	NA	NA	NrdJ	43	88
-Archaea	Thaumarchaeota	NA	Cenarchaeales	NrdJ	1	1
-Archaea	Thaumarchaeota	NA	Nitrosopumilales	NrdJ	25	33
-Archaea	Thaumarchaeota	Nitrososphaeria	Nitrososphaerales	NrdJ	4	4
-Bacteria	NA	NA	NA	NrdA	44	329
-Bacteria	NA	NA	NA	NrdJ	238	329
-Bacteria	NA	NA	NA	NrdD	84	329
-Bacteria	NA	NA	Haloplasmatales	NrdD	2	2
-Bacteria	NA	NA	Haloplasmatales	NrdJ	2	2
-Bacteria	Acidobacteria	NA	NA	NrdJ	5	5
-Bacteria	Acidobacteria	Acidobacteriia	Acidobacteriales	NrdJ	19	23
-Bacteria	Acidobacteria	Acidobacteriia	Acidobacteriales	NrdA	15	23
-Bacteria	Acidobacteria	Blastocatellia	NA	NrdD	3	3
-Bacteria	Acidobacteria	Blastocatellia	NA	NrdJ	4	3
-Bacteria	Acidobacteria	Blastocatellia	NA	NrdA	5	3
-Bacteria	Acidobacteria	Holophagae	Holophagales	NrdD	1	2
-Bacteria	Acidobacteria	Holophagae	Holophagales	NrdJ	2	2
-Bacteria	Acidobacteria	Solibacteres	Solibacterales	NrdJ	3	3
-Bacteria	Acidobacteria	Solibacteres	Solibacterales	NrdA	1	3
-Bacteria	Actinobacteria	Acidimicrobiia	NA	NrdJ	3	4
-Bacteria	Actinobacteria	Acidimicrobiia	Acidimicrobiales	NrdJ	10	14
-Bacteria	Actinobacteria	Acidimicrobiia	Acidimicrobiales	NrdA	5	14
-Bacteria	Actinobacteria	Actinobacteria	NA	NrdJ	29	42
-Bacteria	Actinobacteria	Actinobacteria	NA	NrdA	24	42
-Bacteria	Actinobacteria	Actinobacteria	NA	NrdD	2	42
-Bacteria	Actinobacteria	Actinobacteria	Acidothermales	NrdJ	2	2
-Bacteria	Actinobacteria	Actinobacteria	Acidothermales	NrdA	2	2
-Bacteria	Actinobacteria	Actinobacteria	Actinomycetales	NrdA	145	105
-Bacteria	Actinobacteria	Actinobacteria	Actinomycetales	NrdD	145	105
-Bacteria	Actinobacteria	Actinobacteria	Actinopolysporales	NrdA	2	3
-Bacteria	Actinobacteria	Actinobacteria	Actinopolysporales	NrdJ	4	3
-Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales	NrdA	376	222
-Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales	NrdD	390	222
-Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales	NrdJ	2	222
-Bacteria	Actinobacteria	Actinobacteria	Catenulisporales	NrdJ	4	4
-Bacteria	Actinobacteria	Actinobacteria	Catenulisporales	NrdA	3	4
-Bacteria	Actinobacteria	Actinobacteria	Corynebacteriales	NrdA	5122	2538
-Bacteria	Actinobacteria	Actinobacteria	Corynebacteriales	NrdJ	3655	2538
-Bacteria	Actinobacteria	Actinobacteria	Corynebacteriales	NrdD	171	2538
-Bacteria	Actinobacteria	Actinobacteria	Frankiales	NrdJ	58	31
-Bacteria	Actinobacteria	Actinobacteria	Frankiales	NrdA	6	31
-Bacteria	Actinobacteria	Actinobacteria	Geodermatophilales	NrdJ	17	14
-Bacteria	Actinobacteria	Actinobacteria	Geodermatophilales	NrdA	2	14
-Bacteria	Actinobacteria	Actinobacteria	Glycomycetales	NrdJ	6	6
-Bacteria	Actinobacteria	Actinobacteria	Glycomycetales	NrdA	7	6
-Bacteria	Actinobacteria	Actinobacteria	Jiangellales	NrdJ	3	3
-Bacteria	Actinobacteria	Actinobacteria	Jiangellales	NrdA	3	3
-Bacteria	Actinobacteria	Actinobacteria	Kineosporiales	NrdA	5	4
-Bacteria	Actinobacteria	Actinobacteria	Kineosporiales	NrdJ	3	4
-Bacteria	Actinobacteria	Actinobacteria	Micrococcales	NrdA	788	547
-Bacteria	Actinobacteria	Actinobacteria	Micrococcales	NrdJ	108	547
-Bacteria	Actinobacteria	Actinobacteria	Micrococcales	NrdD	114	547
-Bacteria	Actinobacteria	Actinobacteria	Micromonosporales	NrdJ	120	76
-Bacteria	Actinobacteria	Actinobacteria	Micromonosporales	NrdA	135	76
-Bacteria	Actinobacteria	Actinobacteria	Nakamurellales	NrdJ	3	3
-Bacteria	Actinobacteria	Actinobacteria	Nakamurellales	NrdA	1	3
-Bacteria	Actinobacteria	Actinobacteria	Propionibacteriales	NrdJ	300	201
-Bacteria	Actinobacteria	Actinobacteria	Propionibacteriales	NrdA	185	201
-Bacteria	Actinobacteria	Actinobacteria	Propionibacteriales	NrdD	175	201
-Bacteria	Actinobacteria	Actinobacteria	Pseudonocardiales	NrdJ	128	106
-Bacteria	Actinobacteria	Actinobacteria	Pseudonocardiales	NrdA	114	106
-Bacteria	Actinobacteria	Actinobacteria	Streptomycetales	NrdJ	828	628
-Bacteria	Actinobacteria	Actinobacteria	Streptomycetales	NrdA	831	628
-Bacteria	Actinobacteria	Actinobacteria	Streptomycetales	NrdD	2	628
-Bacteria	Actinobacteria	Actinobacteria	Streptosporangiales	NrdJ	83	77
-Bacteria	Actinobacteria	Actinobacteria	Streptosporangiales	NrdA	73	77
-Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	NrdD	78	57
-Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	NrdA	34	57
-Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	NrdJ	7	57
-Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales	NrdA	9	31
-Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales	NrdD	48	31
-Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales	NrdJ	1	31
-Bacteria	Actinobacteria	Nitriliruptoria	Nitriliruptorales	NrdJ	1	1
-Bacteria	Actinobacteria	Rubrobacteria	Rubrobacterales	NrdJ	5	4
-Bacteria	Actinobacteria	Thermoleophilia	Solirubrobacterales	NrdA	4	8
-Bacteria	Actinobacteria	Thermoleophilia	Solirubrobacterales	NrdJ	11	8
-Bacteria	Aquificae	Aquificae	Aquificales	NrdA	22	28
-Bacteria	Aquificae	Aquificae	Aquificales	NrdD	18	28
-Bacteria	Aquificae	Aquificae	Aquificales	NrdJ	6	28
-Bacteria	Aquificae	Aquificae	Desulfurobacteriales	NrdJ	2	5
-Bacteria	Aquificae	Aquificae	Desulfurobacteriales	NrdA	4	5
-Bacteria	Armatimonadetes	NA	NA	NrdJ	5	5
-Bacteria	Armatimonadetes	NA	NA	NrdA	3	5
-Bacteria	Armatimonadetes	Chthonomonadetes	Chthonomonadales	NrdJ	5	2
-Bacteria	Armatimonadetes	Fimbriimonadia	Fimbriimonadales	NrdJ	2	2
-Bacteria	Bacteroidetes	NA	NA	NrdJ	12	16
-Bacteria	Bacteroidetes	NA	NA	NrdA	4	16
-Bacteria	Bacteroidetes	NA	NA	NrdD	3	16
-Bacteria	Bacteroidetes	NA	Bacteroidetes Order II. Incertae sedis	NrdJ	16	8
-Bacteria	Bacteroidetes	NA	Bacteroidetes Order II. Incertae sedis	NrdA	12	8
-Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	NrdA	296	619
-Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	NrdD	820	619
-Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	NrdJ	730	619
-Bacteria	Bacteroidetes	Chitinophagia	Chitinophagales	NrdA	41	36
-Bacteria	Bacteroidetes	Chitinophagia	Chitinophagales	NrdJ	30	36
-Bacteria	Bacteroidetes	Cytophagia	Cytophagales	NrdA	146	121
-Bacteria	Bacteroidetes	Cytophagia	Cytophagales	NrdJ	34	121
-Bacteria	Bacteroidetes	Cytophagia	Cytophagales	NrdD	17	121
-Bacteria	Bacteroidetes	Flavobacteriia	NA	NrdA	8	4
-Bacteria	Bacteroidetes	Flavobacteriia	Flavobacteriales	NrdA	744	472
-Bacteria	Bacteroidetes	Flavobacteriia	Flavobacteriales	NrdD	120	472
-Bacteria	Bacteroidetes	Flavobacteriia	Flavobacteriales	NrdJ	126	472
-Bacteria	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	NrdA	92	56
-Bacteria	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	NrdJ	16	56
-Bacteria	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	NrdD	7	56
-Bacteria	Caldiserica	Caldisericia	Caldisericales	NrdD	2	2
-Bacteria	Candidatus Acetothermia	NA	NA	NrdJ	2	3
-Bacteria	Candidatus Acetothermia	NA	NA	NrdD	1	3
-Bacteria	Candidatus Adlerbacteria	NA	NA	NrdJ	1	4
-Bacteria	Candidatus Adlerbacteria	NA	NA	NrdA	1	4
-Bacteria	Candidatus Adlerbacteria	NA	NA	NrdD	3	4
-Bacteria	Candidatus Amesbacteria	NA	NA	NrdJ	13	13
-Bacteria	Candidatus Atribacteria	NA	NA	NrdD	1	1
-Bacteria	Candidatus Azambacteria	NA	NA	NrdJ	18	19
-Bacteria	Candidatus Beckwithbacteria	NA	NA	NrdJ	6	7
-Bacteria	Candidatus Berkelbacteria	NA	NA	NrdJ	7	6
-Bacteria	Candidatus Campbellbacteria	NA	NA	NrdJ	5	5
-Bacteria	Candidatus Cloacimonetes	NA	NA	NrdJ	3	3
-Bacteria	Candidatus Cloacimonetes	NA	NA	NrdD	3	3
-Bacteria	Candidatus Collierbacteria	NA	NA	NrdJ	28	29
-Bacteria	Candidatus Curtissbacteria	NA	NA	NrdJ	9	10
-Bacteria	Candidatus Dadabacteria	NA	NA	NrdJ	2	1
-Bacteria	Candidatus Daviesbacteria	NA	NA	NrdJ	13	14
-Bacteria	Candidatus Falkowbacteria	NA	NA	NrdD	8	9
-Bacteria	Candidatus Falkowbacteria	NA	NA	NrdA	1	9
-Bacteria	Candidatus Giovannonibacteria	NA	NA	NrdJ	14	12
-Bacteria	Candidatus Gottesmanbacteria	NA	NA	NrdJ	13	15
-Bacteria	Candidatus Jorgensenbacteria	NA	NA	NrdJ	8	8
-Bacteria	Candidatus Kaiserbacteria	NA	NA	NrdD	2	8
-Bacteria	Candidatus Kaiserbacteria	NA	NA	NrdJ	3	8
-Bacteria	Candidatus Kryptonia	NA	NA	NrdJ	1	3
-Bacteria	Candidatus Latescibacteria	NA	NA	NrdJ	1	1
-Bacteria	Candidatus Levybacteria	NA	NA	NrdJ	12	13
-Bacteria	Candidatus Magasanikbacteria	NA	NA	NrdJ	11	15
-Bacteria	Candidatus Magasanikbacteria	NA	NA	NrdA	1	15
-Bacteria	Candidatus Magasanikbacteria	NA	NA	NrdD	4	15
-Bacteria	Candidatus Marinimicrobia	NA	NA	NrdJ	1	2
-Bacteria	Candidatus Microgenomates	NA	NA	NrdJ	1	4
-Bacteria	Candidatus Moranbacteria	NA	NA	NrdD	26	30
-Bacteria	Candidatus Nomurabacteria	NA	NA	NrdJ	42	41
-Bacteria	Candidatus Omnitrophica	NA	NA	NrdD	1	4
-Bacteria	Candidatus Omnitrophica	NA	NA	NrdJ	5	4
-Bacteria	Candidatus Pacebacteria	NA	NA	NrdJ	3	3
-Bacteria	Candidatus Parcubacteria	NA	NA	NrdJ	8	17
-Bacteria	Candidatus Parcubacteria	NA	NA	NrdA	4	17
-Bacteria	Candidatus Parcubacteria	NA	NA	NrdD	5	17
-Bacteria	Candidatus Peregrinibacteria	NA	NA	NrdJ	8	10
-Bacteria	Candidatus Peregrinibacteria	NA	NA	NrdA	2	10
-Bacteria	Candidatus Peregrinibacteria	NA	NA	NrdD	2	10
-Bacteria	Candidatus Peregrinibacteria	Candidatus Peribacteria	NA	NrdJ	1	2
-Bacteria	Candidatus Peregrinibacteria	Candidatus Peribacteria	Candidatus Peribacterales	NrdJ	5	1
-Bacteria	Candidatus Roizmanbacteria	NA	NA	NrdJ	10	11
-Bacteria	Candidatus Saccharibacteria	NA	NA	NrdA	5	6
-Bacteria	Candidatus Saccharibacteria	NA	NA	NrdD	1	6
-Bacteria	Candidatus Saccharibacteria	NA	NA	NrdJ	1	6
-Bacteria	Candidatus Shapirobacteria	NA	NA	NrdJ	5	5
-Bacteria	Candidatus Tectomicrobia	NA	NA	NrdJ	2	2
-Bacteria	Candidatus Uhrbacteria	NA	NA	NrdJ	16	14
-Bacteria	Candidatus Woesebacteria	NA	NA	NrdJ	50	47
-Bacteria	Candidatus Wolfebacteria	NA	NA	NrdJ	12	12
-Bacteria	Candidatus Yanofskybacteria	NA	NA	NrdJ	13	14
-Bacteria	Chlamydiae	NA	NA	NrdD	1	1
-Bacteria	Chlamydiae	Chlamydiia	Chlamydiales	NrdA	312	177
-Bacteria	Chlamydiae	Chlamydiia	Chlamydiales	NrdJ	24	177
-Bacteria	Chlamydiae	Chlamydiia	Chlamydiales	NrdD	10	177
-Bacteria	Chlorobi	NA	NA	NrdJ	4	5
-Bacteria	Chlorobi	Chlorobia	Chlorobiales	NrdJ	28	27
-Bacteria	Chlorobi	Chlorobia	Chlorobiales	NrdD	14	27
-Bacteria	Chloroflexi	NA	NA	NrdJ	7	6
-Bacteria	Chloroflexi	Anaerolineae	NA	NrdJ	3	4
-Bacteria	Chloroflexi	Anaerolineae	NA	NrdD	2	4
-Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	NrdJ	21	11
-Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	NrdD	3	11
-Bacteria	Chloroflexi	Ardenticatenia	Ardenticatenales	NrdJ	3	2
-Bacteria	Chloroflexi	Caldilineae	Caldilineales	NrdJ	2	2
-Bacteria	Chloroflexi	Chloroflexia	Chloroflexales	NrdJ	13	13
-Bacteria	Chloroflexi	Chloroflexia	Herpetosiphonales	NrdA	3	2
-Bacteria	Chloroflexi	Chloroflexia	Herpetosiphonales	NrdJ	1	2
-Bacteria	Chloroflexi	Dehalococcoidia	NA	NrdJ	25	9
-Bacteria	Chloroflexi	Dehalococcoidia	Dehalococcoidales	NrdJ	83	15
-Bacteria	Chloroflexi	Ktedonobacteria	Ktedonobacterales	NrdJ	2	2
-Bacteria	Chloroflexi	Ktedonobacteria	Ktedonobacterales	NrdA	2	2
-Bacteria	Chloroflexi	Ktedonobacteria	Thermogemmatisporales	NrdJ	1	1
-Bacteria	Chloroflexi	Thermomicrobia	NA	NrdJ	1	1
-Bacteria	Chloroflexi	Thermomicrobia	NA	NrdA	1	1
-Bacteria	Chloroflexi	Thermomicrobia	Sphaerobacterales	NrdJ	3	4
-Bacteria	Chloroflexi	Thermomicrobia	Sphaerobacterales	NrdA	2	4
-Bacteria	Chloroflexi	Thermomicrobia	Thermomicrobiales	NrdJ	4	2
-Bacteria	Chloroflexi	Thermomicrobia	Thermomicrobiales	NrdA	2	2
-Bacteria	Chrysiogenetes	Chrysiogenetes	Chrysiogenales	NrdJ	3	3
-Bacteria	Chrysiogenetes	Chrysiogenetes	Chrysiogenales	NrdD	3	3
-Bacteria	Cyanobacteria	NA	NA	NrdA	2	6
-Bacteria	Cyanobacteria	NA	NA	NrdJ	2	6
-Bacteria	Cyanobacteria	NA	Chroococcales	NrdA	60	45
-Bacteria	Cyanobacteria	NA	Chroococcales	NrdJ	6	45
-Bacteria	Cyanobacteria	NA	Chroococcidiopsidales	NrdJ	4	4
-Bacteria	Cyanobacteria	NA	Nostocales	NrdJ	58	93
-Bacteria	Cyanobacteria	NA	Nostocales	NrdA	14	93
-Bacteria	Cyanobacteria	NA	Oscillatoriales	NrdA	31	58
-Bacteria	Cyanobacteria	NA	Oscillatoriales	NrdJ	18	58
-Bacteria	Cyanobacteria	NA	Pleurocapsales	NrdA	9	8
-Bacteria	Cyanobacteria	NA	Synechococcales	NrdJ	194	211
-Bacteria	Cyanobacteria	NA	Synechococcales	NrdA	28	211
-Bacteria	Cyanobacteria	Gloeobacteria	Gloeobacterales	NrdJ	4	4
-Bacteria	Deferribacteres	Deferribacteres	Deferribacterales	NrdJ	13	13
-Bacteria	Deferribacteres	Deferribacteres	Deferribacterales	NrdD	4	13
-Bacteria	Deinococcus-Thermus	Deinococci	Deinococcales	NrdJ	35	37
-Bacteria	Deinococcus-Thermus	Deinococci	Deinococcales	NrdA	29	37
-Bacteria	Deinococcus-Thermus	Deinococci	Thermales	NrdJ	78	40
-Bacteria	Deinococcus-Thermus	Deinococci	Thermales	NrdA	49	40
-Bacteria	Dictyoglomi	Dictyoglomia	Dictyoglomales	NrdD	5	4
-Bacteria	Dictyoglomi	Dictyoglomia	Dictyoglomales	NrdJ	5	4
-Bacteria	Elusimicrobia	NA	NA	NrdJ	3	2
-Bacteria	Elusimicrobia	NA	NA	NrdD	3	2
-Bacteria	Elusimicrobia	Elusimicrobia	Elusimicrobiales	NrdD	4	2
-Bacteria	Elusimicrobia	Endomicrobia	Endomicrobiales	NrdJ	2	1
-Bacteria	Elusimicrobia	Endomicrobia	Endomicrobiales	NrdD	2	1
-Bacteria	Fibrobacteres	Chitinispirillia	Chitinispirillales	NrdD	1	1
-Bacteria	Fibrobacteres	Chitinispirillia	Chitinispirillales	NrdJ	2	1
-Bacteria	Fibrobacteres	Chitinivibrionia	Chitinivibrionales	NrdA	2	2
-Bacteria	Fibrobacteres	Chitinivibrionia	Chitinivibrionales	NrdD	2	2
-Bacteria	Fibrobacteres	Fibrobacteria	Fibrobacterales	NrdD	2	2
-Bacteria	Firmicutes	NA	NA	NrdD	66	50
-Bacteria	Firmicutes	NA	NA	NrdJ	2	50
-Bacteria	Firmicutes	NA	NA	NrdA	3	50
-Bacteria	Firmicutes	Bacilli	NA	NrdA	5	2
-Bacteria	Firmicutes	Bacilli	NA	NrdD	2	2
-Bacteria	Firmicutes	Bacilli	Bacillales	NrdA	9740	5624
-Bacteria	Firmicutes	Bacilli	Bacillales	NrdD	7809	5624
-Bacteria	Firmicutes	Bacilli	Bacillales	NrdJ	752	5624
-Bacteria	Firmicutes	Bacilli	Lactobacillales	NrdJ	639	2637
-Bacteria	Firmicutes	Bacilli	Lactobacillales	NrdD	12088	2637
-Bacteria	Firmicutes	Bacilli	Lactobacillales	NrdA	13521	2637
-Bacteria	Firmicutes	Clostridia	NA	NrdD	5	11
-Bacteria	Firmicutes	Clostridia	NA	NrdJ	2	11
-Bacteria	Firmicutes	Clostridia	Clostridiales	NrdD	2533	1298
-Bacteria	Firmicutes	Clostridia	Clostridiales	NrdJ	746	1298
-Bacteria	Firmicutes	Clostridia	Clostridiales	NrdA	852	1298
-Bacteria	Firmicutes	Clostridia	Halanaerobiales	NrdD	11	16
-Bacteria	Firmicutes	Clostridia	Halanaerobiales	NrdJ	16	16
-Bacteria	Firmicutes	Clostridia	Natranaerobiales	NrdD	2	2
-Bacteria	Firmicutes	Clostridia	Natranaerobiales	NrdJ	2	2
-Bacteria	Firmicutes	Clostridia	Thermoanaerobacterales	NrdD	106	90
-Bacteria	Firmicutes	Clostridia	Thermoanaerobacterales	NrdJ	77	90
-Bacteria	Firmicutes	Erysipelotrichia	Erysipelotrichales	NrdD	141	68
-Bacteria	Firmicutes	Erysipelotrichia	Erysipelotrichales	NrdA	60	68
-Bacteria	Firmicutes	Erysipelotrichia	Erysipelotrichales	NrdJ	1	68
-Bacteria	Firmicutes	Limnochordia	Limnochordales	NrdJ	4	1
-Bacteria	Firmicutes	Negativicutes	Acidaminococcales	NrdD	20	16
-Bacteria	Firmicutes	Negativicutes	Acidaminococcales	NrdJ	6	16
-Bacteria	Firmicutes	Negativicutes	Acidaminococcales	NrdA	7	16
-Bacteria	Firmicutes	Negativicutes	Selenomonadales	NrdJ	14	69
-Bacteria	Firmicutes	Negativicutes	Selenomonadales	NrdD	101	69
-Bacteria	Firmicutes	Negativicutes	Selenomonadales	NrdA	4	69
-Bacteria	Firmicutes	Negativicutes	Veillonellales	NrdD	91	70
-Bacteria	Firmicutes	Negativicutes	Veillonellales	NrdA	53	70
-Bacteria	Firmicutes	Negativicutes	Veillonellales	NrdJ	29	70
-Bacteria	Firmicutes	Tissierellia	NA	NrdD	13	10
-Bacteria	Firmicutes	Tissierellia	NA	NrdJ	9	10
-Bacteria	Firmicutes	Tissierellia	NA	NrdA	4	10
-Bacteria	Firmicutes	Tissierellia	Tissierellales	NrdD	83	70
-Bacteria	Firmicutes	Tissierellia	Tissierellales	NrdA	78	70
-Bacteria	Firmicutes	Tissierellia	Tissierellales	NrdJ	5	70
-Bacteria	Fusobacteria	Fusobacteriia	Fusobacteriales	NrdA	166	114
-Bacteria	Fusobacteria	Fusobacteriia	Fusobacteriales	NrdD	155	114
-Bacteria	Fusobacteria	Fusobacteriia	Fusobacteriales	NrdJ	12	114
-Bacteria	Gemmatimonadetes	NA	NA	NrdJ	1	1
-Bacteria	Gemmatimonadetes	Gemmatimonadetes	Gemmatimonadales	NrdJ	11	9
-Bacteria	Gemmatimonadetes	Gemmatimonadetes	Gemmatimonadales	NrdA	2	9
-Bacteria	Ignavibacteriae	Ignavibacteria	NA	NrdJ	2	2
-Bacteria	Ignavibacteriae	Ignavibacteria	Ignavibacteriales	NrdJ	4	4
-Bacteria	Lentisphaerae	Lentisphaeria	Lentisphaerales	NrdA	2	2
-Bacteria	Nitrospinae	Nitrospinia	Nitrospinales	NrdJ	4	3
-Bacteria	Nitrospirae	Nitrospira	NA	NrdJ	5	4
-Bacteria	Nitrospirae	Nitrospira	NA	NrdD	2	4
-Bacteria	Nitrospirae	Nitrospira	Nitrospirales	NrdJ	53	27
-Bacteria	Nitrospirae	Nitrospira	Nitrospirales	NrdD	7	27
-Bacteria	Nitrospirae	Nitrospira	Nitrospirales	NrdA	2	27
-Bacteria	Planctomycetes	NA	NA	NrdD	1	6
-Bacteria	Planctomycetes	Phycisphaerae	NA	NrdJ	6	4
-Bacteria	Planctomycetes	Phycisphaerae	Phycisphaerales	NrdJ	2	2
-Bacteria	Planctomycetes	Planctomycetia	Candidatus Brocadiales	NrdD	8	6
-Bacteria	Planctomycetes	Planctomycetia	Candidatus Brocadiales	NrdJ	7	6
-Bacteria	Planctomycetes	Planctomycetia	Planctomycetales	NrdJ	44	42
-Bacteria	Planctomycetes	Planctomycetia	Planctomycetales	NrdA	21	42
-Bacteria	Proteobacteria	NA	NA	NrdA	8	5
-Bacteria	Proteobacteria	NA	NA	NrdD	6	5
-Bacteria	Proteobacteria	NA	NA	NrdJ	2	5
-Bacteria	Proteobacteria	Acidithiobacillia	Acidithiobacillales	NrdA	35	15
-Bacteria	Proteobacteria	Acidithiobacillia	Acidithiobacillales	NrdD	11	15
-Bacteria	Proteobacteria	Acidithiobacillia	Acidithiobacillales	NrdJ	5	15
-Bacteria	Proteobacteria	Alphaproteobacteria	NA	NrdJ	25	24
-Bacteria	Proteobacteria	Alphaproteobacteria	NA	NrdA	18	24
-Bacteria	Proteobacteria	Alphaproteobacteria	NA	NrdD	3	24
-Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	NrdA	99	65
-Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	NrdJ	19	65
-Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	NrdD	5	65
-Bacteria	Proteobacteria	Alphaproteobacteria	Kiloniellales	NrdA	2	3
-Bacteria	Proteobacteria	Alphaproteobacteria	Kiloniellales	NrdJ	5	3
-Bacteria	Proteobacteria	Alphaproteobacteria	Kordiimonadales	NrdJ	3	3
-Bacteria	Proteobacteria	Alphaproteobacteria	Kordiimonadales	NrdA	3	3
-Bacteria	Proteobacteria	Alphaproteobacteria	Magnetococcales	NrdJ	2	2
-Bacteria	Proteobacteria	Alphaproteobacteria	Parvularculales	NrdA	3	3
-Bacteria	Proteobacteria	Alphaproteobacteria	Parvularculales	NrdJ	3	3
-Bacteria	Proteobacteria	Alphaproteobacteria	Pelagibacterales	NrdA	26	25
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	NrdA	1053	1115
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	NrdJ	1626	1115
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	NrdD	25	1115
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	NrdJ	934	369
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	NrdA	164	369
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	NrdD	25	369
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	NrdA	264	220
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	NrdD	28	220
-Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	NrdJ	201	220
-Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	NrdA	275	213
-Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	NrdJ	4	213
-Bacteria	Proteobacteria	Alphaproteobacteria	Sneathiellales	NrdJ	1	1
-Bacteria	Proteobacteria	Alphaproteobacteria	Sneathiellales	NrdA	1	1
-Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	NrdD	19	309
-Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	NrdA	442	309
-Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	NrdJ	9	309
-Bacteria	Proteobacteria	Betaproteobacteria	NA	NrdJ	16	39
-Bacteria	Proteobacteria	Betaproteobacteria	NA	NrdA	27	39
-Bacteria	Proteobacteria	Betaproteobacteria	NA	NrdD	1	39
-Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	NrdD	860	995
-Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	NrdJ	2385	995
-Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	NrdA	2737	995
-Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales	NrdA	4	5
-Bacteria	Proteobacteria	Betaproteobacteria	Ferrovales	NrdJ	7	5
-Bacteria	Proteobacteria	Betaproteobacteria	Gallionellales	NrdJ	5	7
-Bacteria	Proteobacteria	Betaproteobacteria	Gallionellales	NrdA	8	7
-Bacteria	Proteobacteria	Betaproteobacteria	Gallionellales	NrdD	1	7
-Bacteria	Proteobacteria	Betaproteobacteria	Hydrogenophilales	NrdJ	10	6
-Bacteria	Proteobacteria	Betaproteobacteria	Hydrogenophilales	NrdA	7	6
-Bacteria	Proteobacteria	Betaproteobacteria	Hydrogenophilales	NrdD	6	6
-Bacteria	Proteobacteria	Betaproteobacteria	Methylophilales	NrdA	35	39
-Bacteria	Proteobacteria	Betaproteobacteria	Methylophilales	NrdJ	49	39
-Bacteria	Proteobacteria	Betaproteobacteria	Neisseriales	NrdA	1323	383
-Bacteria	Proteobacteria	Betaproteobacteria	Neisseriales	NrdJ	49	383
-Bacteria	Proteobacteria	Betaproteobacteria	Neisseriales	NrdD	159	383
-Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	NrdA	21	14
-Bacteria	Proteobacteria	Betaproteobacteria	Nitrosomonadales	NrdJ	4	14
-Bacteria	Proteobacteria	Betaproteobacteria	Rhodocyclales	NrdJ	55	45
-Bacteria	Proteobacteria	Betaproteobacteria	Rhodocyclales	NrdA	26	45
-Bacteria	Proteobacteria	Betaproteobacteria	Rhodocyclales	NrdD	6	45
-Bacteria	Proteobacteria	Betaproteobacteria	Sulfuricellales	NrdD	4	4
-Bacteria	Proteobacteria	Betaproteobacteria	Sulfuricellales	NrdJ	4	4
-Bacteria	Proteobacteria	Betaproteobacteria	Sulfuricellales	NrdA	4	4
-Bacteria	Proteobacteria	Deltaproteobacteria	NA	NrdD	11	18
-Bacteria	Proteobacteria	Deltaproteobacteria	NA	NrdA	3	18
-Bacteria	Proteobacteria	Deltaproteobacteria	NA	NrdJ	16	18
-Bacteria	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	NrdJ	18	13
-Bacteria	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	NrdA	27	13
-Bacteria	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	NrdD	9	13
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfarculales	NrdD	6	4
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfarculales	NrdJ	12	4
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfobacterales	NrdD	32	48
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfobacterales	NrdJ	34	48
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	NrdD	139	82
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	NrdJ	96	82
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	NrdA	3	82
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfurellales	NrdJ	7	7
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfurellales	NrdD	6	7
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	NrdJ	51	37
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	NrdD	27	37
-Bacteria	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	NrdA	1	37
-Bacteria	Proteobacteria	Deltaproteobacteria	Myxococcales	NrdJ	74	44
-Bacteria	Proteobacteria	Deltaproteobacteria	Myxococcales	NrdA	45	44
-Bacteria	Proteobacteria	Deltaproteobacteria	Myxococcales	NrdD	1	44
-Bacteria	Proteobacteria	Deltaproteobacteria	Syntrophobacterales	NrdD	13	17
-Bacteria	Proteobacteria	Deltaproteobacteria	Syntrophobacterales	NrdJ	13	17
-Bacteria	Proteobacteria	Epsilonproteobacteria	NA	NrdJ	7	10
-Bacteria	Proteobacteria	Epsilonproteobacteria	NA	NrdD	9	10
-Bacteria	Proteobacteria	Epsilonproteobacteria	NA	NrdA	10	10
-Bacteria	Proteobacteria	Epsilonproteobacteria	Campylobacterales	NrdD	233	659
-Bacteria	Proteobacteria	Epsilonproteobacteria	Campylobacterales	NrdA	25	659
-Bacteria	Proteobacteria	Epsilonproteobacteria	Campylobacterales	NrdJ	2	659
-Bacteria	Proteobacteria	Epsilonproteobacteria	Nautiliales	NrdA	6	6
-Bacteria	Proteobacteria	Epsilonproteobacteria	Nautiliales	NrdD	6	6
-Bacteria	Proteobacteria	Gammaproteobacteria	NA	NrdA	82	87
-Bacteria	Proteobacteria	Gammaproteobacteria	NA	NrdJ	30	87
-Bacteria	Proteobacteria	Gammaproteobacteria	NA	NrdD	19	87
-Bacteria	Proteobacteria	Gammaproteobacteria	Acidiferrobacterales	NrdJ	2	3
-Bacteria	Proteobacteria	Gammaproteobacteria	Acidiferrobacterales	NrdD	2	3
-Bacteria	Proteobacteria	Gammaproteobacteria	Aeromonadales	NrdA	171	74
-Bacteria	Proteobacteria	Gammaproteobacteria	Aeromonadales	NrdJ	188	74
-Bacteria	Proteobacteria	Gammaproteobacteria	Aeromonadales	NrdD	193	74
-Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	NrdA	461	337
-Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	NrdD	156	337
-Bacteria	Proteobacteria	Gammaproteobacteria	Alteromonadales	NrdJ	65	337
-Bacteria	Proteobacteria	Gammaproteobacteria	Cardiobacteriales	NrdD	9	6
-Bacteria	Proteobacteria	Gammaproteobacteria	Cardiobacteriales	NrdA	8	6
-Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	NrdA	64	54
-Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	NrdJ	34	54
-Bacteria	Proteobacteria	Gammaproteobacteria	Cellvibrionales	NrdD	7	54
-Bacteria	Proteobacteria	Gammaproteobacteria	Chromatiales	NrdA	131	126
-Bacteria	Proteobacteria	Gammaproteobacteria	Chromatiales	NrdJ	78	126
-Bacteria	Proteobacteria	Gammaproteobacteria	Chromatiales	NrdD	38	126
-Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacteriales	NrdA	26177	4482
-Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacteriales	NrdD	11323	4482
-Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacteriales	NrdJ	2	4482
-Bacteria	Proteobacteria	Gammaproteobacteria	Legionellales	NrdA	517	87
-Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	NrdJ	50	38
-Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	NrdA	22	38
-Bacteria	Proteobacteria	Gammaproteobacteria	Nevskiales	NrdJ	7	11
-Bacteria	Proteobacteria	Gammaproteobacteria	Nevskiales	NrdA	9	11
-Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	NrdJ	106	194
-Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	NrdA	234	194
-Bacteria	Proteobacteria	Gammaproteobacteria	Oceanospirillales	NrdD	59	194
-Bacteria	Proteobacteria	Gammaproteobacteria	Orbales	NrdD	81	8
-Bacteria	Proteobacteria	Gammaproteobacteria	Orbales	NrdA	76	8
-Bacteria	Proteobacteria	Gammaproteobacteria	Pasteurellales	NrdD	573	238
-Bacteria	Proteobacteria	Gammaproteobacteria	Pasteurellales	NrdA	681	238
-Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	NrdA	4429	1718
-Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	NrdD	1163	1718
-Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	NrdJ	973	1718
-Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	NrdA	3	4
-Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	NrdJ	2	4
-Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	NrdA	201	118
-Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	NrdD	5	118
-Bacteria	Proteobacteria	Gammaproteobacteria	Thiotrichales	NrdJ	11	118
-Bacteria	Proteobacteria	Gammaproteobacteria	Vibrionales	NrdA	1345	477
-Bacteria	Proteobacteria	Gammaproteobacteria	Vibrionales	NrdD	1299	477
-Bacteria	Proteobacteria	Gammaproteobacteria	Vibrionales	NrdJ	52	477
-Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	NrdA	779	260
-Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	NrdJ	195	260
-Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	NrdD	9	260
-Bacteria	Proteobacteria	Zetaproteobacteria	NA	NrdA	1	1
-Bacteria	Proteobacteria	Zetaproteobacteria	NA	NrdJ	1	1
-Bacteria	Proteobacteria	Zetaproteobacteria	Mariprofundales	NrdJ	4	2
-Bacteria	Rhodothermaeota	Balneolia	Balneolales	NrdJ	4	3
-Bacteria	Spirochaetes	NA	NA	NrdJ	1	1
-Bacteria	Spirochaetes	Spirochaetia	NA	NrdJ	276	202
-Bacteria	Spirochaetes	Spirochaetia	NA	NrdA	8	202
-Bacteria	Spirochaetes	Spirochaetia	Brachyspirales	NrdA	42	20
-Bacteria	Spirochaetes	Spirochaetia	Brachyspirales	NrdJ	1	20
-Bacteria	Spirochaetes	Spirochaetia	Brachyspirales	NrdD	1	20
-Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	NrdA	127	155
-Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	NrdD	96	155
-Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	NrdJ	28	155
-Bacteria	Synergistetes	Synergistia	Synergistales	NrdD	37	37
-Bacteria	Synergistetes	Synergistia	Synergistales	NrdJ	26	37
-Bacteria	Tenericutes	Mollicutes	NA	NrdD	3	2
-Bacteria	Tenericutes	Mollicutes	NA	NrdJ	3	2
-Bacteria	Tenericutes	Mollicutes	Acholeplasmatales	NrdA	38	34
-Bacteria	Tenericutes	Mollicutes	Acholeplasmatales	NrdD	16	34
-Bacteria	Tenericutes	Mollicutes	Acholeplasmatales	NrdJ	2	34
-Bacteria	Tenericutes	Mollicutes	Entomoplasmatales	NrdA	34	40
-Bacteria	Tenericutes	Mollicutes	Entomoplasmatales	NrdJ	22	40
-Bacteria	Tenericutes	Mollicutes	Mycoplasmatales	NrdA	185	223
-Bacteria	Tenericutes	Mollicutes	Mycoplasmatales	NrdJ	9	223
-Bacteria	Tenericutes	Mollicutes	Mycoplasmatales	NrdD	11	223
-Bacteria	Thermodesulfobacteria	Thermodesulfobacteria	Thermodesulfobacteriales	NrdD	8	15
-Bacteria	Thermodesulfobacteria	Thermodesulfobacteria	Thermodesulfobacteriales	NrdJ	17	15
-Bacteria	Thermotogae	Thermotogae	Kosmotogales	NrdD	14	10
-Bacteria	Thermotogae	Thermotogae	Mesoaciditogales	NrdJ	1	1
-Bacteria	Thermotogae	Thermotogae	Petrotogales	NrdD	10	7
-Bacteria	Thermotogae	Thermotogae	Petrotogales	NrdJ	11	7
-Bacteria	Thermotogae	Thermotogae	Thermotogales	NrdJ	75	43
-Bacteria	Thermotogae	Thermotogae	Thermotogales	NrdD	67	43
-Bacteria	Verrucomicrobia	NA	NA	NrdA	3	10
-Bacteria	Verrucomicrobia	NA	NA	NrdJ	4	10
-Bacteria	Verrucomicrobia	NA	NA	NrdD	2	10
-Bacteria	Verrucomicrobia	NA	Methylacidiphilales	NrdD	6	6
-Bacteria	Verrucomicrobia	NA	Methylacidiphilales	NrdA	3	6
-Bacteria	Verrucomicrobia	Opitutae	Opitutales	NrdJ	11	12
-Bacteria	Verrucomicrobia	Opitutae	Opitutales	NrdD	11	12
-Bacteria	Verrucomicrobia	Opitutae	Opitutales	NrdA	16	12
-Bacteria	Verrucomicrobia	Opitutae	Puniceicoccales	NrdA	2	3
-Bacteria	Verrucomicrobia	Opitutae	Puniceicoccales	NrdD	3	3
-Bacteria	Verrucomicrobia	Opitutae	Puniceicoccales	NrdJ	2	3
-Bacteria	Verrucomicrobia	Spartobacteria	NA	NrdA	3	2
-Bacteria	Verrucomicrobia	Spartobacteria	NA	NrdD	1	2
-Bacteria	Verrucomicrobia	Spartobacteria	Chthoniobacterales	NrdJ	2	2
-Bacteria	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	NrdD	14	23
-Bacteria	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	NrdJ	15	23
-Bacteria	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	NrdA	8	23
-Bacteria	candidate division CPR1	NA	NA	NrdJ	2	2
-Bacteria	candidate division CPR2	NA	NA	NrdD	6	6
-Bacteria	candidate division CPR3	NA	NA	NrdJ	1	2
-Bacteria	candidate division Hyd24-12	NA	NA	NrdJ	3	3
-Bacteria	candidate division NC10	NA	NA	NrdJ	2	2
-Bacteria	candidate division WOR-3	NA	NA	NrdD	3	3
-Bacteria	candidate division WOR-3	NA	NA	NrdJ	1	3
-Bacteria	candidate division WWE3	NA	NA	NrdJ	39	38
-Bacteria	candidate division Zixibacteria	NA	NA	NrdJ	4	8
-Eukaryota	NA	NA	NA	NrdJ	14	26
-Eukaryota	NA	NA	NA	NrdA	8	26
-Eukaryota	NA	NA	NA	NrdD	2	26
-Eukaryota	NA	NA	Choanoflagellida	NrdJ	4	2
-Eukaryota	NA	NA	Choanoflagellida	NrdA	4	2
-Eukaryota	NA	NA	Dictyosteliida	NrdJ	11	7
-Eukaryota	NA	NA	Dictyosteliida	NrdA	13	7
-Eukaryota	NA	NA	Euglyphida	NrdJ	2	1
-Eukaryota	NA	NA	Isochrysidales	NrdA	2	1
-Eukaryota	NA	NA	Kinetoplastida	NrdA	46	40
-Eukaryota	NA	NA	Longamoebia	NrdJ	2	1
-Eukaryota	NA	NA	Longamoebia	NrdA	2	1
-Eukaryota	NA	NA	Mortierellales	NrdA	5	2
-Eukaryota	NA	NA	Mucorales	NrdA	43	14
-Eukaryota	NA	NA	Perkinsida	NrdA	8	1
-Eukaryota	NA	NA	Prymnesiales	NrdA	3	1
-Eukaryota	NA	NA	Trichomonadida	NrdJ	2	1
-Eukaryota	NA	Bangiophyceae	Cyanidiales	NrdA	6	2
-Eukaryota	NA	Cryptophyta	Pyrenomonadales	NrdA	4	2
-Eukaryota	NA	Florideophyceae	Gigartinales	NrdA	2	1
-Eukaryota	NA	Heterolobosea	Schizopyrenida	NrdA	2	2
-Eukaryota	NA	Heterolobosea	Schizopyrenida	NrdJ	2	2
-Eukaryota	NA	Ichthyosporea	NA	NrdA	2	1
-Eukaryota	NA	Ichthyosporea	NA	NrdJ	2	1
-Eukaryota	NA	Ichthyosporea	Ichthyophonida	NrdJ	2	1
-Eukaryota	NA	Ichthyosporea	Ichthyophonida	NrdA	2	1
-Eukaryota	NA	Oligohymenophorea	Hymenostomatida	NrdA	4	2
-Eukaryota	NA	Oligohymenophorea	Peniculida	NrdA	2	2
-Eukaryota	NA	Oligohymenophorea	Philasterida	NrdA	1	1
-Eukaryota	NA	Oomycetes	Albuginales	NrdA	2	2
-Eukaryota	NA	Oomycetes	Peronosporales	NrdA	15	10
-Eukaryota	NA	Oomycetes	Peronosporales	NrdD	13	10
-Eukaryota	NA	Oomycetes	Peronosporales	NrdJ	14	10
-Eukaryota	NA	Oomycetes	Saprolegniales	NrdA	8	4
-Eukaryota	NA	Oomycetes	Saprolegniales	NrdJ	14	4
-Eukaryota	NA	Pelagophyceae	Pelagomonadales	NrdA	6	1
-Eukaryota	NA	Spirotrichea	Sporadotrichida	NrdA	4	2
-Eukaryota	NA	Spirotrichea	Sporadotrichida	NrdJ	2	2
-Eukaryota	Annelida	Hirudinida	Rhynchobdellida	NrdA	6	1
-Eukaryota	Annelida	Polychaeta	Capitellida	NrdA	1	1
-Eukaryota	Apicomplexa	Aconoidasida	NA	NrdA	14	11
-Eukaryota	Apicomplexa	Aconoidasida	Haemosporida	NrdA	54	45
-Eukaryota	Apicomplexa	Coccidia	Eucoccidiorida	NrdA	27	24
-Eukaryota	Apicomplexa	Gregarinasina	Eugregarinorida	NrdA	2	1
-Eukaryota	Arthropoda	Arachnida	NA	NrdA	2	3
-Eukaryota	Arthropoda	Arachnida	Araneae	NrdA	1	5
-Eukaryota	Arthropoda	Arachnida	Astigmata	NrdA	1	3
-Eukaryota	Arthropoda	Arachnida	Ixodida	NrdA	4	20
-Eukaryota	Arthropoda	Arachnida	Mesostigmata	NrdA	2	1
-Eukaryota	Arthropoda	Branchiopoda	Diplostraca	NrdA	2	2
-Eukaryota	Arthropoda	Insecta	Coleoptera	NrdA	7	13
-Eukaryota	Arthropoda	Insecta	Diptera	NrdA	59	51
-Eukaryota	Arthropoda	Insecta	Hemiptera	NrdA	12	21
-Eukaryota	Arthropoda	Insecta	Hymenoptera	NrdA	97	48
-Eukaryota	Arthropoda	Insecta	Isoptera	NrdA	1	2
-Eukaryota	Arthropoda	Insecta	Lepidoptera	NrdA	16	22
-Eukaryota	Arthropoda	Insecta	Lepidoptera	NrdD	1	22
-Eukaryota	Arthropoda	Insecta	Phthiraptera	NrdA	2	1
-Eukaryota	Ascomycota	NA	NA	NrdA	1	1
-Eukaryota	Ascomycota	Dothideomycetes	NA	NrdA	5	5
-Eukaryota	Ascomycota	Dothideomycetes	Botryosphaeriales	NrdA	5	3
-Eukaryota	Ascomycota	Dothideomycetes	Capnodiales	NrdA	12	9
-Eukaryota	Ascomycota	Dothideomycetes	Dothideales	NrdA	6	5
-Eukaryota	Ascomycota	Dothideomycetes	Pleosporales	NrdA	27	22
-Eukaryota	Ascomycota	Dothideomycetes	Venturiales	NrdA	2	1
-Eukaryota	Ascomycota	Eurotiomycetes	Chaetothyriales	NrdA	44	26
-Eukaryota	Ascomycota	Eurotiomycetes	Eurotiales	NrdA	65	51
-Eukaryota	Ascomycota	Eurotiomycetes	Onygenales	NrdA	87	47
-Eukaryota	Ascomycota	Eurotiomycetes	Onygenales	NrdD	1	47
-Eukaryota	Ascomycota	Eurotiomycetes	Phaeomoniellales	NrdA	1	1
-Eukaryota	Ascomycota	Eurotiomycetes	Verrucariales	NrdA	2	1
-Eukaryota	Ascomycota	Leotiomycetes	NA	NrdA	22	23
-Eukaryota	Ascomycota	Leotiomycetes	Erysiphales	NrdA	3	3
-Eukaryota	Ascomycota	Leotiomycetes	Helotiales	NrdA	12	10
-Eukaryota	Ascomycota	Orbiliomycetes	Orbiliales	NrdA	5	3
-Eukaryota	Ascomycota	Pezizomycetes	Pezizales	NrdA	3	3
-Eukaryota	Ascomycota	Pneumocystidomycetes	Pneumocystidales	NrdA	5	4
-Eukaryota	Ascomycota	Saccharomycetes	Saccharomycetales	NrdA	499	209
-Eukaryota	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	NrdA	11	5
-Eukaryota	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	NrdD	2	5
-Eukaryota	Ascomycota	Sordariomycetes	Diaporthales	NrdA	5	5
-Eukaryota	Ascomycota	Sordariomycetes	Glomerellales	NrdA	22	16
-Eukaryota	Ascomycota	Sordariomycetes	Hypocreales	NrdA	94	92
-Eukaryota	Ascomycota	Sordariomycetes	Hypocreales	NrdD	36	92
-Eukaryota	Ascomycota	Sordariomycetes	Magnaporthales	NrdA	7	6
-Eukaryota	Ascomycota	Sordariomycetes	Microascales	NrdA	4	3
-Eukaryota	Ascomycota	Sordariomycetes	Ophiostomatales	NrdD	2	6
-Eukaryota	Ascomycota	Sordariomycetes	Ophiostomatales	NrdA	8	6
-Eukaryota	Ascomycota	Sordariomycetes	Sordariales	NrdA	24	11
-Eukaryota	Ascomycota	Sordariomycetes	Togniniales	NrdD	2	1
-Eukaryota	Ascomycota	Sordariomycetes	Togniniales	NrdA	2	1
-Eukaryota	Ascomycota	Sordariomycetes	Xylariales	NrdA	6	4
-Eukaryota	Ascomycota	Taphrinomycetes	Taphrinales	NrdA	1	1
-Eukaryota	Ascomycota	Xylonomycetes	Xylonomycetales	NrdA	1	1
-Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	NrdA	2	1
-Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	NrdA	6	2
-Eukaryota	Basidiomycota	NA	NA	NrdA	1	1
-Eukaryota	Basidiomycota	Agaricomycetes	Agaricales	NrdA	25	24
-Eukaryota	Basidiomycota	Agaricomycetes	Atheliales	NrdA	2	2
-Eukaryota	Basidiomycota	Agaricomycetes	Auriculariales	NrdA	7	2
-Eukaryota	Basidiomycota	Agaricomycetes	Boletales	NrdA	13	11
-Eukaryota	Basidiomycota	Agaricomycetes	Cantharellales	NrdA	6	8
-Eukaryota	Basidiomycota	Agaricomycetes	Corticiales	NrdA	7	3
-Eukaryota	Basidiomycota	Agaricomycetes	Geastrales	NrdA	2	1
-Eukaryota	Basidiomycota	Agaricomycetes	Gloeophyllales	NrdA	3	3
-Eukaryota	Basidiomycota	Agaricomycetes	Hymenochaetales	NrdA	3	3
-Eukaryota	Basidiomycota	Agaricomycetes	Jaapiales	NrdA	1	1
-Eukaryota	Basidiomycota	Agaricomycetes	Polyporales	NrdA	17	17
-Eukaryota	Basidiomycota	Agaricomycetes	Russulales	NrdA	7	3
-Eukaryota	Basidiomycota	Agaricomycetes	Sebacinales	NrdA	2	2
-Eukaryota	Basidiomycota	Agaricomycetes	Trechisporales	NrdA	2	2
-Eukaryota	Basidiomycota	Dacrymycetes	Dacrymycetales	NrdA	2	2
-Eukaryota	Basidiomycota	Exobasidiomycetes	Ceraceosorales	NrdA	1	1
-Eukaryota	Basidiomycota	Exobasidiomycetes	Georgefischeriales	NrdA	2	1
-Eukaryota	Basidiomycota	Exobasidiomycetes	Tilletiales	NrdA	4	4
-Eukaryota	Basidiomycota	Malasseziomycetes	Malasseziales	NrdA	3	3
-Eukaryota	Basidiomycota	Microbotryomycetes	Microbotryales	NrdA	1	1
-Eukaryota	Basidiomycota	Microbotryomycetes	Sporidiobolales	NrdA	5	5
-Eukaryota	Basidiomycota	Mixiomycetes	Mixiales	NrdA	3	1
-Eukaryota	Basidiomycota	Pucciniomycetes	Pucciniales	NrdA	9	6
-Eukaryota	Basidiomycota	Tremellomycetes	Cystofilobasidiales	NrdA	1	1
-Eukaryota	Basidiomycota	Tremellomycetes	Tremellales	NrdA	33	29
-Eukaryota	Basidiomycota	Tremellomycetes	Trichosporonales	NrdA	4	3
-Eukaryota	Basidiomycota	Ustilaginomycetes	Ustilaginales	NrdA	17	11
-Eukaryota	Basidiomycota	Wallemiomycetes	Wallemiales	NrdA	4	2
-Eukaryota	Blastocladiomycota	Blastocladiomycetes	Blastocladiales	NrdA	2	2
-Eukaryota	Blastocladiomycota	Blastocladiomycetes	Blastocladiales	NrdJ	2	2
-Eukaryota	Brachiopoda	Lingulata	Lingulida	NrdA	2	1
-Eukaryota	Chlorophyta	Chlorophyceae	Chlamydomonadales	NrdA	6	8
-Eukaryota	Chlorophyta	Chlorophyceae	Chlamydomonadales	NrdJ	2	8
-Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	NrdA	10	5
-Eukaryota	Chlorophyta	Trebouxiophyceae	NA	NrdA	2	1
-Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales	NrdA	5	4
-Eukaryota	Chordata	NA	NA	NrdA	2	4
-Eukaryota	Chordata	NA	Coelacanthiformes	NrdA	1	1
-Eukaryota	Chordata	NA	Crocodylia	NrdA	3	2
-Eukaryota	Chordata	NA	Squamata	NrdA	4	7
-Eukaryota	Chordata	NA	Testudines	NrdA	4	3
-Eukaryota	Chordata	Actinopteri	NA	NrdA	6	7
-Eukaryota	Chordata	Actinopteri	Beloniformes	NrdA	2	2
-Eukaryota	Chordata	Actinopteri	Characiformes	NrdA	2	2
-Eukaryota	Chordata	Actinopteri	Cichliformes	NrdA	11	6
-Eukaryota	Chordata	Actinopteri	Clupeiformes	NrdA	1	1
-Eukaryota	Chordata	Actinopteri	Cypriniformes	NrdA	13	11
-Eukaryota	Chordata	Actinopteri	Cyprinodontiformes	NrdA	25	10
-Eukaryota	Chordata	Actinopteri	Esociformes	NrdA	1	1
-Eukaryota	Chordata	Actinopteri	Osteoglossiformes	NrdA	1	1
-Eukaryota	Chordata	Actinopteri	Perciformes	NrdA	2	13
-Eukaryota	Chordata	Actinopteri	Pleuronectiformes	NrdA	2	3
-Eukaryota	Chordata	Actinopteri	Salmoniformes	NrdA	6	5
-Eukaryota	Chordata	Actinopteri	Semionotiformes	NrdA	3	1
-Eukaryota	Chordata	Actinopteri	Siluriformes	NrdA	2	4
-Eukaryota	Chordata	Actinopteri	Tetraodontiformes	NrdA	5	3
-Eukaryota	Chordata	Amphibia	Anura	NrdA	9	5
-Eukaryota	Chordata	Appendicularia	NA	NrdA	2	1
-Eukaryota	Chordata	Ascidiacea	Enterogona	NrdA	1	1
-Eukaryota	Chordata	Aves	Anseriformes	NrdA	3	3
-Eukaryota	Chordata	Aves	Apodiformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Charadriiformes	NrdA	3	2
-Eukaryota	Chordata	Aves	Ciconiiformes	NrdA	1	2
-Eukaryota	Chordata	Aves	Columbiformes	NrdA	1	1
-Eukaryota	Chordata	Aves	Coraciiformes	NrdA	4	2
-Eukaryota	Chordata	Aves	Cuculiformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Falconiformes	NrdA	8	5
-Eukaryota	Chordata	Aves	Galliformes	NrdA	4	3
-Eukaryota	Chordata	Aves	Gaviiformes	NrdA	1	1
-Eukaryota	Chordata	Aves	Gruiformes	NrdA	8	5
-Eukaryota	Chordata	Aves	Musophagiformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Opisthocomiformes	NrdA	1	1
-Eukaryota	Chordata	Aves	Passeriformes	NrdA	12	13
-Eukaryota	Chordata	Aves	Pelecaniformes	NrdA	8	5
-Eukaryota	Chordata	Aves	Piciformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Podicipediformes	NrdA	1	1
-Eukaryota	Chordata	Aves	Procellariiformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Psittaciformes	NrdA	2	3
-Eukaryota	Chordata	Aves	Sphenisciformes	NrdA	4	2
-Eukaryota	Chordata	Aves	Strigiformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Struthioniformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Tinamiformes	NrdA	1	1
-Eukaryota	Chordata	Aves	Trochiliformes	NrdA	2	1
-Eukaryota	Chordata	Aves	Trogoniformes	NrdA	2	1
-Eukaryota	Chordata	Chondrichthyes	Chimaeriformes	NrdA	1	1
-Eukaryota	Chordata	Mammalia	NA	NrdA	23	15
-Eukaryota	Chordata	Mammalia	Carnivora	NrdA	5	10
-Eukaryota	Chordata	Mammalia	Cetacea	NrdA	7	10
-Eukaryota	Chordata	Mammalia	Chiroptera	NrdA	26	8
-Eukaryota	Chordata	Mammalia	Cingulata	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Dasyuromorphia	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Dermoptera	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Didelphimorphia	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Insectivora	NrdA	6	3
-Eukaryota	Chordata	Mammalia	Lagomorpha	NrdA	3	3
-Eukaryota	Chordata	Mammalia	Macroscelidea	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Monotremata	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Perissodactyla	NrdA	4	4
-Eukaryota	Chordata	Mammalia	Pholidota	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Primates	NrdA	66	24
-Eukaryota	Chordata	Mammalia	Proboscidea	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Rodentia	NrdA	34	25
-Eukaryota	Chordata	Mammalia	Scandentia	NrdA	2	1
-Eukaryota	Chordata	Mammalia	Sirenia	NrdA	1	1
-Eukaryota	Chordata	Mammalia	Tubulidentata	NrdA	1	1
-Eukaryota	Chromerida	NA	NA	NrdA	2	1
-Eukaryota	Chytridiomycota	Chytridiomycetes	Rhizophydiales	NrdA	3	2
-Eukaryota	Chytridiomycota	Chytridiomycetes	Spizellomycetales	NrdA	2	1
-Eukaryota	Chytridiomycota	Monoblepharidomycetes	Monoblepharidales	NrdJ	2	1
-Eukaryota	Chytridiomycota	Monoblepharidomycetes	Monoblepharidales	NrdA	1	1
-Eukaryota	Cnidaria	NA	Bivalvulida	NrdA	1	1
-Eukaryota	Cnidaria	Anthozoa	Actiniaria	NrdA	3	2
-Eukaryota	Cnidaria	Hydrozoa	Anthoathecata	NrdA	1	1
-Eukaryota	Cryptomycota	NA	NA	NrdA	1	1
-Eukaryota	Echinodermata	Echinoidea	Echinoida	NrdA	1	1
-Eukaryota	Entomophthoromycota	Entomophthoromycetes	Entomophthorales	NrdA	1	1
-Eukaryota	Euglenida	NA	Euglenales	NrdJ	2	1
-Eukaryota	Eustigmatophyceae	NA	Eustigmatales	NrdA	4	2
-Eukaryota	Eustigmatophyceae	NA	Eustigmatales	NrdJ	1	2
-Eukaryota	Glomeromycota	Glomeromycetes	Glomerales	NrdJ	3	2
-Eukaryota	Glomeromycota	Glomeromycetes	Glomerales	NrdA	4	2
-Eukaryota	Hemichordata	Enteropneusta	NA	NrdA	1	1
-Eukaryota	Microsporidia	NA	NA	NrdA	44	28
-Eukaryota	Mollusca	Bivalvia	Ostreoida	NrdA	5	3
-Eukaryota	Mollusca	Cephalopoda	Octopoda	NrdA	2	2
-Eukaryota	Mollusca	Gastropoda	NA	NrdA	4	18
-Eukaryota	Nematoda	Chromadorea	Ascaridida	NrdA	2	2
-Eukaryota	Nematoda	Chromadorea	Rhabditida	NrdA	17	12
-Eukaryota	Nematoda	Chromadorea	Spirurida	NrdA	5	3
-Eukaryota	Nematoda	Enoplea	Trichocephalida	NrdA	28	14
-Eukaryota	Orthonectida	NA	NA	NrdA	1	1
-Eukaryota	Phaeophyceae	NA	Ectocarpales	NrdJ	1	1
-Eukaryota	Phaeophyceae	NA	Ectocarpales	NrdA	2	1
-Eukaryota	Placozoa	NA	NA	NrdA	2	1
-Eukaryota	Platyhelminthes	Cestoda	Cyclophyllidea	NrdA	7	6
-Eukaryota	Platyhelminthes	Trematoda	Opisthorchiida	NrdA	3	2
-Eukaryota	Platyhelminthes	Trematoda	Strigeidida	NrdA	1	3
-Eukaryota	Porifera	Demospongiae	Haplosclerida	NrdA	1	1
-Eukaryota	Priapulida	NA	NA	NrdA	1	1
-Eukaryota	Streptophyta	NA	Amborellales	NrdA	2	1
-Eukaryota	Streptophyta	NA	Apiales	NrdA	3	10
-Eukaryota	Streptophyta	NA	Brassicales	NrdA	45	16
-Eukaryota	Streptophyta	NA	Caryophyllales	NrdA	4	4
-Eukaryota	Streptophyta	NA	Cucurbitales	NrdA	3	2
-Eukaryota	Streptophyta	NA	Fabales	NrdA	34	18
-Eukaryota	Streptophyta	NA	Gentianales	NrdA	1	6
-Eukaryota	Streptophyta	NA	Lamiales	NrdA	7	11
-Eukaryota	Streptophyta	NA	Lamiales	NrdJ	1	11
-Eukaryota	Streptophyta	NA	Malpighiales	NrdA	20	10
-Eukaryota	Streptophyta	NA	Malvales	NrdA	17	4
-Eukaryota	Streptophyta	NA	Myrtales	NrdA	2	1
-Eukaryota	Streptophyta	NA	Proteales	NrdA	2	1
-Eukaryota	Streptophyta	NA	Rosales	NrdA	13	13
-Eukaryota	Streptophyta	NA	Sapindales	NrdA	13	4
-Eukaryota	Streptophyta	NA	Selaginellales	NrdA	4	1
-Eukaryota	Streptophyta	NA	Solanales	NrdA	19	10
-Eukaryota	Streptophyta	NA	Vitales	NrdA	3	1
-Eukaryota	Streptophyta	Bryopsida	Funariales	NrdA	4	1
-Eukaryota	Streptophyta	Klebsormidiophyceae	Klebsormidiales	NrdA	5	1
-Eukaryota	Streptophyta	Liliopsida	Alismatales	NrdA	1	1
-Eukaryota	Streptophyta	Liliopsida	Arecales	NrdA	8	2
-Eukaryota	Streptophyta	Liliopsida	Poales	NrdA	38	16
-Eukaryota	Streptophyta	Liliopsida	Zingiberales	NrdA	3	4
-Eukaryota	Streptophyta	Marchantiopsida	Marchantiales	NrdA	1	2
-Eukaryota	Xenacoelomorpha	Acoela	NA	NrdA	1	1
-Viruses	NA	NA	NA	NrdA	595	304
-Viruses	NA	NA	NA	NrdJ	42	304
-Viruses	NA	NA	NA	NrdD	12	304
-Viruses	NA	NA	Caudovirales	NrdD	302	758
-Viruses	NA	NA	Caudovirales	NrdA	940	758
-Viruses	NA	NA	Caudovirales	NrdJ	314	758
-Viruses	NA	NA	Herpesvirales	NrdA	33	105
+tdomain	tkingdom	tphylum	tclass	torder	pclass	n_proteins	n_orgs
+Archaea	NA	NA	NA	NA	NrdJ	20	29
+Archaea	NA	NA	NA	NA	NrdA	2	29
+Archaea	NA	NA	NA	NA	NrdD	8	29
+Archaea	NA	Candidatus Bathyarchaeota	NA	NA	NrdD	18	14
+Archaea	NA	Candidatus Bathyarchaeota	NA	NA	NrdJ	4	14
+Archaea	NA	Candidatus Korarchaeota	NA	NA	NrdJ	2	2
+Archaea	NA	Candidatus Korarchaeota	NA	NA	NrdD	2	2
+Archaea	NA	Candidatus Lokiarchaeota	NA	NA	NrdD	2	1
+Archaea	NA	Candidatus Lokiarchaeota	NA	NA	NrdJ	2	1
+Archaea	NA	Candidatus Micrarchaeota	NA	NA	NrdJ	1	1
+Archaea	NA	Candidatus Nanohaloarchaeota	Nanohaloarchaea	NA	NrdJ	2	3
+Archaea	NA	Candidatus Nanohaloarchaeota	Nanohaloarchaea	NA	NrdA	2	3
+Archaea	NA	Candidatus Parvarchaeota	NA	NA	NrdJ	1	2
+Archaea	NA	Candidatus Thorarchaeota	NA	NA	NrdJ	1	3
+Archaea	NA	Candidatus Thorarchaeota	NA	NA	NrdA	1	3
+Archaea	NA	Candidatus Thorarchaeota	NA	NA	NrdD	1	3
+Archaea	NA	Crenarchaeota	NA	NA	NrdJ	1	1
+Archaea	NA	Crenarchaeota	Thermoprotei	Acidilobales	NrdJ	14	9
+Archaea	NA	Crenarchaeota	Thermoprotei	Desulfurococcales	NrdD	25	29
+Archaea	NA	Crenarchaeota	Thermoprotei	Desulfurococcales	NrdJ	11	29
+Archaea	NA	Crenarchaeota	Thermoprotei	Fervidicoccales	NrdD	1	1
+Archaea	NA	Crenarchaeota	Thermoprotei	Fervidicoccales	NrdJ	1	1
+Archaea	NA	Crenarchaeota	Thermoprotei	Sulfolobales	NrdJ	53	35
+Archaea	NA	Crenarchaeota	Thermoprotei	Thermoproteales	NrdD	13	41
+Archaea	NA	Crenarchaeota	Thermoprotei	Thermoproteales	NrdJ	24	41
+Archaea	NA	Euryarchaeota	NA	NA	NrdD	12	62
+Archaea	NA	Euryarchaeota	NA	NA	NrdJ	24	62
+Archaea	NA	Euryarchaeota	NA	NA	NrdA	1	62
+Archaea	NA	Euryarchaeota	Archaeoglobi	Archaeoglobales	NrdJ	14	13
+Archaea	NA	Euryarchaeota	Archaeoglobi	Archaeoglobales	NrdD	4	13
+Archaea	NA	Euryarchaeota	Candidatus Thalassoarchaea	NA	NrdA	1	2
+Archaea	NA	Euryarchaeota	Hadesarchaea	NA	NrdD	3	4
+Archaea	NA	Euryarchaeota	Hadesarchaea	NA	NrdJ	2	4
+Archaea	NA	Euryarchaeota	Halobacteria	Halobacteriales	NrdA	36	80
+Archaea	NA	Euryarchaeota	Halobacteria	Halobacteriales	NrdJ	77	80
+Archaea	NA	Euryarchaeota	Halobacteria	Halobacteriales	NrdD	5	80
+Archaea	NA	Euryarchaeota	Halobacteria	Haloferacales	NrdJ	96	93
+Archaea	NA	Euryarchaeota	Halobacteria	Haloferacales	NrdA	49	93
+Archaea	NA	Euryarchaeota	Halobacteria	Natrialbales	NrdA	15	72
+Archaea	NA	Euryarchaeota	Halobacteria	Natrialbales	NrdJ	72	72
+Archaea	NA	Euryarchaeota	Methanobacteria	Methanobacteriales	NrdD	59	39
+Archaea	NA	Euryarchaeota	Methanobacteria	Methanobacteriales	NrdJ	10	39
+Archaea	NA	Euryarchaeota	Methanococci	Methanococcales	NrdD	34	31
+Archaea	NA	Euryarchaeota	Methanomicrobia	NA	NrdJ	7	8
+Archaea	NA	Euryarchaeota	Methanomicrobia	Methanocellales	NrdJ	2	5
+Archaea	NA	Euryarchaeota	Methanomicrobia	Methanomicrobiales	NrdD	33	37
+Archaea	NA	Euryarchaeota	Methanomicrobia	Methanomicrobiales	NrdJ	43	37
+Archaea	NA	Euryarchaeota	Methanomicrobia	Methanosarcinales	NrdD	154	74
+Archaea	NA	Euryarchaeota	Methanomicrobia	Methanosarcinales	NrdJ	126	74
+Archaea	NA	Euryarchaeota	Thermococci	Thermococcales	NrdJ	66	46
+Archaea	NA	Euryarchaeota	Thermococci	Thermococcales	NrdD	43	46
+Archaea	NA	Euryarchaeota	Thermoplasmata	NA	NrdJ	2	1
+Archaea	NA	Euryarchaeota	Thermoplasmata	Methanomassiliicoccales	NrdJ	7	9
+Archaea	NA	Euryarchaeota	Thermoplasmata	Methanomassiliicoccales	NrdD	5	9
+Archaea	NA	Euryarchaeota	Thermoplasmata	Thermoplasmatales	NrdJ	25	27
+Archaea	NA	Euryarchaeota	Thermoplasmata	Thermoplasmatales	NrdD	4	27
+Archaea	NA	Euryarchaeota	Thermoplasmata	Thermoplasmatales	NrdA	1	27
+Archaea	NA	Nanoarchaeota	NA	Nanoarchaeales	NrdD	1	3
+Archaea	NA	Nanoarchaeota	NA	Nanoarchaeales	NrdJ	2	3
+Archaea	NA	Thaumarchaeota	NA	NA	NrdJ	43	86
+Archaea	NA	Thaumarchaeota	NA	Cenarchaeales	NrdJ	1	1
+Archaea	NA	Thaumarchaeota	NA	Nitrosopumilales	NrdJ	25	33
+Archaea	NA	Thaumarchaeota	Nitrososphaeria	Nitrososphaerales	NrdJ	4	4
+Bacteria	NA	NA	NA	NA	NrdA	44	326
+Bacteria	NA	NA	NA	NA	NrdD	84	326
+Bacteria	NA	NA	NA	NA	NrdJ	237	326
+Bacteria	NA	NA	NA	Haloplasmatales	NrdJ	2	2
+Bacteria	NA	NA	NA	Haloplasmatales	NrdD	2	2
+Bacteria	NA	Acidobacteria	NA	NA	NrdJ	5	5
+Bacteria	NA	Acidobacteria	Acidobacteriia	Acidobacteriales	NrdA	15	23
+Bacteria	NA	Acidobacteria	Acidobacteriia	Acidobacteriales	NrdJ	19	23
+Bacteria	NA	Acidobacteria	Blastocatellia	NA	NrdD	3	3
+Bacteria	NA	Acidobacteria	Blastocatellia	NA	NrdA	5	3
+Bacteria	NA	Acidobacteria	Blastocatellia	NA	NrdJ	4	3
+Bacteria	NA	Acidobacteria	Holophagae	Holophagales	NrdD	1	2
+Bacteria	NA	Acidobacteria	Holophagae	Holophagales	NrdJ	2	2
+Bacteria	NA	Acidobacteria	Solibacteres	Solibacterales	NrdJ	3	3
+Bacteria	NA	Acidobacteria	Solibacteres	Solibacterales	NrdA	1	3
+Bacteria	NA	Actinobacteria	Acidimicrobiia	NA	NrdJ	3	4
+Bacteria	NA	Actinobacteria	Acidimicrobiia	Acidimicrobiales	NrdJ	10	14
+Bacteria	NA	Actinobacteria	Acidimicrobiia	Acidimicrobiales	NrdA	5	14
+Bacteria	NA	Actinobacteria	Actinobacteria	NA	NrdD	2	39
+Bacteria	NA	Actinobacteria	Actinobacteria	NA	NrdA	24	39
+Bacteria	NA	Actinobacteria	Actinobacteria	NA	NrdJ	29	39
+Bacteria	NA	Actinobacteria	Actinobacteria	Acidothermales	NrdJ	2	2
+Bacteria	NA	Actinobacteria	Actinobacteria	Acidothermales	NrdA	2	2
+Bacteria	NA	Actinobacteria	Actinobacteria	Actinomycetales	NrdD	145	105
+Bacteria	NA	Actinobacteria	Actinobacteria	Actinomycetales	NrdA	145	105
+Bacteria	NA	Actinobacteria	Actinobacteria	Actinopolysporales	NrdJ	4	3
+Bacteria	NA	Actinobacteria	Actinobacteria	Actinopolysporales	NrdA	2	3
+Bacteria	NA	Actinobacteria	Actinobacteria	Bifidobacteriales	NrdD	390	222
+Bacteria	NA	Actinobacteria	Actinobacteria	Bifidobacteriales	NrdA	376	222
+Bacteria	NA	Actinobacteria	Actinobacteria	Bifidobacteriales	NrdJ	2	222
+Bacteria	NA	Actinobacteria	Actinobacteria	Catenulisporales	NrdA	3	4
+Bacteria	NA	Actinobacteria	Actinobacteria	Catenulisporales	NrdJ	4	4
+Bacteria	NA	Actinobacteria	Actinobacteria	Corynebacteriales	NrdJ	3654	2538
+Bacteria	NA	Actinobacteria	Actinobacteria	Corynebacteriales	NrdA	5122	2538
+Bacteria	NA	Actinobacteria	Actinobacteria	Corynebacteriales	NrdD	171	2538
+Bacteria	NA	Actinobacteria	Actinobacteria	Frankiales	NrdJ	58	31
+Bacteria	NA	Actinobacteria	Actinobacteria	Frankiales	NrdA	6	31
+Bacteria	NA	Actinobacteria	Actinobacteria	Geodermatophilales	NrdJ	17	14
+Bacteria	NA	Actinobacteria	Actinobacteria	Geodermatophilales	NrdA	2	14
+Bacteria	NA	Actinobacteria	Actinobacteria	Glycomycetales	NrdJ	6	6
+Bacteria	NA	Actinobacteria	Actinobacteria	Glycomycetales	NrdA	7	6
+Bacteria	NA	Actinobacteria	Actinobacteria	Jiangellales	NrdJ	3	3
+Bacteria	NA	Actinobacteria	Actinobacteria	Jiangellales	NrdA	3	3
+Bacteria	NA	Actinobacteria	Actinobacteria	Kineosporiales	NrdA	5	4
+Bacteria	NA	Actinobacteria	Actinobacteria	Kineosporiales	NrdJ	3	4
+Bacteria	NA	Actinobacteria	Actinobacteria	Micrococcales	NrdA	788	547
+Bacteria	NA	Actinobacteria	Actinobacteria	Micrococcales	NrdD	114	547
+Bacteria	NA	Actinobacteria	Actinobacteria	Micrococcales	NrdJ	108	547
+Bacteria	NA	Actinobacteria	Actinobacteria	Micromonosporales	NrdJ	120	76
+Bacteria	NA	Actinobacteria	Actinobacteria	Micromonosporales	NrdA	135	76
+Bacteria	NA	Actinobacteria	Actinobacteria	Nakamurellales	NrdJ	3	3
+Bacteria	NA	Actinobacteria	Actinobacteria	Nakamurellales	NrdA	1	3
+Bacteria	NA	Actinobacteria	Actinobacteria	Propionibacteriales	NrdA	185	201
+Bacteria	NA	Actinobacteria	Actinobacteria	Propionibacteriales	NrdD	175	201
+Bacteria	NA	Actinobacteria	Actinobacteria	Propionibacteriales	NrdJ	300	201
+Bacteria	NA	Actinobacteria	Actinobacteria	Pseudonocardiales	NrdA	114	106
+Bacteria	NA	Actinobacteria	Actinobacteria	Pseudonocardiales	NrdJ	128	106
+Bacteria	NA	Actinobacteria	Actinobacteria	Streptomycetales	NrdA	831	627
+Bacteria	NA	Actinobacteria	Actinobacteria	Streptomycetales	NrdJ	828	627
+Bacteria	NA	Actinobacteria	Actinobacteria	Streptomycetales	NrdD	2	627
+Bacteria	NA	Actinobacteria	Actinobacteria	Streptosporangiales	NrdJ	83	77
+Bacteria	NA	Actinobacteria	Actinobacteria	Streptosporangiales	NrdA	73	77
+Bacteria	NA	Actinobacteria	Coriobacteriia	Coriobacteriales	NrdD	78	57
+Bacteria	NA	Actinobacteria	Coriobacteriia	Coriobacteriales	NrdA	34	57
+Bacteria	NA	Actinobacteria	Coriobacteriia	Coriobacteriales	NrdJ	7	57
+Bacteria	NA	Actinobacteria	Coriobacteriia	Eggerthellales	NrdD	48	31
+Bacteria	NA	Actinobacteria	Coriobacteriia	Eggerthellales	NrdA	9	31
+Bacteria	NA	Actinobacteria	Coriobacteriia	Eggerthellales	NrdJ	1	31
+Bacteria	NA	Actinobacteria	Nitriliruptoria	Nitriliruptorales	NrdJ	1	1
+Bacteria	NA	Actinobacteria	Rubrobacteria	Rubrobacterales	NrdJ	5	4
+Bacteria	NA	Actinobacteria	Thermoleophilia	Solirubrobacterales	NrdJ	11	8
+Bacteria	NA	Actinobacteria	Thermoleophilia	Solirubrobacterales	NrdA	4	8
+Bacteria	NA	Aquificae	Aquificae	Aquificales	NrdA	22	28
+Bacteria	NA	Aquificae	Aquificae	Aquificales	NrdD	18	28
+Bacteria	NA	Aquificae	Aquificae	Aquificales	NrdJ	6	28
+Bacteria	NA	Aquificae	Aquificae	Desulfurobacteriales	NrdJ	2	5
+Bacteria	NA	Aquificae	Aquificae	Desulfurobacteriales	NrdA	4	5
+Bacteria	NA	Armatimonadetes	NA	NA	NrdJ	5	5
+Bacteria	NA	Armatimonadetes	NA	NA	NrdA	3	5
+Bacteria	NA	Armatimonadetes	Chthonomonadetes	Chthonomonadales	NrdJ	5	2
+Bacteria	NA	Armatimonadetes	Fimbriimonadia	Fimbriimonadales	NrdJ	2	2
+Bacteria	NA	Bacteroidetes	NA	NA	NrdD	3	16
+Bacteria	NA	Bacteroidetes	NA	NA	NrdA	4	16
+Bacteria	NA	Bacteroidetes	NA	NA	NrdJ	12	16
+Bacteria	NA	Bacteroidetes	NA	Bacteroidetes Order II. Incertae sedis	NrdA	12	8
+Bacteria	NA	Bacteroidetes	NA	Bacteroidetes Order II. Incertae sedis	NrdJ	16	8
+Bacteria	NA	Bacteroidetes	Bacteroidia	Bacteroidales	NrdD	820	618
+Bacteria	NA	Bacteroidetes	Bacteroidia	Bacteroidales	NrdJ	730	618
+Bacteria	NA	Bacteroidetes	Bacteroidia	Bacteroidales	NrdA	296	618
+Bacteria	NA	Bacteroidetes	Chitinophagia	Chitinophagales	NrdA	41	36
+Bacteria	NA	Bacteroidetes	Chitinophagia	Chitinophagales	NrdJ	30	36
+Bacteria	NA	Bacteroidetes	Cytophagia	Cytophagales	NrdJ	34	121
+Bacteria	NA	Bacteroidetes	Cytophagia	Cytophagales	NrdA	146	121
+Bacteria	NA	Bacteroidetes	Cytophagia	Cytophagales	NrdD	17	121
+Bacteria	NA	Bacteroidetes	Flavobacteriia	NA	NrdA	8	4
+Bacteria	NA	Bacteroidetes	Flavobacteriia	Flavobacteriales	NrdA	744	471
+Bacteria	NA	Bacteroidetes	Flavobacteriia	Flavobacteriales	NrdJ	126	471
+Bacteria	NA	Bacteroidetes	Flavobacteriia	Flavobacteriales	NrdD	120	471
+Bacteria	NA	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	NrdA	92	56
+Bacteria	NA	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	NrdJ	16	56
+Bacteria	NA	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	NrdD	7	56
+Bacteria	NA	Caldiserica	Caldisericia	Caldisericales	NrdD	2	2
+Bacteria	NA	Candidatus Acetothermia	NA	NA	NrdJ	2	3
+Bacteria	NA	Candidatus Acetothermia	NA	NA	NrdD	1	3
+Bacteria	NA	Candidatus Adlerbacteria	NA	NA	NrdJ	1	4
+Bacteria	NA	Candidatus Adlerbacteria	NA	NA	NrdA	1	4
+Bacteria	NA	Candidatus Adlerbacteria	NA	NA	NrdD	3	4
+Bacteria	NA	Candidatus Amesbacteria	NA	NA	NrdJ	13	13
+Bacteria	NA	Candidatus Atribacteria	NA	NA	NrdD	1	1
+Bacteria	NA	Candidatus Azambacteria	NA	NA	NrdJ	18	19
+Bacteria	NA	Candidatus Beckwithbacteria	NA	NA	NrdJ	6	7
+Bacteria	NA	Candidatus Berkelbacteria	NA	NA	NrdJ	7	6
+Bacteria	NA	Candidatus Campbellbacteria	NA	NA	NrdJ	5	5
+Bacteria	NA	Candidatus Cloacimonetes	NA	NA	NrdJ	3	3
+Bacteria	NA	Candidatus Cloacimonetes	NA	NA	NrdD	3	3
+Bacteria	NA	Candidatus Collierbacteria	NA	NA	NrdJ	28	28
+Bacteria	NA	Candidatus Curtissbacteria	NA	NA	NrdJ	9	10
+Bacteria	NA	Candidatus Dadabacteria	NA	NA	NrdJ	2	1
+Bacteria	NA	Candidatus Daviesbacteria	NA	NA	NrdJ	13	14
+Bacteria	NA	Candidatus Falkowbacteria	NA	NA	NrdD	8	9
+Bacteria	NA	Candidatus Falkowbacteria	NA	NA	NrdA	1	9
+Bacteria	NA	Candidatus Giovannonibacteria	NA	NA	NrdJ	14	12
+Bacteria	NA	Candidatus Gottesmanbacteria	NA	NA	NrdJ	13	15
+Bacteria	NA	Candidatus Jorgensenbacteria	NA	NA	NrdJ	8	8
+Bacteria	NA	Candidatus Kaiserbacteria	NA	NA	NrdD	2	8
+Bacteria	NA	Candidatus Kaiserbacteria	NA	NA	NrdJ	3	8
+Bacteria	NA	Candidatus Kryptonia	NA	NA	NrdJ	1	3
+Bacteria	NA	Candidatus Latescibacteria	NA	NA	NrdJ	1	1
+Bacteria	NA	Candidatus Levybacteria	NA	NA	NrdJ	12	13
+Bacteria	NA	Candidatus Magasanikbacteria	NA	NA	NrdJ	11	14
+Bacteria	NA	Candidatus Magasanikbacteria	NA	NA	NrdA	1	14
+Bacteria	NA	Candidatus Magasanikbacteria	NA	NA	NrdD	4	14
+Bacteria	NA	Candidatus Marinimicrobia	NA	NA	NrdJ	1	2
+Bacteria	NA	Candidatus Microgenomates	NA	NA	NrdJ	1	4
+Bacteria	NA	Candidatus Moranbacteria	NA	NA	NrdD	26	30
+Bacteria	NA	Candidatus Nomurabacteria	NA	NA	NrdJ	42	41
+Bacteria	NA	Candidatus Omnitrophica	NA	NA	NrdD	1	4
+Bacteria	NA	Candidatus Omnitrophica	NA	NA	NrdJ	5	4
+Bacteria	NA	Candidatus Pacebacteria	NA	NA	NrdJ	3	3
+Bacteria	NA	Candidatus Parcubacteria	NA	NA	NrdJ	8	17
+Bacteria	NA	Candidatus Parcubacteria	NA	NA	NrdA	4	17
+Bacteria	NA	Candidatus Parcubacteria	NA	NA	NrdD	5	17
+Bacteria	NA	Candidatus Peregrinibacteria	NA	NA	NrdA	2	10
+Bacteria	NA	Candidatus Peregrinibacteria	NA	NA	NrdJ	8	10
+Bacteria	NA	Candidatus Peregrinibacteria	NA	NA	NrdD	2	10
+Bacteria	NA	Candidatus Peregrinibacteria	Candidatus Peribacteria	NA	NrdJ	1	1
+Bacteria	NA	Candidatus Peregrinibacteria	Candidatus Peribacteria	Candidatus Peribacterales	NrdJ	5	1
+Bacteria	NA	Candidatus Roizmanbacteria	NA	NA	NrdJ	10	10
+Bacteria	NA	Candidatus Saccharibacteria	NA	NA	NrdA	5	6
+Bacteria	NA	Candidatus Saccharibacteria	NA	NA	NrdJ	1	6
+Bacteria	NA	Candidatus Saccharibacteria	NA	NA	NrdD	1	6
+Bacteria	NA	Candidatus Shapirobacteria	NA	NA	NrdJ	5	5
+Bacteria	NA	Candidatus Tectomicrobia	NA	NA	NrdJ	2	2
+Bacteria	NA	Candidatus Uhrbacteria	NA	NA	NrdJ	16	14
+Bacteria	NA	Candidatus Woesebacteria	NA	NA	NrdJ	50	47
+Bacteria	NA	Candidatus Wolfebacteria	NA	NA	NrdJ	12	12
+Bacteria	NA	Candidatus Yanofskybacteria	NA	NA	NrdJ	13	14
+Bacteria	NA	Chlamydiae	NA	NA	NrdD	1	1
+Bacteria	NA	Chlamydiae	Chlamydiia	Chlamydiales	NrdJ	24	177
+Bacteria	NA	Chlamydiae	Chlamydiia	Chlamydiales	NrdA	312	177
+Bacteria	NA	Chlamydiae	Chlamydiia	Chlamydiales	NrdD	10	177
+Bacteria	NA	Chlorobi	NA	NA	NrdJ	4	5
+Bacteria	NA	Chlorobi	Chlorobia	Chlorobiales	NrdJ	28	27
+Bacteria	NA	Chlorobi	Chlorobia	Chlorobiales	NrdD	14	27
+Bacteria	NA	Chloroflexi	NA	NA	NrdJ	7	6
+Bacteria	NA	Chloroflexi	Anaerolineae	NA	NrdJ	3	4
+Bacteria	NA	Chloroflexi	Anaerolineae	NA	NrdD	2	4
+Bacteria	NA	Chloroflexi	Anaerolineae	Anaerolineales	NrdJ	21	11
+Bacteria	NA	Chloroflexi	Anaerolineae	Anaerolineales	NrdD	3	11
+Bacteria	NA	Chloroflexi	Ardenticatenia	Ardenticatenales	NrdJ	3	2
+Bacteria	NA	Chloroflexi	Caldilineae	Caldilineales	NrdJ	2	2
+Bacteria	NA	Chloroflexi	Chloroflexia	Chloroflexales	NrdJ	12	13
+Bacteria	NA	Chloroflexi	Chloroflexia	Herpetosiphonales	NrdA	3	2
+Bacteria	NA	Chloroflexi	Chloroflexia	Herpetosiphonales	NrdJ	1	2
+Bacteria	NA	Chloroflexi	Dehalococcoidia	NA	NrdJ	25	8
+Bacteria	NA	Chloroflexi	Dehalococcoidia	Dehalococcoidales	NrdJ	83	15
+Bacteria	NA	Chloroflexi	Ktedonobacteria	Ktedonobacterales	NrdA	2	2
+Bacteria	NA	Chloroflexi	Ktedonobacteria	Ktedonobacterales	NrdJ	2	2
+Bacteria	NA	Chloroflexi	Ktedonobacteria	Thermogemmatisporales	NrdJ	1	1
+Bacteria	NA	Chloroflexi	Thermomicrobia	NA	NrdJ	1	1
+Bacteria	NA	Chloroflexi	Thermomicrobia	NA	NrdA	1	1
+Bacteria	NA	Chloroflexi	Thermomicrobia	Sphaerobacterales	NrdJ	3	4
+Bacteria	NA	Chloroflexi	Thermomicrobia	Sphaerobacterales	NrdA	2	4
+Bacteria	NA	Chloroflexi	Thermomicrobia	Thermomicrobiales	NrdJ	4	2
+Bacteria	NA	Chloroflexi	Thermomicrobia	Thermomicrobiales	NrdA	2	2
+Bacteria	NA	Chrysiogenetes	Chrysiogenetes	Chrysiogenales	NrdJ	3	3
+Bacteria	NA	Chrysiogenetes	Chrysiogenetes	Chrysiogenales	NrdD	3	3
+Bacteria	NA	Cyanobacteria	NA	NA	NrdJ	2	6
+Bacteria	NA	Cyanobacteria	NA	NA	NrdA	2	6
+Bacteria	NA	Cyanobacteria	NA	Chroococcales	NrdA	60	45
+Bacteria	NA	Cyanobacteria	NA	Chroococcales	NrdJ	6	45
+Bacteria	NA	Cyanobacteria	NA	Chroococcidiopsidales	NrdJ	4	4
+Bacteria	NA	Cyanobacteria	NA	Nostocales	NrdJ	58	93
+Bacteria	NA	Cyanobacteria	NA	Nostocales	NrdA	14	93
+Bacteria	NA	Cyanobacteria	NA	Oscillatoriales	NrdJ	18	58
+Bacteria	NA	Cyanobacteria	NA	Oscillatoriales	NrdA	31	58
+Bacteria	NA	Cyanobacteria	NA	Pleurocapsales	NrdA	9	8
+Bacteria	NA	Cyanobacteria	NA	Synechococcales	NrdJ	194	160
+Bacteria	NA	Cyanobacteria	NA	Synechococcales	NrdA	28	160
+Bacteria	NA	Cyanobacteria	Gloeobacteria	Gloeobacterales	NrdJ	4	4
+Bacteria	NA	Deferribacteres	Deferribacteres	Deferribacterales	NrdJ	13	13
+Bacteria	NA	Deferribacteres	Deferribacteres	Deferribacterales	NrdD	4	13
+Bacteria	NA	Deinococcus-Thermus	Deinococci	Deinococcales	NrdA	29	37
+Bacteria	NA	Deinococcus-Thermus	Deinococci	Deinococcales	NrdJ	35	37
+Bacteria	NA	Deinococcus-Thermus	Deinococci	Thermales	NrdJ	78	40
+Bacteria	NA	Deinococcus-Thermus	Deinococci	Thermales	NrdA	49	40
+Bacteria	NA	Dictyoglomi	Dictyoglomia	Dictyoglomales	NrdD	5	4
+Bacteria	NA	Dictyoglomi	Dictyoglomia	Dictyoglomales	NrdJ	5	4
+Bacteria	NA	Elusimicrobia	NA	NA	NrdJ	3	2
+Bacteria	NA	Elusimicrobia	NA	NA	NrdD	3	2
+Bacteria	NA	Elusimicrobia	Elusimicrobia	Elusimicrobiales	NrdD	4	2
+Bacteria	NA	Elusimicrobia	Endomicrobia	Endomicrobiales	NrdJ	2	1
+Bacteria	NA	Elusimicrobia	Endomicrobia	Endomicrobiales	NrdD	2	1
+Bacteria	NA	Fibrobacteres	Chitinispirillia	Chitinispirillales	NrdJ	2	1
+Bacteria	NA	Fibrobacteres	Chitinispirillia	Chitinispirillales	NrdD	1	1
+Bacteria	NA	Fibrobacteres	Chitinivibrionia	Chitinivibrionales	NrdA	2	2
+Bacteria	NA	Fibrobacteres	Chitinivibrionia	Chitinivibrionales	NrdD	2	2
+Bacteria	NA	Fibrobacteres	Fibrobacteria	Fibrobacterales	NrdD	2	2
+Bacteria	NA	Firmicutes	NA	NA	NrdD	66	50
+Bacteria	NA	Firmicutes	NA	NA	NrdA	3	50
+Bacteria	NA	Firmicutes	NA	NA	NrdJ	2	50
+Bacteria	NA	Firmicutes	Bacilli	NA	NrdA	5	2
+Bacteria	NA	Firmicutes	Bacilli	NA	NrdD	2	2
+Bacteria	NA	Firmicutes	Bacilli	Bacillales	NrdD	7809	5624
+Bacteria	NA	Firmicutes	Bacilli	Bacillales	NrdA	9740	5624
+Bacteria	NA	Firmicutes	Bacilli	Bacillales	NrdJ	750	5624
+Bacteria	NA	Firmicutes	Bacilli	Lactobacillales	NrdA	13521	2636
+Bacteria	NA	Firmicutes	Bacilli	Lactobacillales	NrdD	12088	2636
+Bacteria	NA	Firmicutes	Bacilli	Lactobacillales	NrdJ	638	2636
+Bacteria	NA	Firmicutes	Clostridia	NA	NrdD	5	11
+Bacteria	NA	Firmicutes	Clostridia	NA	NrdJ	2	11
+Bacteria	NA	Firmicutes	Clostridia	Clostridiales	NrdD	2533	1297
+Bacteria	NA	Firmicutes	Clostridia	Clostridiales	NrdA	852	1297
+Bacteria	NA	Firmicutes	Clostridia	Clostridiales	NrdJ	744	1297
+Bacteria	NA	Firmicutes	Clostridia	Halanaerobiales	NrdD	11	16
+Bacteria	NA	Firmicutes	Clostridia	Halanaerobiales	NrdJ	16	16
+Bacteria	NA	Firmicutes	Clostridia	Natranaerobiales	NrdD	2	2
+Bacteria	NA	Firmicutes	Clostridia	Natranaerobiales	NrdJ	2	2
+Bacteria	NA	Firmicutes	Clostridia	Thermoanaerobacterales	NrdJ	77	90
+Bacteria	NA	Firmicutes	Clostridia	Thermoanaerobacterales	NrdD	106	90
+Bacteria	NA	Firmicutes	Erysipelotrichia	Erysipelotrichales	NrdD	141	68
+Bacteria	NA	Firmicutes	Erysipelotrichia	Erysipelotrichales	NrdA	60	68
+Bacteria	NA	Firmicutes	Erysipelotrichia	Erysipelotrichales	NrdJ	1	68
+Bacteria	NA	Firmicutes	Limnochordia	Limnochordales	NrdJ	4	1
+Bacteria	NA	Firmicutes	Negativicutes	Acidaminococcales	NrdA	7	16
+Bacteria	NA	Firmicutes	Negativicutes	Acidaminococcales	NrdJ	6	16
+Bacteria	NA	Firmicutes	Negativicutes	Acidaminococcales	NrdD	20	16
+Bacteria	NA	Firmicutes	Negativicutes	Selenomonadales	NrdJ	14	69
+Bacteria	NA	Firmicutes	Negativicutes	Selenomonadales	NrdD	101	69
+Bacteria	NA	Firmicutes	Negativicutes	Selenomonadales	NrdA	4	69
+Bacteria	NA	Firmicutes	Negativicutes	Veillonellales	NrdD	91	70
+Bacteria	NA	Firmicutes	Negativicutes	Veillonellales	NrdA	53	70
+Bacteria	NA	Firmicutes	Negativicutes	Veillonellales	NrdJ	29	70
+Bacteria	NA	Firmicutes	Tissierellia	NA	NrdD	13	10
+Bacteria	NA	Firmicutes	Tissierellia	NA	NrdJ	9	10
+Bacteria	NA	Firmicutes	Tissierellia	NA	NrdA	4	10
+Bacteria	NA	Firmicutes	Tissierellia	Tissierellales	NrdA	78	70
+Bacteria	NA	Firmicutes	Tissierellia	Tissierellales	NrdD	83	70
+Bacteria	NA	Firmicutes	Tissierellia	Tissierellales	NrdJ	5	70
+Bacteria	NA	Fusobacteria	Fusobacteriia	Fusobacteriales	NrdA	166	114
+Bacteria	NA	Fusobacteria	Fusobacteriia	Fusobacteriales	NrdJ	12	114
+Bacteria	NA	Fusobacteria	Fusobacteriia	Fusobacteriales	NrdD	155	114
+Bacteria	NA	Gemmatimonadetes	NA	NA	NrdJ	1	1
+Bacteria	NA	Gemmatimonadetes	Gemmatimonadetes	Gemmatimonadales	NrdJ	11	9
+Bacteria	NA	Gemmatimonadetes	Gemmatimonadetes	Gemmatimonadales	NrdA	2	9
+Bacteria	NA	Ignavibacteriae	Ignavibacteria	NA	NrdJ	2	2
+Bacteria	NA	Ignavibacteriae	Ignavibacteria	Ignavibacteriales	NrdJ	4	4
+Bacteria	NA	Lentisphaerae	Lentisphaeria	Lentisphaerales	NrdA	2	2
+Bacteria	NA	Nitrospinae	Nitrospinia	Nitrospinales	NrdJ	4	3
+Bacteria	NA	Nitrospirae	Nitrospira	NA	NrdJ	5	4
+Bacteria	NA	Nitrospirae	Nitrospira	NA	NrdD	2	4
+Bacteria	NA	Nitrospirae	Nitrospira	Nitrospirales	NrdJ	53	27
+Bacteria	NA	Nitrospirae	Nitrospira	Nitrospirales	NrdD	7	27
+Bacteria	NA	Nitrospirae	Nitrospira	Nitrospirales	NrdA	2	27
+Bacteria	NA	Planctomycetes	NA	NA	NrdD	1	6
+Bacteria	NA	Planctomycetes	Phycisphaerae	NA	NrdJ	6	4
+Bacteria	NA	Planctomycetes	Phycisphaerae	Phycisphaerales	NrdJ	2	2
+Bacteria	NA	Planctomycetes	Planctomycetia	Candidatus Brocadiales	NrdD	8	6
+Bacteria	NA	Planctomycetes	Planctomycetia	Candidatus Brocadiales	NrdJ	7	6
+Bacteria	NA	Planctomycetes	Planctomycetia	Planctomycetales	NrdJ	44	42
+Bacteria	NA	Planctomycetes	Planctomycetia	Planctomycetales	NrdA	21	42
+Bacteria	NA	Proteobacteria	NA	NA	NrdD	6	5
+Bacteria	NA	Proteobacteria	NA	NA	NrdA	8	5
+Bacteria	NA	Proteobacteria	NA	NA	NrdJ	2	5
+Bacteria	NA	Proteobacteria	Acidithiobacillia	Acidithiobacillales	NrdA	35	15
+Bacteria	NA	Proteobacteria	Acidithiobacillia	Acidithiobacillales	NrdD	11	15
+Bacteria	NA	Proteobacteria	Acidithiobacillia	Acidithiobacillales	NrdJ	5	15
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	NA	NrdJ	25	24
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	NA	NrdA	18	24
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	NA	NrdD	3	24
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Caulobacterales	NrdA	99	65
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Caulobacterales	NrdJ	19	65
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Caulobacterales	NrdD	5	65
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Kiloniellales	NrdJ	5	3
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Kiloniellales	NrdA	2	3
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Kordiimonadales	NrdJ	3	3
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Kordiimonadales	NrdA	3	3
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Magnetococcales	NrdJ	2	2
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Parvularculales	NrdJ	3	3
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Parvularculales	NrdA	3	3
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Pelagibacterales	NrdA	26	25
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhizobiales	NrdJ	1624	1115
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhizobiales	NrdA	1053	1115
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhizobiales	NrdD	25	1115
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhodobacterales	NrdJ	932	369
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhodobacterales	NrdA	164	369
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhodobacterales	NrdD	25	369
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhodospirillales	NrdJ	201	220
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhodospirillales	NrdA	264	220
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rhodospirillales	NrdD	28	220
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rickettsiales	NrdA	275	213
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Rickettsiales	NrdJ	4	213
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Sneathiellales	NrdJ	1	1
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Sneathiellales	NrdA	1	1
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Sphingomonadales	NrdA	442	309
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Sphingomonadales	NrdD	19	309
+Bacteria	NA	Proteobacteria	Alphaproteobacteria	Sphingomonadales	NrdJ	9	309
+Bacteria	NA	Proteobacteria	Betaproteobacteria	NA	NrdA	27	39
+Bacteria	NA	Proteobacteria	Betaproteobacteria	NA	NrdJ	16	39
+Bacteria	NA	Proteobacteria	Betaproteobacteria	NA	NrdD	1	39
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Burkholderiales	NrdD	860	995
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Burkholderiales	NrdA	2737	995
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Burkholderiales	NrdJ	2383	995
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Ferrovales	NrdJ	7	5
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Ferrovales	NrdA	4	5
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Gallionellales	NrdA	8	7
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Gallionellales	NrdJ	5	7
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Gallionellales	NrdD	1	7
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Hydrogenophilales	NrdJ	10	6
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Hydrogenophilales	NrdD	6	6
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Hydrogenophilales	NrdA	7	6
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Methylophilales	NrdJ	49	39
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Methylophilales	NrdA	35	39
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Neisseriales	NrdA	1323	383
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Neisseriales	NrdD	159	383
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Neisseriales	NrdJ	49	383
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Nitrosomonadales	NrdA	21	14
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Nitrosomonadales	NrdJ	4	14
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Rhodocyclales	NrdA	26	45
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Rhodocyclales	NrdJ	55	45
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Rhodocyclales	NrdD	6	45
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Sulfuricellales	NrdA	4	4
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Sulfuricellales	NrdJ	4	4
+Bacteria	NA	Proteobacteria	Betaproteobacteria	Sulfuricellales	NrdD	4	4
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	NA	NrdJ	16	16
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	NA	NrdA	3	16
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	NA	NrdD	11	16
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	NrdD	9	13
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	NrdJ	18	13
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Bdellovibrionales	NrdA	27	13
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfarculales	NrdJ	12	4
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfarculales	NrdD	6	4
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfobacterales	NrdD	32	48
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfobacterales	NrdJ	34	48
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	NrdD	139	82
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	NrdJ	96	82
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfovibrionales	NrdA	3	82
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfurellales	NrdJ	7	7
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfurellales	NrdD	6	7
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	NrdJ	51	37
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	NrdD	27	37
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	NrdA	1	37
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Myxococcales	NrdA	45	43
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Myxococcales	NrdJ	72	43
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Myxococcales	NrdD	1	43
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Syntrophobacterales	NrdD	13	16
+Bacteria	NA	Proteobacteria	Deltaproteobacteria	Syntrophobacterales	NrdJ	13	16
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	NA	NrdA	10	10
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	NA	NrdJ	7	10
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	NA	NrdD	9	10
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	Campylobacterales	NrdD	233	659
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	Campylobacterales	NrdA	20	659
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	Campylobacterales	NrdJ	2	659
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	Nautiliales	NrdD	6	6
+Bacteria	NA	Proteobacteria	Epsilonproteobacteria	Nautiliales	NrdA	6	6
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	NA	NrdA	82	87
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	NA	NrdJ	30	87
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	NA	NrdD	19	87
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Acidiferrobacterales	NrdD	2	3
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Acidiferrobacterales	NrdJ	2	3
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Aeromonadales	NrdA	171	74
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Aeromonadales	NrdD	193	74
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Aeromonadales	NrdJ	188	74
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Alteromonadales	NrdJ	65	337
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Alteromonadales	NrdA	461	337
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Alteromonadales	NrdD	156	337
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Cardiobacteriales	NrdA	8	6
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Cardiobacteriales	NrdD	9	6
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Cellvibrionales	NrdA	64	54
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Cellvibrionales	NrdJ	34	54
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Cellvibrionales	NrdD	7	54
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Chromatiales	NrdA	131	126
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Chromatiales	NrdD	38	126
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Chromatiales	NrdJ	78	126
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Enterobacteriales	NrdD	11323	4474
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Enterobacteriales	NrdA	26177	4474
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Enterobacteriales	NrdJ	2	4474
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Legionellales	NrdA	517	87
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Methylococcales	NrdJ	50	38
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Methylococcales	NrdA	22	38
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Nevskiales	NrdJ	7	11
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Nevskiales	NrdA	9	11
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Oceanospirillales	NrdA	234	194
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Oceanospirillales	NrdD	59	194
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Oceanospirillales	NrdJ	103	194
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Orbales	NrdD	81	8
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Orbales	NrdA	76	8
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Pasteurellales	NrdA	681	238
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Pasteurellales	NrdD	573	238
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Pseudomonadales	NrdD	1163	1718
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Pseudomonadales	NrdJ	973	1718
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Pseudomonadales	NrdA	4429	1718
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Salinisphaerales	NrdJ	2	4
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Salinisphaerales	NrdA	3	4
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Thiotrichales	NrdA	201	118
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Thiotrichales	NrdD	5	118
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Thiotrichales	NrdJ	11	118
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Vibrionales	NrdA	1345	477
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Vibrionales	NrdD	1299	477
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Vibrionales	NrdJ	52	477
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Xanthomonadales	NrdA	779	260
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Xanthomonadales	NrdJ	195	260
+Bacteria	NA	Proteobacteria	Gammaproteobacteria	Xanthomonadales	NrdD	9	260
+Bacteria	NA	Proteobacteria	Zetaproteobacteria	NA	NrdA	1	1
+Bacteria	NA	Proteobacteria	Zetaproteobacteria	NA	NrdJ	1	1
+Bacteria	NA	Proteobacteria	Zetaproteobacteria	Mariprofundales	NrdJ	4	2
+Bacteria	NA	Rhodothermaeota	Balneolia	Balneolales	NrdJ	4	3
+Bacteria	NA	Spirochaetes	NA	NA	NrdJ	1	1
+Bacteria	NA	Spirochaetes	Spirochaetia	NA	NrdJ	276	202
+Bacteria	NA	Spirochaetes	Spirochaetia	NA	NrdA	8	202
+Bacteria	NA	Spirochaetes	Spirochaetia	Brachyspirales	NrdA	42	20
+Bacteria	NA	Spirochaetes	Spirochaetia	Brachyspirales	NrdJ	1	20
+Bacteria	NA	Spirochaetes	Spirochaetia	Brachyspirales	NrdD	1	20
+Bacteria	NA	Spirochaetes	Spirochaetia	Spirochaetales	NrdD	96	155
+Bacteria	NA	Spirochaetes	Spirochaetia	Spirochaetales	NrdA	127	155
+Bacteria	NA	Spirochaetes	Spirochaetia	Spirochaetales	NrdJ	28	155
+Bacteria	NA	Synergistetes	Synergistia	Synergistales	NrdJ	26	37
+Bacteria	NA	Synergistetes	Synergistia	Synergistales	NrdD	37	37
+Bacteria	NA	Tenericutes	Mollicutes	NA	NrdD	3	2
+Bacteria	NA	Tenericutes	Mollicutes	NA	NrdJ	3	2
+Bacteria	NA	Tenericutes	Mollicutes	Acholeplasmatales	NrdA	38	34
+Bacteria	NA	Tenericutes	Mollicutes	Acholeplasmatales	NrdD	16	34
+Bacteria	NA	Tenericutes	Mollicutes	Acholeplasmatales	NrdJ	2	34
+Bacteria	NA	Tenericutes	Mollicutes	Entomoplasmatales	NrdJ	22	40
+Bacteria	NA	Tenericutes	Mollicutes	Entomoplasmatales	NrdA	34	40
+Bacteria	NA	Tenericutes	Mollicutes	Mycoplasmatales	NrdA	185	223
+Bacteria	NA	Tenericutes	Mollicutes	Mycoplasmatales	NrdJ	9	223
+Bacteria	NA	Tenericutes	Mollicutes	Mycoplasmatales	NrdD	11	223
+Bacteria	NA	Thermodesulfobacteria	Thermodesulfobacteria	Thermodesulfobacteriales	NrdD	8	15
+Bacteria	NA	Thermodesulfobacteria	Thermodesulfobacteria	Thermodesulfobacteriales	NrdJ	17	15
+Bacteria	NA	Thermotogae	Thermotogae	Kosmotogales	NrdD	14	10
+Bacteria	NA	Thermotogae	Thermotogae	Mesoaciditogales	NrdJ	1	1
+Bacteria	NA	Thermotogae	Thermotogae	Petrotogales	NrdD	10	7
+Bacteria	NA	Thermotogae	Thermotogae	Petrotogales	NrdJ	11	7
+Bacteria	NA	Thermotogae	Thermotogae	Thermotogales	NrdJ	75	43
+Bacteria	NA	Thermotogae	Thermotogae	Thermotogales	NrdD	67	43
+Bacteria	NA	Verrucomicrobia	NA	NA	NrdA	3	10
+Bacteria	NA	Verrucomicrobia	NA	NA	NrdJ	4	10
+Bacteria	NA	Verrucomicrobia	NA	NA	NrdD	2	10
+Bacteria	NA	Verrucomicrobia	NA	Methylacidiphilales	NrdD	6	6
+Bacteria	NA	Verrucomicrobia	NA	Methylacidiphilales	NrdA	3	6
+Bacteria	NA	Verrucomicrobia	Opitutae	Opitutales	NrdA	16	12
+Bacteria	NA	Verrucomicrobia	Opitutae	Opitutales	NrdD	11	12
+Bacteria	NA	Verrucomicrobia	Opitutae	Opitutales	NrdJ	11	12
+Bacteria	NA	Verrucomicrobia	Opitutae	Puniceicoccales	NrdJ	2	3
+Bacteria	NA	Verrucomicrobia	Opitutae	Puniceicoccales	NrdA	2	3
+Bacteria	NA	Verrucomicrobia	Opitutae	Puniceicoccales	NrdD	3	3
+Bacteria	NA	Verrucomicrobia	Spartobacteria	NA	NrdA	3	2
+Bacteria	NA	Verrucomicrobia	Spartobacteria	NA	NrdD	1	2
+Bacteria	NA	Verrucomicrobia	Spartobacteria	Chthoniobacterales	NrdJ	2	2
+Bacteria	NA	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	NrdJ	15	23
+Bacteria	NA	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	NrdA	8	23
+Bacteria	NA	Verrucomicrobia	Verrucomicrobiae	Verrucomicrobiales	NrdD	14	23
+Bacteria	NA	candidate division CPR1	NA	NA	NrdJ	2	2
+Bacteria	NA	candidate division CPR2	NA	NA	NrdD	6	6
+Bacteria	NA	candidate division CPR3	NA	NA	NrdJ	1	2
+Bacteria	NA	candidate division Hyd24-12	NA	NA	NrdJ	3	3
+Bacteria	NA	candidate division NC10	NA	NA	NrdJ	2	2
+Bacteria	NA	candidate division WOR-3	NA	NA	NrdD	3	3
+Bacteria	NA	candidate division WOR-3	NA	NA	NrdJ	1	3
+Bacteria	NA	candidate division WWE3	NA	NA	NrdJ	39	38
+Bacteria	NA	candidate division Zixibacteria	NA	NA	NrdJ	4	8
+Eukaryota	NA	NA	NA	NA	NrdD	2	25
+Eukaryota	NA	NA	NA	NA	NrdA	7	25
+Eukaryota	NA	NA	NA	NA	NrdJ	14	25
+Eukaryota	NA	NA	NA	Choanoflagellida	NrdA	4	2
+Eukaryota	NA	NA	NA	Choanoflagellida	NrdJ	4	2
+Eukaryota	NA	NA	NA	Dictyosteliida	NrdA	13	7
+Eukaryota	NA	NA	NA	Dictyosteliida	NrdJ	11	7
+Eukaryota	NA	NA	NA	Euglyphida	NrdJ	2	1
+Eukaryota	NA	NA	NA	Isochrysidales	NrdA	2	1
+Eukaryota	NA	NA	NA	Kinetoplastida	NrdA	46	40
+Eukaryota	NA	NA	NA	Longamoebia	NrdJ	2	1
+Eukaryota	NA	NA	NA	Longamoebia	NrdA	2	1
+Eukaryota	NA	NA	NA	Perkinsida	NrdA	8	1
+Eukaryota	NA	NA	NA	Prymnesiales	NrdA	3	1
+Eukaryota	NA	NA	NA	Trichomonadida	NrdJ	2	1
+Eukaryota	NA	NA	Bangiophyceae	Cyanidiales	NrdA	6	2
+Eukaryota	NA	NA	Cryptophyta	Pyrenomonadales	NrdA	4	2
+Eukaryota	NA	NA	Florideophyceae	Gigartinales	NrdA	2	1
+Eukaryota	NA	NA	Heterolobosea	Schizopyrenida	NrdA	2	2
+Eukaryota	NA	NA	Heterolobosea	Schizopyrenida	NrdJ	2	2
+Eukaryota	NA	NA	Ichthyosporea	NA	NrdJ	2	1
+Eukaryota	NA	NA	Ichthyosporea	NA	NrdA	2	1
+Eukaryota	NA	NA	Ichthyosporea	Ichthyophonida	NrdJ	2	1
+Eukaryota	NA	NA	Ichthyosporea	Ichthyophonida	NrdA	2	1
+Eukaryota	NA	NA	Oligohymenophorea	Hymenostomatida	NrdA	4	2
+Eukaryota	NA	NA	Oligohymenophorea	Peniculida	NrdA	2	2
+Eukaryota	NA	NA	Oligohymenophorea	Philasterida	NrdA	1	1
+Eukaryota	NA	NA	Oomycetes	Albuginales	NrdA	2	2
+Eukaryota	NA	NA	Oomycetes	Peronosporales	NrdJ	14	10
+Eukaryota	NA	NA	Oomycetes	Peronosporales	NrdA	15	10
+Eukaryota	NA	NA	Oomycetes	Peronosporales	NrdD	13	10
+Eukaryota	NA	NA	Oomycetes	Saprolegniales	NrdJ	14	4
+Eukaryota	NA	NA	Oomycetes	Saprolegniales	NrdA	8	4
+Eukaryota	NA	NA	Pelagophyceae	Pelagomonadales	NrdA	6	1
+Eukaryota	NA	NA	Spirotrichea	Sporadotrichida	NrdA	4	2
+Eukaryota	NA	NA	Spirotrichea	Sporadotrichida	NrdJ	2	2
+Eukaryota	NA	Apicomplexa	Aconoidasida	NA	NrdA	14	11
+Eukaryota	NA	Apicomplexa	Aconoidasida	Haemosporida	NrdA	54	45
+Eukaryota	NA	Apicomplexa	Coccidia	Eucoccidiorida	NrdA	27	23
+Eukaryota	NA	Apicomplexa	Gregarinasina	Eugregarinorida	NrdA	2	1
+Eukaryota	NA	Bacillariophyta	Bacillariophyceae	Naviculales	NrdA	2	1
+Eukaryota	NA	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	NrdA	6	2
+Eukaryota	NA	Chromerida	NA	NA	NrdA	2	1
+Eukaryota	NA	Euglenida	NA	Euglenales	NrdJ	2	1
+Eukaryota	NA	Eustigmatophyceae	NA	Eustigmatales	NrdA	4	2
+Eukaryota	NA	Eustigmatophyceae	NA	Eustigmatales	NrdJ	1	2
+Eukaryota	NA	Phaeophyceae	NA	Ectocarpales	NrdJ	1	1
+Eukaryota	NA	Phaeophyceae	NA	Ectocarpales	NrdA	2	1
+Eukaryota	Fungi	NA	NA	NA	NrdA	1	1
+Eukaryota	Fungi	NA	NA	Mortierellales	NrdA	5	2
+Eukaryota	Fungi	NA	NA	Mucorales	NrdA	43	14
+Eukaryota	Fungi	Ascomycota	NA	NA	NrdA	1	1
+Eukaryota	Fungi	Ascomycota	Dothideomycetes	NA	NrdA	5	5
+Eukaryota	Fungi	Ascomycota	Dothideomycetes	Botryosphaeriales	NrdA	5	3
+Eukaryota	Fungi	Ascomycota	Dothideomycetes	Capnodiales	NrdA	12	9
+Eukaryota	Fungi	Ascomycota	Dothideomycetes	Dothideales	NrdA	6	5
+Eukaryota	Fungi	Ascomycota	Dothideomycetes	Pleosporales	NrdA	27	22
+Eukaryota	Fungi	Ascomycota	Dothideomycetes	Venturiales	NrdA	2	1
+Eukaryota	Fungi	Ascomycota	Eurotiomycetes	Chaetothyriales	NrdA	44	26
+Eukaryota	Fungi	Ascomycota	Eurotiomycetes	Eurotiales	NrdA	65	51
+Eukaryota	Fungi	Ascomycota	Eurotiomycetes	Onygenales	NrdA	87	47
+Eukaryota	Fungi	Ascomycota	Eurotiomycetes	Onygenales	NrdD	1	47
+Eukaryota	Fungi	Ascomycota	Eurotiomycetes	Phaeomoniellales	NrdA	1	1
+Eukaryota	Fungi	Ascomycota	Eurotiomycetes	Verrucariales	NrdA	2	1
+Eukaryota	Fungi	Ascomycota	Leotiomycetes	NA	NrdA	22	23
+Eukaryota	Fungi	Ascomycota	Leotiomycetes	Erysiphales	NrdA	3	3
+Eukaryota	Fungi	Ascomycota	Leotiomycetes	Helotiales	NrdA	12	10
+Eukaryota	Fungi	Ascomycota	Orbiliomycetes	Orbiliales	NrdA	5	3
+Eukaryota	Fungi	Ascomycota	Pezizomycetes	Pezizales	NrdA	3	3
+Eukaryota	Fungi	Ascomycota	Pneumocystidomycetes	Pneumocystidales	NrdA	5	4
+Eukaryota	Fungi	Ascomycota	Saccharomycetes	Saccharomycetales	NrdA	499	209
+Eukaryota	Fungi	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	NrdD	2	5
+Eukaryota	Fungi	Ascomycota	Schizosaccharomycetes	Schizosaccharomycetales	NrdA	11	5
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Diaporthales	NrdA	5	5
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Glomerellales	NrdA	22	16
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Hypocreales	NrdD	36	92
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Hypocreales	NrdA	94	92
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Magnaporthales	NrdA	7	6
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Microascales	NrdA	4	3
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Ophiostomatales	NrdD	2	6
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Ophiostomatales	NrdA	8	6
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Sordariales	NrdA	24	11
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Togniniales	NrdA	2	1
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Togniniales	NrdD	2	1
+Eukaryota	Fungi	Ascomycota	Sordariomycetes	Xylariales	NrdA	6	4
+Eukaryota	Fungi	Ascomycota	Taphrinomycetes	Taphrinales	NrdA	1	1
+Eukaryota	Fungi	Ascomycota	Xylonomycetes	Xylonomycetales	NrdA	1	1
+Eukaryota	Fungi	Basidiomycota	NA	NA	NrdA	1	1
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Agaricales	NrdA	25	24
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Atheliales	NrdA	2	2
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Auriculariales	NrdA	7	2
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Boletales	NrdA	13	11
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Cantharellales	NrdA	6	8
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Corticiales	NrdA	7	3
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Geastrales	NrdA	2	1
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Gloeophyllales	NrdA	3	3
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Hymenochaetales	NrdA	3	3
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Jaapiales	NrdA	1	1
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Polyporales	NrdA	17	17
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Russulales	NrdA	7	3
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Sebacinales	NrdA	2	2
+Eukaryota	Fungi	Basidiomycota	Agaricomycetes	Trechisporales	NrdA	2	2
+Eukaryota	Fungi	Basidiomycota	Dacrymycetes	Dacrymycetales	NrdA	2	2
+Eukaryota	Fungi	Basidiomycota	Exobasidiomycetes	Ceraceosorales	NrdA	1	1
+Eukaryota	Fungi	Basidiomycota	Exobasidiomycetes	Georgefischeriales	NrdA	2	1
+Eukaryota	Fungi	Basidiomycota	Exobasidiomycetes	Tilletiales	NrdA	4	4
+Eukaryota	Fungi	Basidiomycota	Malasseziomycetes	Malasseziales	NrdA	3	3
+Eukaryota	Fungi	Basidiomycota	Microbotryomycetes	Microbotryales	NrdA	1	1
+Eukaryota	Fungi	Basidiomycota	Microbotryomycetes	Sporidiobolales	NrdA	5	5
+Eukaryota	Fungi	Basidiomycota	Mixiomycetes	Mixiales	NrdA	3	1
+Eukaryota	Fungi	Basidiomycota	Pucciniomycetes	Pucciniales	NrdA	9	6
+Eukaryota	Fungi	Basidiomycota	Tremellomycetes	Cystofilobasidiales	NrdA	1	1
+Eukaryota	Fungi	Basidiomycota	Tremellomycetes	Tremellales	NrdA	33	29
+Eukaryota	Fungi	Basidiomycota	Tremellomycetes	Trichosporonales	NrdA	4	3
+Eukaryota	Fungi	Basidiomycota	Ustilaginomycetes	Ustilaginales	NrdA	17	11
+Eukaryota	Fungi	Basidiomycota	Wallemiomycetes	Wallemiales	NrdA	4	2
+Eukaryota	Fungi	Blastocladiomycota	Blastocladiomycetes	Blastocladiales	NrdA	2	2
+Eukaryota	Fungi	Blastocladiomycota	Blastocladiomycetes	Blastocladiales	NrdJ	2	2
+Eukaryota	Fungi	Chytridiomycota	Chytridiomycetes	Rhizophydiales	NrdA	3	2
+Eukaryota	Fungi	Chytridiomycota	Chytridiomycetes	Spizellomycetales	NrdA	2	1
+Eukaryota	Fungi	Chytridiomycota	Monoblepharidomycetes	Monoblepharidales	NrdJ	2	1
+Eukaryota	Fungi	Chytridiomycota	Monoblepharidomycetes	Monoblepharidales	NrdA	1	1
+Eukaryota	Fungi	Cryptomycota	NA	NA	NrdA	1	1
+Eukaryota	Fungi	Entomophthoromycota	Entomophthoromycetes	Entomophthorales	NrdA	1	1
+Eukaryota	Fungi	Glomeromycota	Glomeromycetes	Glomerales	NrdJ	3	2
+Eukaryota	Fungi	Glomeromycota	Glomeromycetes	Glomerales	NrdA	4	2
+Eukaryota	Fungi	Microsporidia	NA	NA	NrdA	44	28
+Eukaryota	Metazoa	Annelida	Hirudinida	Rhynchobdellida	NrdA	6	1
+Eukaryota	Metazoa	Annelida	Polychaeta	Capitellida	NrdA	1	1
+Eukaryota	Metazoa	Arthropoda	Arachnida	NA	NrdA	2	3
+Eukaryota	Metazoa	Arthropoda	Arachnida	Araneae	NrdA	1	5
+Eukaryota	Metazoa	Arthropoda	Arachnida	Astigmata	NrdA	1	3
+Eukaryota	Metazoa	Arthropoda	Arachnida	Ixodida	NrdA	4	20
+Eukaryota	Metazoa	Arthropoda	Arachnida	Mesostigmata	NrdA	2	1
+Eukaryota	Metazoa	Arthropoda	Branchiopoda	Diplostraca	NrdA	2	2
+Eukaryota	Metazoa	Arthropoda	Insecta	Coleoptera	NrdA	7	13
+Eukaryota	Metazoa	Arthropoda	Insecta	Diptera	NrdA	59	51
+Eukaryota	Metazoa	Arthropoda	Insecta	Hemiptera	NrdA	11	21
+Eukaryota	Metazoa	Arthropoda	Insecta	Hymenoptera	NrdA	97	48
+Eukaryota	Metazoa	Arthropoda	Insecta	Isoptera	NrdA	1	2
+Eukaryota	Metazoa	Arthropoda	Insecta	Lepidoptera	NrdA	16	22
+Eukaryota	Metazoa	Arthropoda	Insecta	Lepidoptera	NrdD	1	22
+Eukaryota	Metazoa	Arthropoda	Insecta	Phthiraptera	NrdA	2	1
+Eukaryota	Metazoa	Brachiopoda	Lingulata	Lingulida	NrdA	2	1
+Eukaryota	Metazoa	Chordata	NA	NA	NrdA	2	4
+Eukaryota	Metazoa	Chordata	NA	Coelacanthiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	NA	Crocodylia	NrdA	3	2
+Eukaryota	Metazoa	Chordata	NA	Squamata	NrdA	4	7
+Eukaryota	Metazoa	Chordata	NA	Testudines	NrdA	4	3
+Eukaryota	Metazoa	Chordata	Actinopteri	NA	NrdA	6	7
+Eukaryota	Metazoa	Chordata	Actinopteri	Beloniformes	NrdA	2	2
+Eukaryota	Metazoa	Chordata	Actinopteri	Characiformes	NrdA	2	2
+Eukaryota	Metazoa	Chordata	Actinopteri	Cichliformes	NrdA	11	6
+Eukaryota	Metazoa	Chordata	Actinopteri	Clupeiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Actinopteri	Cypriniformes	NrdA	13	11
+Eukaryota	Metazoa	Chordata	Actinopteri	Cyprinodontiformes	NrdA	25	10
+Eukaryota	Metazoa	Chordata	Actinopteri	Esociformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Actinopteri	Osteoglossiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Actinopteri	Perciformes	NrdA	2	13
+Eukaryota	Metazoa	Chordata	Actinopteri	Pleuronectiformes	NrdA	2	3
+Eukaryota	Metazoa	Chordata	Actinopteri	Salmoniformes	NrdA	6	5
+Eukaryota	Metazoa	Chordata	Actinopteri	Semionotiformes	NrdA	3	1
+Eukaryota	Metazoa	Chordata	Actinopteri	Siluriformes	NrdA	2	4
+Eukaryota	Metazoa	Chordata	Actinopteri	Tetraodontiformes	NrdA	5	3
+Eukaryota	Metazoa	Chordata	Amphibia	Anura	NrdA	9	5
+Eukaryota	Metazoa	Chordata	Appendicularia	NA	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Ascidiacea	Enterogona	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Aves	Anseriformes	NrdA	3	3
+Eukaryota	Metazoa	Chordata	Aves	Apodiformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Charadriiformes	NrdA	3	2
+Eukaryota	Metazoa	Chordata	Aves	Ciconiiformes	NrdA	1	2
+Eukaryota	Metazoa	Chordata	Aves	Columbiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Aves	Coraciiformes	NrdA	4	2
+Eukaryota	Metazoa	Chordata	Aves	Cuculiformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Falconiformes	NrdA	8	5
+Eukaryota	Metazoa	Chordata	Aves	Galliformes	NrdA	4	3
+Eukaryota	Metazoa	Chordata	Aves	Gaviiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Aves	Gruiformes	NrdA	8	5
+Eukaryota	Metazoa	Chordata	Aves	Musophagiformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Opisthocomiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Aves	Passeriformes	NrdA	11	13
+Eukaryota	Metazoa	Chordata	Aves	Pelecaniformes	NrdA	8	5
+Eukaryota	Metazoa	Chordata	Aves	Piciformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Podicipediformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Aves	Procellariiformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Psittaciformes	NrdA	2	3
+Eukaryota	Metazoa	Chordata	Aves	Sphenisciformes	NrdA	4	2
+Eukaryota	Metazoa	Chordata	Aves	Strigiformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Struthioniformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Tinamiformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Aves	Trochiliformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Aves	Trogoniformes	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Chondrichthyes	Chimaeriformes	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	NA	NrdA	23	15
+Eukaryota	Metazoa	Chordata	Mammalia	Carnivora	NrdA	5	10
+Eukaryota	Metazoa	Chordata	Mammalia	Cetacea	NrdA	7	10
+Eukaryota	Metazoa	Chordata	Mammalia	Chiroptera	NrdA	26	8
+Eukaryota	Metazoa	Chordata	Mammalia	Cingulata	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Dasyuromorphia	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Dermoptera	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Didelphimorphia	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Insectivora	NrdA	6	3
+Eukaryota	Metazoa	Chordata	Mammalia	Lagomorpha	NrdA	3	3
+Eukaryota	Metazoa	Chordata	Mammalia	Macroscelidea	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Monotremata	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Perissodactyla	NrdA	4	4
+Eukaryota	Metazoa	Chordata	Mammalia	Pholidota	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Primates	NrdA	66	24
+Eukaryota	Metazoa	Chordata	Mammalia	Proboscidea	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Rodentia	NrdA	34	25
+Eukaryota	Metazoa	Chordata	Mammalia	Scandentia	NrdA	2	1
+Eukaryota	Metazoa	Chordata	Mammalia	Sirenia	NrdA	1	1
+Eukaryota	Metazoa	Chordata	Mammalia	Tubulidentata	NrdA	1	1
+Eukaryota	Metazoa	Cnidaria	NA	Bivalvulida	NrdA	1	1
+Eukaryota	Metazoa	Cnidaria	Anthozoa	Actiniaria	NrdA	3	2
+Eukaryota	Metazoa	Cnidaria	Hydrozoa	Anthoathecata	NrdA	1	1
+Eukaryota	Metazoa	Echinodermata	Echinoidea	Echinoida	NrdA	1	1
+Eukaryota	Metazoa	Hemichordata	Enteropneusta	NA	NrdA	1	1
+Eukaryota	Metazoa	Mollusca	Bivalvia	Ostreoida	NrdA	5	3
+Eukaryota	Metazoa	Mollusca	Cephalopoda	Octopoda	NrdA	2	2
+Eukaryota	Metazoa	Mollusca	Gastropoda	NA	NrdA	4	18
+Eukaryota	Metazoa	Nematoda	Chromadorea	Ascaridida	NrdA	2	2
+Eukaryota	Metazoa	Nematoda	Chromadorea	Rhabditida	NrdA	17	12
+Eukaryota	Metazoa	Nematoda	Chromadorea	Spirurida	NrdA	5	3
+Eukaryota	Metazoa	Nematoda	Enoplea	Trichocephalida	NrdA	28	14
+Eukaryota	Metazoa	Orthonectida	NA	NA	NrdA	1	1
+Eukaryota	Metazoa	Placozoa	NA	NA	NrdA	2	1
+Eukaryota	Metazoa	Platyhelminthes	Cestoda	Cyclophyllidea	NrdA	7	6
+Eukaryota	Metazoa	Platyhelminthes	Trematoda	Opisthorchiida	NrdA	3	2
+Eukaryota	Metazoa	Platyhelminthes	Trematoda	Strigeidida	NrdA	1	3
+Eukaryota	Metazoa	Porifera	Demospongiae	Haplosclerida	NrdA	1	1
+Eukaryota	Metazoa	Priapulida	NA	NA	NrdA	1	1
+Eukaryota	Metazoa	Xenacoelomorpha	Acoela	NA	NrdA	1	1
+Eukaryota	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	NrdA	6	8
+Eukaryota	Viridiplantae	Chlorophyta	Chlorophyceae	Chlamydomonadales	NrdJ	2	8
+Eukaryota	Viridiplantae	Chlorophyta	Mamiellophyceae	Mamiellales	NrdA	10	5
+Eukaryota	Viridiplantae	Chlorophyta	Trebouxiophyceae	NA	NrdA	2	1
+Eukaryota	Viridiplantae	Chlorophyta	Trebouxiophyceae	Chlorellales	NrdA	5	4
+Eukaryota	Viridiplantae	Streptophyta	NA	Amborellales	NrdA	2	1
+Eukaryota	Viridiplantae	Streptophyta	NA	Apiales	NrdA	3	10
+Eukaryota	Viridiplantae	Streptophyta	NA	Brassicales	NrdA	45	16
+Eukaryota	Viridiplantae	Streptophyta	NA	Caryophyllales	NrdA	4	4
+Eukaryota	Viridiplantae	Streptophyta	NA	Cucurbitales	NrdA	3	2
+Eukaryota	Viridiplantae	Streptophyta	NA	Fabales	NrdA	34	18
+Eukaryota	Viridiplantae	Streptophyta	NA	Gentianales	NrdA	1	6
+Eukaryota	Viridiplantae	Streptophyta	NA	Lamiales	NrdA	7	11
+Eukaryota	Viridiplantae	Streptophyta	NA	Lamiales	NrdJ	1	11
+Eukaryota	Viridiplantae	Streptophyta	NA	Malpighiales	NrdA	20	10
+Eukaryota	Viridiplantae	Streptophyta	NA	Malvales	NrdA	17	4
+Eukaryota	Viridiplantae	Streptophyta	NA	Myrtales	NrdA	2	1
+Eukaryota	Viridiplantae	Streptophyta	NA	Proteales	NrdA	2	1
+Eukaryota	Viridiplantae	Streptophyta	NA	Rosales	NrdA	13	13
+Eukaryota	Viridiplantae	Streptophyta	NA	Sapindales	NrdA	13	4
+Eukaryota	Viridiplantae	Streptophyta	NA	Selaginellales	NrdA	4	1
+Eukaryota	Viridiplantae	Streptophyta	NA	Solanales	NrdA	19	10
+Eukaryota	Viridiplantae	Streptophyta	NA	Vitales	NrdA	3	1
+Eukaryota	Viridiplantae	Streptophyta	Bryopsida	Funariales	NrdA	4	1
+Eukaryota	Viridiplantae	Streptophyta	Klebsormidiophyceae	Klebsormidiales	NrdA	5	1
+Eukaryota	Viridiplantae	Streptophyta	Liliopsida	Alismatales	NrdA	1	1
+Eukaryota	Viridiplantae	Streptophyta	Liliopsida	Arecales	NrdA	8	2
+Eukaryota	Viridiplantae	Streptophyta	Liliopsida	Poales	NrdA	38	16
+Eukaryota	Viridiplantae	Streptophyta	Liliopsida	Zingiberales	NrdA	3	4
+Eukaryota	Viridiplantae	Streptophyta	Marchantiopsida	Marchantiales	NrdA	1	2
+Viruses	NA	NA	NA	NA	NrdA	595	302
+Viruses	NA	NA	NA	NA	NrdJ	42	302
+Viruses	NA	NA	NA	NA	NrdD	12	302
+Viruses	NA	NA	NA	Caudovirales	NrdJ	312	757
+Viruses	NA	NA	NA	Caudovirales	NrdA	940	757
+Viruses	NA	NA	NA	Caudovirales	NrdD	302	757
+Viruses	NA	NA	NA	Herpesvirales	NrdA	31	105
