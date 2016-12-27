@@ -13,6 +13,7 @@ org = cp %>% select(tdomain:tstrain) %>% distinct()
 
 NrdGRE.domclass = NrdGRE %>% group_by(tdomain, pclass) %>% summarise(n_proteins = n()) %>% ungroup() %>% inner_join(org %>% group_by(tdomain) %>% summarise(n_orgs=n()))
 write_tsv(NrdGRE.domclass, 'NrdGRE.domclass.tsv')
+write_tsv(NrdGRE.domclass %>% spread(pclass, n_proteins), 'NrdGRE.domclass.wide.tsv')
 
 NrdGRE.domsubclass = NrdGRE %>% group_by(tdomain, pclass, psubclass) %>% summarise(n_proteins = n()) %>% ungroup() %>% inner_join(org %>% group_by(tdomain) %>% summarise(n_orgs=n()))
 write_tsv(NrdGRE.domsubclass, 'NrdGRE.domsubclass.tsv')
