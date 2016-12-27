@@ -18,11 +18,11 @@
       var thead = table.append('thead');
       var tbody = table.append('tbody');
 
-      d3.tsv('data/NrdGRE.domclass.wide.tsv', function(error, ptablew) {
+      d3.tsv('data/NrdGREfer.domclass.wide.tsv', function(error, ptablew) {
 	// Add a hard-coded header row
 	thead.append('tr')
 	  .selectAll('th')
-	  .data(['Domain', 'N. organisms', 'NrdA', 'NrdD', 'NrdJ'])
+	  .data(['Domain', 'N. organisms'].concat(Object.keys(ptablew[0]).slice(2)))
 	  .enter()
 	  .append('th')
 	    .text(function(c) { return c; });
@@ -39,10 +39,11 @@
 	    return [ 
 	      { value: row.tdomain, background: '#ffffff00' },
 	      { value: row.n_orgs, background: '#ffffff00' },
-	      { value: row.NrdA, background: d3.rgb(heatscale(row.NrdA/row.n_orgs)) },
-	      { value: row.NrdD, background: d3.rgb(heatscale(row.NrdD/row.n_orgs)) },
-	      { value: row.NrdJ,  background: d3.rgb(heatscale(row.NrdJ/row.n_orgs)) }
-	    ];
+	    ].concat(
+	      Object.keys(ptablew[0]).slice(2).map(function(c) {
+		return { value: row[c], background: d3.rgb(heatscale(row[c]/row.n_orgs)) };
+	      })
+	    );
 	  })
 	  .enter()
 	  .append('td')
