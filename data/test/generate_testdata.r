@@ -4,6 +4,7 @@ library(data.table)
 library(dtplyr)
 library(dplyr)
 library(readr)
+library(tidyr)
 
 cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
 
