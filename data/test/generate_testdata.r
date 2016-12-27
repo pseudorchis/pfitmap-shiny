@@ -28,6 +28,7 @@ NrdGREfer = cp %>% filter(psuperfamily %in% c('NrdGRE', 'Ferritin-like'))
 
 NrdGREfer.domclass = NrdGREfer %>% group_by(tdomain, pclass) %>% summarise(n_proteins = n()) %>% ungroup() %>% inner_join(org %>% group_by(tdomain) %>% summarise(n_orgs=n()))
 write_tsv(NrdGREfer.domclass, 'NrdGREfer.domclass.tsv')
+write_tsv(NrdGREfer.domclass %>% replace_na(replace=list(pclass='No class')) %>% spread(pclass, n_proteins, fill=0), 'NrdGREfer.domclass.wide.tsv')
 
 NrdGREfer.domsubclass = NrdGREfer %>% group_by(tdomain, pclass, psubclass) %>% summarise(n_proteins = n()) %>% ungroup() %>% inner_join(org %>% group_by(tdomain) %>% summarise(n_orgs=n()))
 write_tsv(NrdGREfer.domsubclass, 'NrdGREfer.domsubclass.tsv')
