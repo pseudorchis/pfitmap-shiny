@@ -10,27 +10,6 @@
     <div class='proteintable'></div>
     <p>Den här texten kommer efter tabell-diven men före skriptet.</p>
     <script>
-      var ptablel = [
-        { 'tdomain': 'Archaea', 'pclass': 'NrdD', 'n_proteins': 427, 'n_orgs': 902 },
-        { 'tdomain': 'Archaea', 'pclass': 'NrdJ', 'n_proteins': 785, 'n_orgs': 902 },
-        { 'tdomain': 'Archaea', 'pclass': 'NrdA', 'n_proteins': 108, 'n_orgs': 902 },
-        { 'tdomain': 'Bacteria', 'pclass': 'NrdD', 'n_proteins': 42455, 'n_orgs': 32000 },
-        { 'tdomain': 'Bacteria', 'pclass': 'NrdA', 'n_proteins': 76953, 'n_orgs': 32000 },
-        { 'tdomain': 'Bacteria', 'pclass': 'NrdJ', 'n_proteins': 18204, 'n_orgs': 32000 },
-        { 'tdomain': 'Eukaryota', 'pclass': 'NrdA', 'n_proteins': 2493, 'n_orgs': 1830 },
-        { 'tdomain': 'Eukaryota', 'pclass': 'NrdJ', 'n_proteins': 85, 'n_orgs': 1830 },
-        { 'tdomain': 'Eukaryota', 'pclass': 'NrdD', 'n_proteins': 59, 'n_orgs': 1830 },
-        { 'tdomain': 'Viruses', 'pclass': 'NrdA', 'n_proteins': 1566, 'n_orgs': 1164 },
-        { 'tdomain': 'Viruses', 'pclass': 'NrdJ', 'n_proteins': 354, 'n_orgs': 1164 },
-        { 'tdomain': 'Viruses', 'pclass': 'NrdD', 'n_proteins': 314, 'n_orgs': 1164 }
-      ];
-      var ptablew = [
-        { 'tdomain': 'Archaea', 'n_orgs': 902, 'NrdA': 108, 'NrdD': 427, 'NrdJ': 785 },
-        { 'tdomain': 'Bacteria', 'n_orgs': 32000, 'NrdA': 76953, 'NrdD': 42455, 'NrdJ': 18204 },
-        { 'tdomain': 'Eukaryota', 'n_orgs': 1830, 'NrdA': 2493, 'NrdD': 59, 'NrdJ': 0 },
-        { 'tdomain': 'Viruses', 'n_orgs': 1164, 'NrdA': 1566, 'NrdD': 314, 'NrdJ': 354 }
-      ];
-
       var heatscale = d3.scaleLinear()
           .domain([0, 0.0001, 1, 2])
 	  .range(['#ffffff', '#ffffe0', '#ffff00', '#ff0000']);
@@ -39,36 +18,37 @@
       var thead = table.append('thead');
       var tbody = table.append('tbody');
 
-      // Add a hard-coded header row
-      thead.append('tr')
-        .selectAll('th')
-	.data(['Domain', 'N. organisms', 'NrdA', 'NrdD', 'NrdJ'])
-	.enter()
-	.append('th')
-	  .text(function(c) { return c; });
+      d3.tsv('data/NrdGRE.domclass.wide.tsv', function(error, ptablew) {
+	// Add a hard-coded header row
+	thead.append('tr')
+	  .selectAll('th')
+	  .data(['Domain', 'N. organisms', 'NrdA', 'NrdD', 'NrdJ'])
+	  .enter()
+	  .append('th')
+	    .text(function(c) { return c; });
 
-      // Add rows to table
-      var rows = tbody.selectAll('tr')
-        .data(ptablew)
-	.enter()
-	.append('tr')
+	// Add rows to table
+	var rows = tbody.selectAll('tr')
+	  .data(ptablew)
+	  .enter()
+	  .append('tr')
 
-      // Add cell content to each cell
-      var cells = rows.selectAll('td')
-        .data(function(row) {
-	  return [ 
-	    { value: row.tdomain, background: '#ffffff00' },
-	    { value: row.n_orgs, background: '#ffffff00' },
-	    { value: row.NrdA, background: d3.rgb(heatscale(row.NrdA/row.n_orgs)) },
-	    { value: row.NrdD, background: d3.rgb(heatscale(row.NrdD/row.n_orgs)) },
-	    { value: row.NrdJ,  background: d3.rgb(heatscale(row.NrdJ/row.n_orgs)) }
-	  ];
-	})
-	.enter()
-	.append('td')
-	  .text(function(d) { return d.value; })
-	  .style('background', function(d) { return d.background; });
-
+	// Add cell content to each cell
+	var cells = rows.selectAll('td')
+	  .data(function(row) {
+	    return [ 
+	      { value: row.tdomain, background: '#ffffff00' },
+	      { value: row.n_orgs, background: '#ffffff00' },
+	      { value: row.NrdA, background: d3.rgb(heatscale(row.NrdA/row.n_orgs)) },
+	      { value: row.NrdD, background: d3.rgb(heatscale(row.NrdD/row.n_orgs)) },
+	      { value: row.NrdJ,  background: d3.rgb(heatscale(row.NrdJ/row.n_orgs)) }
+	    ];
+	  })
+	  .enter()
+	  .append('td')
+	    .text(function(d) { return d.value; })
+	    .style('background', function(d) { return d.background; });
+      });
     </script>
   </body>
 </html>
