@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
+  <meta charset='utf-8'/>
   <head>
     <title>Test table</title>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
   </head>
   <body>
-    <table>
-      <tr>
-	<th>Domain</th>
-	<th>N. taxa</th>
-	<th>NrdA</th>
-	<th>NrdD</th>
-	<th>NrdJ</th>
-      </tr>
-      <tr>
-	<td>Archaea</td>
-	<td>902</td>
-	<td>108</td>
-	<td>427</td>
-	<td>785</td>
-      </tr>
-      <tr>
-	<td>Bacteria</td>
-	<td>32000</td>
-	<td>76953</td>
-	<td>42455</td>
-	<td>18204</td>
-      </tr>
-    </table>
+    <h1>Erik och Daniel testar D3</h1>
+    <div class='proteintable'></div>
+    <script>
+      var table = d3.select('.proteintable').append('table');
+      var thead = table.append('thead');
+      var tbody = table.append('tbody');
+
+      var tr = thead.append('tr');
+      tr.append('th')
+	  .text('Taxon');
+      tr.append('th')
+	  .text('N. taxa');
+      tr.append('th')
+	  .text('NrdA');
+      tr.append('th')
+	  .text('NrdD');
+      tr.append('th')
+	  .text('NrdJ');
+
+      var tr = tbody.append('tr'); 
+      tr.append('td')
+	  .text('Archaea');
+      tr.append('td')
+	  .text('1243');
+      tr.append('td')
+	  .text('2345');
+      tr.append('td')
+	  .text('4567');
+      tr.append('td')
+	  .text('6789');
+    </script>
   </body>
 </html>
