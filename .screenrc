@@ -4,6 +4,8 @@ chdir data
 screen -t data
 chdir $ROOT/src/js
 screen -t js
+chdir ../shiny
+screen -t shiny
 chdir $ROOT
 screen -t man
 screen -t rstudio
