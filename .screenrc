@@ -1,7 +1,12 @@
 sessionname pfitmap-shiny
 setenv ROOT $PWD
+setenv PFITMAP_DATA data/test/classified_proteins.10000.tsv
 chdir data
 screen -t data
+chdir $ROOT/shiny
+screen -t shiny
+chdir pfitmap
+screen -t pfitmap
 chdir $ROOT
 screen -t man
 screen -t rstudio
