@@ -26,8 +26,7 @@ classified_proteins = data.table(
       prop_matching = col_double(),
       ss_version = col_integer(),
       e_value = col_double(),
-      score = col_double(),
-      profile_version = col_double()
+      score = col_double()
     )
   )
 )
