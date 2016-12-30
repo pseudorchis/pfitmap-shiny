@@ -35,11 +35,18 @@ classified_proteins = data.table(
 # We will need a vector of protein superfamilies
 psuperfamilies = (classified_proteins %>% select(psuperfamily) %>% distinct() %>% arrange(psuperfamily))$psuperfamily
 
+# We also need a vector of databases
+dbs = (classified_proteins %>% select(db) %>% distinct() %>% arrange(db))$db
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
   sidebarLayout(
     sidebarPanel( 
+      selectInput(
+        'db', 'Database',
+        dbs, selected = 'ref'
+      ),
       selectInput(
         'taxonrank', 'Taxon rank', 
         list(
@@ -81,6 +88,7 @@ server <- function(input, output) {
   
   output$mainmatrix = renderDataTable(
     classified_proteins %>% 
+      filter(db == input$db) %>%
       filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
