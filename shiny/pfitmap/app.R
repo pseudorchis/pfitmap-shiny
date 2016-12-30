@@ -54,16 +54,17 @@ ui <- fluidPage(
           'Superfamily' = 'psuperfamily', 'Family'   = 'pfamily',
           'Class'       = 'pclass',       'Subclass' = 'psubclass',
           'Group'       = 'pgroup'
-        )
+        ),
+        selected = c('pclass')
       ),
       selectInput(
         'psuperfamilies', 'Protein superfamily',
-        c('', psuperfamilies), multiple=T
+        c('', psuperfamilies), selected = c('NrdGRE'), 
+        multiple=T
       )
     ),
     mainPanel(
       h1('pfitmap'),
-      textOutput('psupdebug'),
       dataTableOutput('mainmatrix')
     )
   )
