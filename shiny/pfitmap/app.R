@@ -32,6 +32,9 @@ classified_proteins = data.table(
   )
 )
 
+# We will need a vector of protein superfamilies
+psuperfamilies = (classified_proteins %>% select(psuperfamily) %>% distinct() %>% arrange(psuperfamily))$psuperfamily
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
@@ -52,9 +55,15 @@ ui <- fluidPage(
           'Class'       = 'pclass',       'Subclass' = 'psubclass',
           'Group'       = 'pgroup'
         )
+      ),
+      selectInput(
+        'psuperfamilies', 'Protein superfamily',
+        c('', psuperfamilies), multiple=T
       )
     ),
     mainPanel(
+      h1('pfitmap'),
+      textOutput('psupdebug'),
       dataTableOutput('mainmatrix')
     )
   )
@@ -62,8 +71,17 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  dataPSuperfamiliesFilter <- reactive({
+    if ( length(input$psuperfamilies) == 0 ) {
+      return(psuperfamilies)
+    }
+    return(input$psuperfamilies)
+  })
+  
   output$mainmatrix = renderDataTable(
-    classified_proteins %>% group_by_(input$taxonrank, input$proteinrank) %>%
+    classified_proteins %>% 
+      filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
+      group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
       spread_(input$proteinrank, 'n', fill=0)
   )
