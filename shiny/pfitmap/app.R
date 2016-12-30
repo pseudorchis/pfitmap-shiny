@@ -38,7 +38,8 @@ classified_proteins = data.table(
 
 # Step 1. Get all unique taxa
 taxa = classified_proteins %>% 
-  select(ncbi_taxon_id, tdomain:tstrain) %>% distinct()  %>% 
+  select(ncbi_taxon_id, tdomain, tkingdom, tphylum, tclass, torder, tfamily, tgenus, tspecies, tstrain) %>% 
+  distinct() %>% 
   mutate(tspecies = ifelse(is.na(tspecies) & ! is.na(tgenus), sprintf("%s sp.", tgenus), tspecies))
 
 # Step 2. Left join with a list of species that have strains, and then filter.
@@ -114,7 +115,18 @@ server <- function(input, output) {
       filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
-      spread_(input$proteinrank, 'n', fill=0)
+      spread_(input$proteinrank, 'n', fill=0) %>%
+      inner_join(
+        taxa %>%
+          inner_join(
+            classified_proteins %>%
+              filter(db == input$db) %>%
+              select(ncbi_taxon_id) %>% distinct(),
+            by = 'ncbi_taxon_id'
+          ) %>%
+          group_by_(input$taxonrank) %>%
+          summarise(n_genomes = n())
+      )
   )
 }
 
