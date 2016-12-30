@@ -5,15 +5,32 @@ library(dtplyr)
 library(dplyr)
 library(readr)
 
-#cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
+cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
 
-n10000 = cp %>%
-
+# Write a test file with ca. 10000 rows. The file will contain all proteins for a selection
+# of strains. The selection is random plus a few favourites.
 write_tsv(
   cp %>% 
+    filter(db %in% c('ref', 'pdb', 'dbj')) %>%
     inner_join(
-      cp %>% filter(db=='ref') %>% 
-        select(db, tstrain) %>% distinct() %>% sample_n(500)
+      cp %>% filter(db %in% c('ref', 'pdb', 'dbj')) %>% 
+        select(ncbi_taxon_id) %>% distinct() %>% sample_n(200) %>%
+        union(
+          cp %>% 
+            filter(db=='ref') %>% 
+            filter(
+              tspecies %in% c(
+                'Escherichia coli', 'Pseudomonas aeruginosa', 
+                'Thermotoga maritima', 'Enterobacteria phage T4',
+                'Salmonella enterica', 'Lactobacillus leichmannii',
+                'Clostridium botulinum',
+                'Homo sapiens', 'Saccharomyces cerevisiae'
+              )
+            ) %>%
+            select(ncbi_taxon_id) %>% distinct()
+        ) %>%
+        distinct(),
+      by = 'ncbi_taxon_id'
     ),
   'classified_proteins.10000.tsv'
 )
