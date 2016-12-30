@@ -32,6 +32,27 @@ classified_proteins = data.table(
   )
 )
 
+# We have problematic organisms, where multiple sequences of the same kind are assigned
+# to the same taxon, probably always a species. Trying to get rid of those by filtering
+# non-strain taxa from species with at least one strain.
+
+# Step 1. Get all unique taxa
+taxa = classified_proteins %>% 
+  select(ncbi_taxon_id, tdomain:tstrain) %>% distinct()  %>% 
+  mutate(tspecies = ifelse(is.na(tspecies) & ! is.na(tgenus), sprintf("%s sp.", tgenus), tspecies))
+
+# Step 2. Left join with a list of species that have strains, and then filter.
+taxa = taxa %>% 
+  left_join(
+    taxa %>% 
+      filter(tspecies != tstrain) %>% 
+      select(tdomain:tspecies) %>% distinct() %>% 
+      mutate(strains=T),
+    by = c("tdomain", "tkingdom", "tphylum", "tclass", "torder", "tfamily", "tgenus", "tspecies")
+  ) %>% 
+  replace_na(list('strains'=F)) %>%
+  filter( ! ( strains & tspecies == tstrain ) )
+
 # We will need a vector of protein superfamilies
 psuperfamilies = (classified_proteins %>% select(psuperfamily) %>% distinct() %>% arrange(psuperfamily))$psuperfamily
 
@@ -89,6 +110,7 @@ server <- function(input, output) {
   output$mainmatrix = renderDataTable(
     classified_proteins %>% 
       filter(db == input$db) %>%
+      inner_join(taxa %>% select(ncbi_taxon_id), by='ncbi_taxon_id') %>%
       filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 

@@ -5,7 +5,10 @@ library(dtplyr)
 library(dplyr)
 library(readr)
 
-cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
+#cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
+
+write_tsv(cp %>% sample_n(1000), 'classified_proteins.1000.tsv')
+write_tsv(cp %>% sample_n(10000), 'classified_proteins.10000.tsv')
 
 NrdGRE = cp %>% filter(psuperfamily=='NrdGRE')
 org = cp %>% select(tdomain:tstrain) %>% distinct()
