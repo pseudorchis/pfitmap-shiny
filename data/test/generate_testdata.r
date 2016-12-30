@@ -7,8 +7,16 @@ library(readr)
 
 #cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
 
-write_tsv(cp %>% sample_n(1000), 'classified_proteins.1000.tsv')
-write_tsv(cp %>% sample_n(10000), 'classified_proteins.10000.tsv')
+n10000 = cp %>%
+
+write_tsv(
+  cp %>% 
+    inner_join(
+      cp %>% filter(db=='ref') %>% 
+        select(db, tstrain) %>% distinct() %>% sample_n(500)
+    ),
+  'classified_proteins.10000.tsv'
+)
 
 NrdGRE = cp %>% filter(psuperfamily=='NrdGRE')
 org = cp %>% select(tdomain:tstrain) %>% distinct()
