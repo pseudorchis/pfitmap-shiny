@@ -35,9 +35,8 @@ classified_proteins = data.table(
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
-  fluidRow(
-    column(2),
-    column(4, 
+  sidebarLayout(
+    sidebarPanel( 
       selectInput(
         'taxonrank', 'Taxon rank', 
         list(
@@ -45,9 +44,7 @@ ui <- fluidPage(
           'Order'   = 'torder',   'Family'  = 'tfamily', 'Genus'   = 'tgenus',
           'Species' = 'tspecies', 'Strain'  = 'tstrain'
         )
-      )
-    ),
-    column(4,
+      ),
       selectInput(
         'proteinrank', 'Protein rank',
         list(
@@ -56,11 +53,10 @@ ui <- fluidPage(
           'Group'       = 'pgroup'
         )
       )
+    ),
+    mainPanel(
+      dataTableOutput('mainmatrix')
     )
-  ),
-  
-  fluidRow(
-    column(12, dataTableOutput('mainmatrix'))
   )
 )
 
