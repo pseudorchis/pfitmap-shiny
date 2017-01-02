@@ -151,7 +151,6 @@ server <- function(input, output) {
     t %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
-      spread_(input$proteinrank, 'n', fill=0) %>%
       inner_join(
         taxa %>%
           inner_join(
@@ -161,8 +160,10 @@ server <- function(input, output) {
             by = 'ncbi_taxon_id'
           ) %>%
           group_by_(input$taxonrank) %>%
-          summarise(n_genomes = n())
-      )
+          summarise(`N. genomes` = n()),
+        by=c(input$taxonrank)
+      ) %>%
+      spread_(input$proteinrank, 'n', fill=0)
   })
   
   output$ssversion = renderText(
