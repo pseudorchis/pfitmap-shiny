@@ -86,10 +86,12 @@ ui <- fluidPage(
         selected = c('pclass')
       ),
       selectInput(
-        'psuperfamilies', 'Protein superfamily',
+        'psuperfamilies', 'Protein superfamilies',
         c('', psuperfamilies), selected = c('NrdGRE'), 
         multiple=T
-      )
+      ),
+      uiOutput('pfamilies'),
+      uiOutput('pclasses')
     ),
     mainPanel(
       h1('pfitmap'),
@@ -101,18 +103,50 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-  dataPSuperfamiliesFilter <- reactive({
-    if ( length(input$psuperfamilies) == 0 ) {
-      return(psuperfamilies)
+  output$pfamilies = renderUI({
+    pf = classified_proteins
+    if ( length(input$psuperfamilies) > 0 ) {
+      pf = pf %>% filter(psuperfamily %in% input$psuperfamilies)
     }
-    return(input$psuperfamilies)
+    pf = (pf %>% select(pfamily) %>% distinct())$pfamily
+    
+    selectInput(
+      'pfamilies', 'Protein families',
+      pf, multiple = T
+    )
   })
   
-  output$mainmatrix = renderDataTable(
-    classified_proteins %>% 
+  output$pclasses = renderUI({
+    pc = classified_proteins
+    if ( length(input$pfamilies) > 0) {
+      pc = pc %>% filter(pfamily %in% input$pfamilies)
+    }
+    pc = (pc %>% select(pclass) %>% distinct() %>% arrange(pclass))$pclass
+    
+    selectInput(
+      'pclasses', 'Protein classes',
+      pc, multiple = T
+    )
+  })
+  
+  output$mainmatrix = renderDataTable({
+    t = classified_proteins %>% 
       filter(db == input$db) %>%
-      inner_join(taxa %>% select(ncbi_taxon_id), by='ncbi_taxon_id') %>%
-      filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
+      inner_join(taxa %>% select(ncbi_taxon_id), by='ncbi_taxon_id')
+    
+    if ( length(input$psuperfamilies) > 0 ) {
+      t = t %>% filter(psuperfamily %in% input$psuperfamilies)
+    }
+    
+    if ( length(input$pfamilies) > 0 ) {
+      t = t %>% filter(pfamily %in% input$pfamilies)
+    }
+    
+    if ( length(input$pclasses) > 0 ) {
+      t = t %>% filter(pclass %in% input$pclasses)
+    }
+    
+    t %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
       spread_(input$proteinrank, 'n', fill=0) %>%
@@ -127,7 +161,7 @@ server <- function(input, output) {
           group_by_(input$taxonrank) %>%
           summarise(n_genomes = n())
       )
-  )
+  })
   
   output$ssversion = renderText(
     (classified_proteins %>% 
