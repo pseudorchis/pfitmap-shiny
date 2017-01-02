@@ -165,7 +165,10 @@ server <- function(input, output) {
       ) %>%
       spread_(input$proteinrank, 'n', fill=0)
     
-    t %>% select_('Taxon' = input$taxonrank, `N. genomes` = 'n_genomes', rownames(t)[3:length(rownames(l))])
+    # This is to get the right column names, a bit involved perhaps...
+    c = colnames(t)
+    t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
+      select(c(length(c)+1,length(c)+2,3:length(c)))
   })
   
   output$ssversion = renderText(
