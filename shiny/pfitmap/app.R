@@ -85,13 +85,15 @@ ui <- fluidPage(
         ),
         selected = c('pclass')
       ),
-      selectInput(
-        'psuperfamilies', 'Protein superfamilies',
-        c('', psuperfamilies), selected = c('NrdGRE'), 
-        multiple=T
-      ),
-      uiOutput('pfamilies'),
-      uiOutput('pclasses')
+      wellPanel(
+        selectInput(
+          'psuperfamilies', 'Protein superfamilies',
+          c('', psuperfamilies), selected = c('NrdGRE'), 
+          multiple=T
+        ),
+        uiOutput('pfamilies'),
+        uiOutput('pclasses')
+      )
     ),
     mainPanel(
       h1('pfitmap'),
