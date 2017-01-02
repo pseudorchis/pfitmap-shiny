@@ -148,7 +148,7 @@ server <- function(input, output) {
       t = t %>% filter(pclass %in% input$pclasses)
     }
     
-    t %>%
+    t = t %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
       inner_join(
@@ -160,10 +160,12 @@ server <- function(input, output) {
             by = 'ncbi_taxon_id'
           ) %>%
           group_by_(input$taxonrank) %>%
-          summarise(`N. genomes` = n()),
+          summarise(n_genomes = n()),
         by=c(input$taxonrank)
       ) %>%
       spread_(input$proteinrank, 'n', fill=0)
+    
+    t %>% select_('Taxon' = input$taxonrank, `N. genomes` = 'n_genomes', rownames(t)[3:length(rownames(l))])
   })
   
   output$ssversion = renderText(
