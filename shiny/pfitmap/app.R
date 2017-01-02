@@ -86,10 +86,11 @@ ui <- fluidPage(
         selected = c('pclass')
       ),
       selectInput(
-        'psuperfamilies', 'Protein superfamily',
+        'psuperfamilies', 'Protein superfamilies',
         c('', psuperfamilies), selected = c('NrdGRE'), 
         multiple=T
-      )
+      ),
+      uiOutput('pfamilies')
     ),
     mainPanel(
       h1('pfitmap'),
@@ -101,6 +102,7 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  
   dataPSuperfamiliesFilter <- reactive({
     if ( length(input$psuperfamilies) == 0 ) {
       return(psuperfamilies)
@@ -108,11 +110,29 @@ server <- function(input, output) {
     return(input$psuperfamilies)
   })
   
-  output$mainmatrix = renderDataTable(
-    classified_proteins %>% 
+  output$pfamilies = renderUI({
+    pfamilies = (classified_proteins %>%
+      filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
+      select(pfamily) %>% distinct())$pfamily
+    
+    selectInput(
+      'pfamilies', 'Protein families',
+      pfamilies, multiple = T
+    )
+  })
+  
+  output$mainmatrix = renderDataTable({
+    t = classified_proteins %>% 
       filter(db == input$db) %>%
       inner_join(taxa %>% select(ncbi_taxon_id), by='ncbi_taxon_id') %>%
-      filter(psuperfamily %in% dataPSuperfamiliesFilter()) %>%
+      filter(psuperfamily %in% dataPSuperfamiliesFilter())
+    
+    if ( length(input$pfamilies) > 0 ) {
+      t = t %>%
+        filter(pfamily %in% input$pfamilies)
+    }
+    
+    t %>%
       group_by_(input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
       spread_(input$proteinrank, 'n', fill=0) %>%
@@ -127,7 +147,7 @@ server <- function(input, output) {
           group_by_(input$taxonrank) %>%
           summarise(n_genomes = n())
       )
-  )
+  })
   
   output$ssversion = renderText(
     (classified_proteins %>% 
