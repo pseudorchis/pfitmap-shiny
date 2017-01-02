@@ -93,6 +93,7 @@ ui <- fluidPage(
     ),
     mainPanel(
       h1('pfitmap'),
+      textOutput('ssversion'),
       dataTableOutput('mainmatrix')
     )
   )
@@ -126,6 +127,12 @@ server <- function(input, output) {
           group_by_(input$taxonrank) %>%
           summarise(n_genomes = n())
       )
+  )
+  
+  output$ssversion = renderText(
+    (classified_proteins %>% 
+      transmute(ssversion = sprintf("Source database: %s %s, downloaded %s", ss_source, ss_name, ss_version)) %>% 
+      distinct())$ssversion
   )
 }
 
