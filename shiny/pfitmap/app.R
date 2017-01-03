@@ -202,7 +202,7 @@ server <- function(input, output) {
   output$maingraph = renderPlot({
     ggplot(filtered_table(), aes(x=pclass, y=score)) + 
       geom_violin() +
-      geom_sina(aes(colour=psubclass), binwidth=1)
+      geom_sina(aes(colour=psubclass), method='counts')
   }) 
   
   output$ssversion = renderText(
