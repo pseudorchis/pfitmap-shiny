@@ -161,8 +161,7 @@ server <- function(input, output) {
           group_by_(input$taxonrank) %>%
           summarise(n_genomes = n()),
         by=c(input$taxonrank)
-      ) %>%
-      spread_(input$proteinrank, 'n', fill=0)
+      )
   })
 
   output$pfamilies = renderUI({
@@ -192,7 +191,8 @@ server <- function(input, output) {
   })
   
   output$mainmatrix = renderDataTable({
-    t = group_summed_table()
+    t = group_summed_table() %>%
+      spread_(input$proteinrank, 'n', fill=0)
     # This is to get the right column names, a bit involved perhaps...
     c = colnames(t)
     t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
