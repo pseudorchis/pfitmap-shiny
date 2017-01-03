@@ -13,6 +13,8 @@ library(dplyr)
 library(data.table)
 library(dtplyr)
 library(tidyr)
+library(ggplot2)
+library(ggforce)
 
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
@@ -196,6 +198,10 @@ server <- function(input, output) {
     t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
       select(c(length(c)+1,length(c)+2,3:length(c)))
   })
+  
+  output$maingraph = renderPlot({
+    ggplot(filtered_table(), aes(x=pclass, y=score, color=psubclass)) + geom_sina()
+  }) 
   
   output$ssversion = renderText(
     (classified_proteins %>% 
