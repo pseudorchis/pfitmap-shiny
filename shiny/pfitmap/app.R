@@ -106,8 +106,13 @@ ui <- fluidPage(
     mainPanel(
       h1('pfitmap'),
       textOutput('ssversion'),
-      checkboxInput('taxonomysort', 'Taxonomic sort'),
-      dataTableOutput('mainmatrix')
+      tabsetPanel(type= 'tabs', 
+        tabPanel('table', 
+          checkboxInput('taxonomysort', 'Taxonomic sort'),
+          dataTableOutput('mainmatrix')
+        ),
+        tabPanel('graph',  plotOutput('maingraph'))
+      )
     )
   )
 )
