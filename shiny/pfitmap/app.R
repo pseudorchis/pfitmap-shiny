@@ -114,6 +114,50 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  # Reactive methods outside assignments
+  
+  # Returns a table after applying all filters the user have called for
+  filtered_table = reactive({
+    t = classified_proteins %>% 
+      filter(db == input$db) %>%
+      inner_join(taxa %>% select(ncbi_taxon_id), by='ncbi_taxon_id')
+    
+    if ( length(input$psuperfamilies) > 0 ) {
+      t = t %>% filter(psuperfamily %in% input$psuperfamilies)
+    }
+    
+    if ( length(input$pfamilies) > 0 ) {
+      t = t %>% filter(pfamily %in% input$pfamilies)
+    }
+    
+    if ( length(input$pclasses) > 0 ) {
+      t = t %>% filter(pclass %in% input$pclasses)
+    }
+
+    t
+  })
+
+  # Returns a filtered and summarised table after applying the group by
+  # criteria called for by the user.
+  group_summed_table = reactive({
+    filtered_table() %>%
+      group_by_(input$taxonrank, input$proteinrank) %>%
+      summarise(n=n())  %>% 
+      inner_join(
+        taxa %>%
+          inner_join(
+            classified_proteins %>%
+              filter(db == input$db) %>%
+              select(ncbi_taxon_id) %>% distinct(),
+            by = 'ncbi_taxon_id'
+          ) %>%
+          group_by_(input$taxonrank) %>%
+          summarise(n_genomes = n()),
+        by=c(input$taxonrank)
+      ) %>%
+      spread_(input$proteinrank, 'n', fill=0)
+  })
+
   output$pfamilies = renderUI({
     pf = classified_proteins
     if ( length(input$psuperfamilies) > 0 ) {
@@ -141,39 +185,7 @@ server <- function(input, output) {
   })
   
   output$mainmatrix = renderDataTable({
-    t = classified_proteins %>% 
-      filter(db == input$db) %>%
-      inner_join(taxa %>% select(ncbi_taxon_id), by='ncbi_taxon_id')
-    
-    if ( length(input$psuperfamilies) > 0 ) {
-      t = t %>% filter(psuperfamily %in% input$psuperfamilies)
-    }
-    
-    if ( length(input$pfamilies) > 0 ) {
-      t = t %>% filter(pfamily %in% input$pfamilies)
-    }
-    
-    if ( length(input$pclasses) > 0 ) {
-      t = t %>% filter(pclass %in% input$pclasses)
-    }
-    
-    t = t %>%
-      group_by_(input$taxonrank, input$proteinrank) %>%
-      summarise(n=n())  %>% 
-      inner_join(
-        taxa %>%
-          inner_join(
-            classified_proteins %>%
-              filter(db == input$db) %>%
-              select(ncbi_taxon_id) %>% distinct(),
-            by = 'ncbi_taxon_id'
-          ) %>%
-          group_by_(input$taxonrank) %>%
-          summarise(n_genomes = n()),
-        by=c(input$taxonrank)
-      ) %>%
-      spread_(input$proteinrank, 'n', fill=0)
-    
+    t = group_summed_table()
     # This is to get the right column names, a bit involved perhaps...
     c = colnames(t)
     t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
