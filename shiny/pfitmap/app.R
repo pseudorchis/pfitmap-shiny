@@ -28,7 +28,13 @@ classified_proteins = data.table(
       e_value = col_double(),
       score = col_double()
     )
-  )
+  ) %>%
+    mutate(
+      pfamily = ifelse(is.na(pfamily), sprintf("%s, no family", psuperfamily), pfamily),
+      pclass = ifelse(is.na(pclass), sprintf("%s, no class", pfamily), pclass),
+      psubclass = ifelse(is.na(psubclass), sprintf("%s, no subclass", pclass), psubclass),
+      pgroup = ifelse(is.na(pgroup), sprintf("%s, no group", psubclass), pgroup)
+    )
 )
 
 # We have problematic organisms, where multiple sequences of the same kind are assigned
