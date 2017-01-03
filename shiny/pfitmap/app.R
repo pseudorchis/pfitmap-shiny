@@ -14,6 +14,8 @@ library(data.table)
 library(dtplyr)
 library(tidyr)
 
+TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
+
 classified_proteins = data.table(
   read_tsv(
     Sys.getenv('PFITMAP_DATA'),
@@ -104,6 +106,7 @@ ui <- fluidPage(
     mainPanel(
       h1('pfitmap'),
       textOutput('ssversion'),
+      checkboxInput('taxonomysort', 'Taxonomic sort'),
       dataTableOutput('mainmatrix')
     )
   )
