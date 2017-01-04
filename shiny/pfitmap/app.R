@@ -209,19 +209,12 @@ server <- function(input, output) {
   
   output$maingraph = renderPlot({
     d = filtered_table() %>%
-      mutate(seqlen = str_length(seq))
+      mutate(seqlen = str_length(seq)) %>%
+      mutate_('stat' = input$sinastat)
     
-    if ( input$sinastat == 'score') {
-      ggplot(d, aes(x=pclass, y=score)) + 
-        geom_violin() +
-        geom_sina(aes(colour=psubclass), method='counts')
-    }  else {
-      if ( input$sinastat == 'seqlen') {
-        ggplot(d, aes(x=pclass, y=seqlen)) + 
-          geom_violin() +
-          geom_sina(aes(colour=psubclass), method='counts')
-      }
-    }
+    ggplot(d, aes(x=pclass, y=stat)) + 
+      geom_violin() +
+      geom_sina(aes(colour=psubclass), method='counts')
   }) 
   
   output$ssversion = renderText(
