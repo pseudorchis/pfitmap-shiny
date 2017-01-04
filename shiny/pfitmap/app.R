@@ -218,6 +218,11 @@ server <- function(input, output) {
   output$mainmatrix = renderDataTable({
     t = group_summed_table() %>%
       spread_(input$proteinrank, 'n', fill=0) 
+    
+    if ( input$taxonomysort ) {
+      t = t %>% arrange(tsort)
+    }
+    
     # This is to get the right column names, a bit involved perhaps...
     c = colnames(t)
     t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
