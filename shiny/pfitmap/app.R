@@ -15,6 +15,7 @@ library(dtplyr)
 library(tidyr)
 library(ggplot2)
 library(ggforce)
+library(stringr)
 
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
@@ -113,7 +114,14 @@ ui <- fluidPage(
           checkboxInput('taxonomysort', 'Taxonomic sort'),
           dataTableOutput('mainmatrix')
         ),
-        tabPanel('graph',  plotOutput('maingraph'))
+        tabPanel('distributions',
+          selectInput(
+            'sinastat', 'Statistic',
+            list(
+              'HMM score' = 'score', 'Sequence length' = 'seqlen', 'Alignment length' = 'align_length'
+            )
+          ),
+          plotOutput('maingraph'))
       )
     )
   )
@@ -200,7 +208,11 @@ server <- function(input, output) {
   })
   
   output$maingraph = renderPlot({
-    ggplot(filtered_table(), aes(x=pclass, y=score)) + 
+    d = filtered_table() %>%
+      mutate(seqlen = str_length(seq)) %>%
+      mutate_('stat' = input$sinastat)
+    
+    ggplot(d, aes(x=pclass, y=stat)) + 
       geom_violin() +
       geom_sina(aes(colour=psubclass), method='counts')
   }) 
