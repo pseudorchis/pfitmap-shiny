@@ -114,7 +114,7 @@ ui <- fluidPage(
           checkboxInput('taxonomysort', 'Taxonomic sort'),
           dataTableOutput('mainmatrix')
         ),
-        tabPanel('graph',
+        tabPanel('distributions',
           selectInput(
             'sinastat', 'Statistic',
             list(
