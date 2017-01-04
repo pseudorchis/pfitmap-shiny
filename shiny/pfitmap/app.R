@@ -158,7 +158,7 @@ ui <- fluidPage(
       tabsetPanel(type= 'tabs', 
         tabPanel('table', 
           fluidRow(
-            column(4, checkboxInput('taxonomysort', 'Taxonomic sort')),
+            column(4, checkboxInput('taxonomysort', 'Taxonomic sort', value=T)),
             column(4, uiOutput('trank4colour'))
           ),
           dataTableOutput('mainmatrix')
@@ -212,7 +212,6 @@ server <- function(input, output) {
       'sprintf(strrep("%-50s",', which(TAXON_HIERARCHY == input$taxonrank),  '), ',
       paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ')'
     )
-    write(sprintf("trank4colour: %s", input$trank4colour), stderr())
     d = filtered_table() %>%
       mutate_('tsort' = ts_string, 'tcolour' = input$trank4colour) %>%
       group_by_('tsort', 'tcolour', input$taxonrank, input$proteinrank) %>%
