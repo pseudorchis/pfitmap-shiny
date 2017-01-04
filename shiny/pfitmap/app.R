@@ -163,8 +163,17 @@ server <- function(input, output) {
   # Returns a filtered and summarised table after applying the group by
   # criteria called for by the user.
   group_summed_table = reactive({
-    filtered_table() %>%
-      group_by_(input$taxonrank, input$proteinrank) %>%
+    # Construct a field for taxonomical sort. This is done in two steps: first
+    # a string is constructed, then the the string is used in a mutate_
+    # statement.
+    n = which(TAXON_HIERARCHY==input$taxonrank)
+    ts_string = paste(
+      'sprintf(strrep("%-50s",', which(TAXON_HIERARCHY == input$taxonrank),  '), ',
+      paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ')'
+    )
+    d = filtered_table() %>%
+      mutate_('tsort' = ts_string) %>%
+      group_by_('tsort', input$taxonrank, input$proteinrank) %>%
       summarise(n=n())  %>% 
       inner_join(
         taxa %>%
@@ -208,7 +217,7 @@ server <- function(input, output) {
   
   output$mainmatrix = renderDataTable({
     t = group_summed_table() %>%
-      spread_(input$proteinrank, 'n', fill=0)
+      spread_(input$proteinrank, 'n', fill=0) 
     # This is to get the right column names, a bit involved perhaps...
     c = colnames(t)
     t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
