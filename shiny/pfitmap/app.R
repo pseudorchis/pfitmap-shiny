@@ -295,7 +295,7 @@ server <- function(input, output) {
         formatStyle(
           'Taxon', 'tcolour',
           backgroundColor = styleEqual(
-            t$Taxon, LIGHT_PALETTE_256X[1:length(t$Taxon)]
+            unique(t$tcolour), LIGHT_PALETTE_256X[1:length(unique(t$tcolour))]
           )
         )
     }
