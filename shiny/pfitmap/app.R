@@ -282,14 +282,14 @@ server <- function(input, output) {
       # This is to get the right column names, a bit involved perhaps...
       t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') #%>% 
       c = colnames(t)
-      write(sprintf("c: %s", c), stderr())
       t = t %>%
-        select(tsort, tcolour, c(length(c)-1,length(c),7:length(c)-2))
+        select(tcolour, c(length(c)-1,length(c),7:length(c)-2))
       datatable(
         t, 
         rownames=F, 
         options=list(
-          lengthMenu = c(50, 100, 250, 500)
+          lengthMenu = c(50, 100, 250, 500),
+          columnDefs = list(list(targets = 0, visible = FALSE))
         )
       ) %>%
         formatStyle(
