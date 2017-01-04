@@ -157,8 +157,10 @@ ui <- fluidPage(
       textOutput('debug'),
       tabsetPanel(type= 'tabs', 
         tabPanel('table', 
-          checkboxInput('taxonomysort', 'Taxonomic sort'),
-          uiOutput('trank4colour'),
+          fluidRow(
+            column(4, checkboxInput('taxonomysort', 'Taxonomic sort')),
+            column(4, uiOutput('trank4colour'))
+          ),
           dataTableOutput('mainmatrix')
         ),
         tabPanel('distributions',
@@ -210,9 +212,10 @@ server <- function(input, output) {
       'sprintf(strrep("%-50s",', which(TAXON_HIERARCHY == input$taxonrank),  '), ',
       paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ')'
     )
+    write(sprintf("trank4colour: %s", input$trank4colour), stderr())
     d = filtered_table() %>%
-      mutate_('tsort' = ts_string) %>%
-      group_by_('tsort', input$taxonrank, input$proteinrank) %>%
+      mutate_('tsort' = ts_string, 'tcolour' = input$trank4colour) %>%
+      group_by_('tsort', 'tcolour', input$taxonrank, input$proteinrank) %>%
       summarise(n=n()) %>%
       inner_join(
         taxa %>%
@@ -263,7 +266,7 @@ server <- function(input, output) {
     }
     selectInput(
       'trank4colour', 'Colour by taxon',
-      ranks
+      ranks, selected = 'tdomain'
     )
   })
   
@@ -277,9 +280,11 @@ server <- function(input, output) {
       }
       
       # This is to get the right column names, a bit involved perhaps...
+      t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') #%>% 
       c = colnames(t)
-      t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
-        select(c(length(c)+1,length(c)+2,3:length(c)))
+      write(sprintf("c: %s", c), stderr())
+      t = t %>%
+        select(tsort, tcolour, c(length(c)-1,length(c),7:length(c)-2))
       datatable(
         t, 
         rownames=F, 
@@ -287,7 +292,12 @@ server <- function(input, output) {
           lengthMenu = c(50, 100, 250, 500)
         )
       ) %>%
-        formatStyle(c(1), backgroundColor = '#a6cee3')
+        formatStyle(
+          'Taxon', 'tcolour',
+          backgroundColor = styleEqual(
+            t$Taxon, LIGHT_PALETTE_256X[1:length(t$Taxon)]
+          )
+        )
     }
   )
   
