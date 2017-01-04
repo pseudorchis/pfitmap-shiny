@@ -15,6 +15,7 @@ library(dtplyr)
 library(tidyr)
 library(ggplot2)
 library(ggforce)
+library(stringr)
 
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
@@ -207,9 +208,20 @@ server <- function(input, output) {
   })
   
   output$maingraph = renderPlot({
-    ggplot(filtered_table(), aes(x=pclass, y=score)) + 
-      geom_violin() +
-      geom_sina(aes(colour=psubclass), method='counts')
+    d = filtered_table() %>%
+      mutate(seqlen = str_length(seq))
+    
+    if ( input$sinastat == 'score') {
+      ggplot(d, aes(x=pclass, y=score)) + 
+        geom_violin() +
+        geom_sina(aes(colour=psubclass), method='counts')
+    }  else {
+      if ( input$sinastat == 'seqlen') {
+        ggplot(d, aes(x=pclass, y=seqlen)) + 
+          geom_violin() +
+          geom_sina(aes(colour=psubclass), method='counts')
+      }
+    }
   }) 
   
   output$ssversion = renderText(
