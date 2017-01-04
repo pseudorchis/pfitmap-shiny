@@ -88,13 +88,26 @@ taxa = taxa %>%
 classified_proteins = classified_proteins %>%
   mutate(
     tkingdom = ifelse(is.na(tkingdom), sprintf("%s, no kingdom", tdomain), tkingdom),
-    tphylum = ifelse(is.na(tphylum), sprintf("%s, no phylum", tkingdom), tphylum),
-    tclass = ifelse(is.na(tclass), sprintf("%s, no class", tphylum), tclass),
-    torder = ifelse(is.na(torder), sprintf("%s, no order", tclass), torder),
-    tfamily = ifelse(is.na(tfamily), sprintf("%s, no family", torder), tfamily),
-    tgenus = ifelse(is.na(tgenus), sprintf("%s, no genus", tfamily), tgenus),
-    tspecies = ifelse(is.na(tspecies), sprintf("%s, no species", tgenus), tspecies)
+    tphylum = ifelse(is.na(tphylum), sprintf("%s, no phylum", sub(', no kingdom', '', tkingdom)), tphylum),
+    tclass = ifelse(is.na(tclass), sprintf("%s, no class", sub(', no phylum', '', tphylum)), tclass),
+    torder = ifelse(is.na(torder), sprintf("%s, no order", sub(', no class', '', tclass)), torder),
+    tfamily = ifelse(is.na(tfamily), sprintf("%s, no family", sub(', no order', '', torder)), tfamily),
+    tgenus = ifelse(is.na(tgenus), sprintf("%s, no genus", sub(', no family', '', tfamily)), tgenus),
+    tspecies = ifelse(is.na(tspecies), sprintf("%s, no species", sub(', no genus', '', tgenus)), tspecies)
   )
+
+# Do the same for taxa
+taxa = taxa %>%
+  mutate(
+    tkingdom = ifelse(is.na(tkingdom), sprintf("%s, no kingdom", tdomain), tkingdom),
+    tphylum = ifelse(is.na(tphylum), sprintf("%s, no phylum", sub(', no kingdom', '', tkingdom)), tphylum),
+    tclass = ifelse(is.na(tclass), sprintf("%s, no class", sub(', no phylum', '', tphylum)), tclass),
+    torder = ifelse(is.na(torder), sprintf("%s, no order", sub(', no class', '', tclass)), torder),
+    tfamily = ifelse(is.na(tfamily), sprintf("%s, no family", sub(', no order', '', torder)), tfamily),
+    tgenus = ifelse(is.na(tgenus), sprintf("%s, no genus", sub(', no family', '', tfamily)), tgenus),
+    tspecies = ifelse(is.na(tspecies), sprintf("%s, no species", sub(', no genus', '', tgenus)), tspecies)
+  )
+###write(sprintf("Phyla: %s", classified_proteins %>% select(tphylum) %>% distinct()), stderr())
 
 # We will need a vector of protein superfamilies
 psuperfamilies = (classified_proteins %>% select(psuperfamily) %>% distinct() %>% arrange(psuperfamily))$psuperfamily
@@ -141,6 +154,7 @@ ui <- fluidPage(
     mainPanel(
       h1('pfitmap'),
       textOutput('ssversion'),
+      textOutput('debug'),
       tabsetPanel(type= 'tabs', 
         tabPanel('table', 
           checkboxInput('taxonomysort', 'Taxonomic sort'),
@@ -195,10 +209,16 @@ server <- function(input, output) {
       'sprintf(strrep("%-50s",', which(TAXON_HIERARCHY == input$taxonrank),  '), ',
       paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ')'
     )
-    d = filtered_table() %>%
-      mutate_('tsort' = ts_string) %>%
+    d = filtered_table()
+    ###write(sprintf("Phyla after filter: %s", d %>% select(tphylum) %>% distinct() %>% arrange(tphylum)), stderr())
+    d = d %>%
+      mutate_('tsort' = ts_string)
+    ###write(sprintf("Phyla after tsort: %s", d %>% select(tphylum) %>% distinct() %>% arrange(tphylum)), stderr())
+    d = d %>%
       group_by_('tsort', input$taxonrank, input$proteinrank) %>%
-      summarise(n=n())  %>% 
+      summarise(n=n())
+    ###write(sprintf("%s after group by/summarise: %s", input$taxonrank, d %>% select_('t'=input$taxonrank) %>% distinct() %>% arrange(t)), stderr())
+    d = d %>%
       inner_join(
         taxa %>%
           inner_join(
@@ -211,6 +231,8 @@ server <- function(input, output) {
           summarise(n_genomes = n()),
         by=c(input$taxonrank)
       )
+    
+    d
   })
 
   output$pfamilies = renderUI({
@@ -243,6 +265,7 @@ server <- function(input, output) {
     {
       t = group_summed_table() %>%
         spread_(input$proteinrank, 'n', fill=0) 
+      ###write(sprintf("Taxon after group by/sum: %s", t %>% select(t=1) %>% distinct() %>% arrange(t)), stderr())
       
       if ( input$taxonomysort ) {
         t = t %>% arrange(tsort)
@@ -252,6 +275,7 @@ server <- function(input, output) {
       c = colnames(t)
       t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
         select(c(length(c)+1,length(c)+2,3:length(c)))
+      ###write(sprintf("Taxon after group by/sum: %s", t %>% select(Taxon) %>% distinct() %>% arrange(Taxon)), stderr())
       datatable(
         t, 
         rownames=F, 
