@@ -17,6 +17,7 @@ library(ggplot2)
 library(ggforce)
 library(stringr)
 library(DT)
+library(Hmisc)
 
 # Some constants
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
@@ -107,7 +108,6 @@ taxa = taxa %>%
     tgenus = ifelse(is.na(tgenus), sprintf("%s, no genus", sub(', no family', '', tfamily)), tgenus),
     tspecies = ifelse(is.na(tspecies), sprintf("%s, no species", sub(', no genus', '', tgenus)), tspecies)
   )
-###write(sprintf("Phyla: %s", classified_proteins %>% select(tphylum) %>% distinct()), stderr())
 
 # We will need a vector of protein superfamilies
 psuperfamilies = (classified_proteins %>% select(psuperfamily) %>% distinct() %>% arrange(psuperfamily))$psuperfamily
@@ -158,6 +158,7 @@ ui <- fluidPage(
       tabsetPanel(type= 'tabs', 
         tabPanel('table', 
           checkboxInput('taxonomysort', 'Taxonomic sort'),
+          uiOutput('trank4colour'),
           dataTableOutput('mainmatrix')
         ),
         tabPanel('distributions',
@@ -209,16 +210,10 @@ server <- function(input, output) {
       'sprintf(strrep("%-50s",', which(TAXON_HIERARCHY == input$taxonrank),  '), ',
       paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ')'
     )
-    d = filtered_table()
-    ###write(sprintf("Phyla after filter: %s", d %>% select(tphylum) %>% distinct() %>% arrange(tphylum)), stderr())
-    d = d %>%
-      mutate_('tsort' = ts_string)
-    ###write(sprintf("Phyla after tsort: %s", d %>% select(tphylum) %>% distinct() %>% arrange(tphylum)), stderr())
-    d = d %>%
+    d = filtered_table() %>%
+      mutate_('tsort' = ts_string) %>%
       group_by_('tsort', input$taxonrank, input$proteinrank) %>%
-      summarise(n=n())
-    ###write(sprintf("%s after group by/summarise: %s", input$taxonrank, d %>% select_('t'=input$taxonrank) %>% distinct() %>% arrange(t)), stderr())
-    d = d %>%
+      summarise(n=n()) %>%
       inner_join(
         taxa %>%
           inner_join(
@@ -260,12 +255,22 @@ server <- function(input, output) {
       pc, multiple = T
     )
   })
+
+  output$trank4colour = renderUI({
+    ranks = list()
+    for ( r in TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)] ) { 
+      ranks[[capitalize(sub('^t', '', r))]] = r 
+    }
+    selectInput(
+      'trank4colour', 'Colour by taxon',
+      ranks
+    )
+  })
   
   output$mainmatrix = renderDataTable(
     {
       t = group_summed_table() %>%
         spread_(input$proteinrank, 'n', fill=0) 
-      ###write(sprintf("Taxon after group by/sum: %s", t %>% select(t=1) %>% distinct() %>% arrange(t)), stderr())
       
       if ( input$taxonomysort ) {
         t = t %>% arrange(tsort)
@@ -275,7 +280,6 @@ server <- function(input, output) {
       c = colnames(t)
       t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
         select(c(length(c)+1,length(c)+2,3:length(c)))
-      ###write(sprintf("Taxon after group by/sum: %s", t %>% select(Taxon) %>% distinct() %>% arrange(Taxon)), stderr())
       datatable(
         t, 
         rownames=F, 
