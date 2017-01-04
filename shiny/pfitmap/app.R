@@ -113,7 +113,14 @@ ui <- fluidPage(
           checkboxInput('taxonomysort', 'Taxonomic sort'),
           dataTableOutput('mainmatrix')
         ),
-        tabPanel('graph',  plotOutput('maingraph'))
+        tabPanel('graph',
+          selectInput(
+            'sinastat', 'Statistic',
+            list(
+              'HMM score' = 'score', 'Sequence length' = 'seqlen'
+            )
+          ),
+          plotOutput('maingraph'))
       )
     )
   )
