@@ -18,16 +18,26 @@ library(ggforce)
 library(stringr)
 library(DT)
 
+# Some constants
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
-PALETTE = c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928')
-PALETTE_32X = c(
-  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE,
-  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE,
-  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE,
-  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE
+DIV_PALETTE = c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928')
+DIV_PALETTE_8X = c(
+  DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE
+)
+DIV_PALETTE_256X = c(
+  DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X
 )
 
+LIGHT_PALETTE = c('#a6cee3','#b2df8a','#fb9a99','#fdbf6f','#cab2d6','#ffff99')
+LIGHT_PALETTE_8X = c(
+  LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE
+)
+LIGHT_PALETTE_256X = c(
+  LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X
+)
+
+# Reading data and transforming
 classified_proteins = data.table(
   read_tsv(
     Sys.getenv('PFITMAP_DATA'),
@@ -72,6 +82,19 @@ taxa = taxa %>%
   ) %>% 
   replace_na(list('strains'=F)) %>%
   filter( ! ( strains & tspecies == tstrain ) )
+
+# Fill in empty levels of the taxon hierarchy (can't be done before the steps
+# involving taxa above).
+classified_proteins = classified_proteins %>%
+  mutate(
+    tkingdom = ifelse(is.na(tkingdom), sprintf("%s, no kingdom", tdomain), tkingdom),
+    tphylum = ifelse(is.na(tphylum), sprintf("%s, no phylum", tkingdom), tphylum),
+    tclass = ifelse(is.na(tclass), sprintf("%s, no class", tphylum), tclass),
+    torder = ifelse(is.na(torder), sprintf("%s, no order", tclass), torder),
+    tfamily = ifelse(is.na(tfamily), sprintf("%s, no family", torder), tfamily),
+    tgenus = ifelse(is.na(tgenus), sprintf("%s, no genus", tfamily), tgenus),
+    tspecies = ifelse(is.na(tspecies), sprintf("%s, no species", tgenus), tspecies)
+  )
 
 # We will need a vector of protein superfamilies
 psuperfamilies = (classified_proteins %>% select(psuperfamily) %>% distinct() %>% arrange(psuperfamily))$psuperfamily
@@ -229,7 +252,14 @@ server <- function(input, output) {
       c = colnames(t)
       t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
         select(c(length(c)+1,length(c)+2,3:length(c)))
-      datatable(t, rownames=F)
+      datatable(
+        t, 
+        rownames=F, 
+        options=list(
+          lengthMenu = c(50, 100, 250, 500)
+        )
+      ) %>%
+        formatStyle(c(1), backgroundColor = '#a6cee3')
     }
   )
   
@@ -241,7 +271,7 @@ server <- function(input, output) {
     ggplot(d, aes(x=pclass, y=stat)) + 
       geom_violin() +
       geom_sina(aes(colour=psubclass), method='counts') +
-      scale_colour_manual('Protein subclass', values=PALETTE_32X)
+      scale_colour_manual('Protein subclass', values=DIV_PALETTE_256X)
   }) 
   
   output$ssversion = renderText(
