@@ -19,6 +19,14 @@ library(stringr)
 
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
+PALETTE = c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928')
+PALETTE_32X = c(
+  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE,
+  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE,
+  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE,
+  PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE, PALETTE
+)
+
 classified_proteins = data.table(
   read_tsv(
     Sys.getenv('PFITMAP_DATA'),
@@ -214,7 +222,8 @@ server <- function(input, output) {
     
     ggplot(d, aes(x=pclass, y=stat)) + 
       geom_violin() +
-      geom_sina(aes(colour=psubclass), method='counts')
+      geom_sina(aes(colour=psubclass), method='counts') +
+      scale_colour_manual('Protein subclass', values=PALETTE_32X)
   }) 
   
   output$ssversion = renderText(
