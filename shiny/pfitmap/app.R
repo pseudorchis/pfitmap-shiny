@@ -16,6 +16,7 @@ library(tidyr)
 library(ggplot2)
 library(ggforce)
 library(stringr)
+library(DT)
 
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
@@ -215,19 +216,22 @@ server <- function(input, output) {
     )
   })
   
-  output$mainmatrix = renderDataTable({
-    t = group_summed_table() %>%
-      spread_(input$proteinrank, 'n', fill=0) 
-    
-    if ( input$taxonomysort ) {
-      t = t %>% arrange(tsort)
+  output$mainmatrix = renderDataTable(
+    {
+      t = group_summed_table() %>%
+        spread_(input$proteinrank, 'n', fill=0) 
+      
+      if ( input$taxonomysort ) {
+        t = t %>% arrange(tsort)
+      }
+      
+      # This is to get the right column names, a bit involved perhaps...
+      c = colnames(t)
+      t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
+        select(c(length(c)+1,length(c)+2,3:length(c)))
+      datatable(t, rownames=F)
     }
-    
-    # This is to get the right column names, a bit involved perhaps...
-    c = colnames(t)
-    t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>% 
-      select(c(length(c)+1,length(c)+2,3:length(c)))
-  })
+  )
   
   output$maingraph = renderPlot({
     d = filtered_table() %>%
