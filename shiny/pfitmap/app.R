@@ -118,7 +118,7 @@ ui <- fluidPage(
           selectInput(
             'sinastat', 'Statistic',
             list(
-              'HMM score' = 'score', 'Sequence length' = 'seqlen'
+              'HMM score' = 'score', 'Sequence length' = 'seqlen', 'Alignment length' = 'align_length'
             )
           ),
           plotOutput('maingraph'))
