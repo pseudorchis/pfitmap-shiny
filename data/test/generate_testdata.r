@@ -5,7 +5,22 @@ library(dtplyr)
 library(dplyr)
 library(readr)
 
-cp = data.table(read_tsv('~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv'))
+cp = data.table(
+  read_tsv(
+    '~/data/pfitmap-eval/classified_proteins.prop_matching_ge_0.9.tsv',
+    col_types = cols(
+      .default = col_character(),
+      profile_length = col_integer(),
+      align_length = col_integer(),
+      align_start = col_integer(),
+      align_end = col_integer(),
+      prop_matching = col_double(),
+      ss_version = col_integer(),
+      e_value = col_double(),
+      score = col_double()
+    )
+  )
+)
 
 # Write a test file with ca. 10000 rows. The file will contain all proteins for a selection
 # of strains. The selection is random plus a few favourites.
@@ -29,6 +44,7 @@ write_tsv(
             ) %>%
             select(ncbi_taxon_id) %>% distinct()
         ) %>%
+        union( tibble(ncbi_taxon_id = '382359') ) %>%
         distinct(),
       by = 'ncbi_taxon_id'
     ),
