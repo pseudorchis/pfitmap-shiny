@@ -218,17 +218,24 @@ server <- function(input, output) {
   # Returns a filtered and summarised table after applying the group by
   # criteria called for by the user.
   group_summed_table = reactive({
-    # Construct a field for taxonomical sort. This is done in two steps: first
-    # a string is constructed, then the the string is used in a mutate_
-    # statement.
+    # Construct a field for taxonomical sort and on for tooltip for taxonomy.
+    # This is done in two steps: first a string is constructed, then the the
+    # string is used in a mutate_ statement.
     n = which(TAXON_HIERARCHY==input$taxonrank)
     ts_string = paste(
       'sprintf(strrep("%-50s",', which(TAXON_HIERARCHY == input$taxonrank),  '), ',
       paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ')'
     )
+    ttt_string = paste(
+      'paste(', paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ', sep="; ")'
+    )
     d = filtered_table() %>%
-      mutate_('tsort' = ts_string, 'tcolour' = input$trank4colour) %>%
-      group_by_('tsort', 'tcolour', input$taxonrank, input$proteinrank) %>%
+      mutate_(
+        'tsort' = ts_string, 
+        'tcolour' = input$trank4colour,
+        'taxon_tooltip' = ttt_string
+      ) %>%
+      group_by_('tsort', 'tcolour', 'taxon_tooltip', input$taxonrank, input$proteinrank) %>%
       summarise(n=n()) %>%
       inner_join(
         taxa %>%
@@ -293,13 +300,16 @@ server <- function(input, output) {
       }
       
       # This is to get the right column names, a bit involved perhaps...
-      t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') #%>% 
+      t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>%
+        mutate(Taxon = sprintf("<span title='%s'>%s</span>", taxon_tooltip, Taxon))
       c = colnames(t)
+      #write(sprintf("c: %s", c), stderr())
       t = t %>%
-        select(tcolour, c(length(c)-1,length(c),7:length(c)-2))
+        select(tcolour, c(length(c)-1,length(c),8:length(c)-2))
       datatable(
         t, 
         rownames=F, 
+        escape = c(T, F),
         options=list(
           lengthMenu = c(50, 100, 250, 500),
           columnDefs = list(list(targets = 0, visible = FALSE))
