@@ -23,6 +23,9 @@ library(DT)
 PROTEIN_HIERARCHY = c( 'psuperfamily', 'pfamily', 'pclass', 'psubclass', 'pgroup' )
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
+INDPROTEINS = 'indproteins'
+COMBPROTEINS = 'combproteins'
+
 DIV_PALETTE = c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928')
 DIV_PALETTE_96X = c(
   DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE
@@ -137,10 +140,10 @@ ui <- fluidPage(
       radioButtons(
         'protstattype', 'Type of protein statistic',
         list(
-          'Individual proteins' = 'indproteins',
-          'Combinations of proteins' = 'combproteins'
+          'Individual proteins' = INDPROTEINS,
+          'Combinations of proteins' = COMBPROTEINS
         ),
-        selected = 'indprotein'
+        selected = INDPROTEINS
       ),
       selectInput(
         'db', 'Database',
@@ -220,12 +223,6 @@ server <- function(input, output) {
       t = t %>% filter(pclass %in% input$pclasses)
     }
 
-    t
-  })
-
-  # Returns a filtered and summarised table after applying the group by
-  # criteria called for by the user.
-  group_summed_table = reactive({
     # Construct a field for taxonomical sort and on for tooltip for taxonomy.
     # This is done in two steps: first a string is constructed, then the the
     # string is used in a mutate_ statement.
@@ -237,12 +234,19 @@ server <- function(input, output) {
     ttt_string = paste(
       'paste(', paste(TAXON_HIERARCHY[1:which(TAXON_HIERARCHY==input$taxonrank)], collapse=", "), ', sep="; ")'
     )
-    d = filtered_table() %>%
+    t %>%
       mutate_(
         'tsort' = ts_string, 
         'tcolour' = input$trank4colour,
         'taxon_tooltip' = ttt_string
-      ) %>%
+      )
+  })
+
+  # Returns a filtered and summarised table after applying the group by
+  # criteria called for by the user.
+  indproteins_sums_table = reactive({
+    ###write(sprintf("indproteins_sums_table, protstattype: %s", input$protstattype), stderr())
+    d = filtered_table() %>%
       group_by_('tsort', 'tcolour', 'taxon_tooltip', input$taxonrank, input$proteinrank) %>%
       summarise(n=n()) %>%
       inner_join(
@@ -258,6 +262,37 @@ server <- function(input, output) {
         by=c(input$taxonrank)
       )
     
+    d
+  })
+
+  # Calculates all present combinations of proteins at the proteinrank selected,
+  # groups by the combinations, combines with n_genomes from taxa and returns.
+  combproteins_sums_table = reactive({
+    ###write(sprintf("combproteins_sums_table, protstattype: %s", input$protstattype), stderr())
+    d = filtered_table() %>%
+      group_by_('tsort', 'tcolour', 'taxon_tooltip', 'ncbi_taxon_id', input$taxonrank, input$proteinrank) %>%
+      summarise(n=n()) %>%
+      ungroup() %>%
+      spread_(input$proteinrank, input$proteinrank, fill='') %>%
+      select(-n)
+    d = d %>%
+      unite(comb, 6:length(colnames(d)), sep=':') %>%
+      mutate(comb=sub('::*', ':', sub(':*$', '', sub('^:*', '', comb)))) %>%
+      group_by_('tsort', 'tcolour', 'taxon_tooltip', input$taxonrank, 'comb') %>%
+      summarise(n=n()) %>%
+      inner_join(
+        taxa %>%
+          inner_join(
+            classified_proteins %>%
+              filter(db == input$db) %>%
+              select(ncbi_taxon_id) %>% distinct(),
+            by = 'ncbi_taxon_id'
+          ) %>%
+          group_by_(input$taxonrank) %>%
+          summarise(n_genomes = n()),
+        by=c(input$taxonrank)
+      )
+
     d
   })
 
@@ -300,8 +335,12 @@ server <- function(input, output) {
   
   output$mainmatrix = renderDataTable(
     {
-      t = group_summed_table() %>%
-        spread_(input$proteinrank, 'n', fill=0) 
+      t = switch(
+        input$protstattype,
+        indproteins  = indproteins_sums_table() %>% spread_(input$proteinrank, 'n', fill=0),
+        combproteins = combproteins_sums_table() %>% spread(comb, n, fill=0)
+      )
+      ###write(sprintf("colnames(t): %s", colnames(t)), stderr())
       
       if ( input$taxonomysort ) {
         t = t %>% arrange(tsort)
@@ -311,7 +350,7 @@ server <- function(input, output) {
       t = t %>% mutate_('Taxon'=input$taxonrank, `N. genomes`='n_genomes') %>%
         mutate(Taxon = sprintf("<span title='%s'>%s</span>", taxon_tooltip, Taxon))
       c = colnames(t)
-      #write(sprintf("c: %s", c), stderr())
+      ###write(sprintf("c: %s", c), stderr())
       t = t %>%
         select(tcolour, c(length(c)-1,length(c),8:length(c)-2))
       datatable(
