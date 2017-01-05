@@ -20,6 +20,7 @@ library(stringr)
 library(DT)
 
 # Some constants
+PROTEIN_HIERARCHY = c( 'psuperfamily', 'pfamily', 'pclass', 'psubclass', 'pgroup' )
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
 DIV_PALETTE = c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928')
@@ -325,13 +326,21 @@ server <- function(input, output) {
   )
   
   output$maingraph = renderPlot({
+    subc =  ifelse(
+      which(PROTEIN_HIERARCHY==input$proteinrank) == length(PROTEIN_HIERARCHY),
+      input$proteinrank, PROTEIN_HIERARCHY[which(PROTEIN_HIERARCHY==input$proteinrank) + 1]
+    )
     d = filtered_table() %>%
       mutate(seqlen = str_length(seq)) %>%
-      mutate_('stat' = input$sinastat)
+      mutate_(
+        'stat' = input$sinastat,
+        'c' = input$proteinrank,
+        'subc' = subc
+      )
     
-    ggplot(d, aes(x=pclass, y=stat)) + 
+    ggplot(d, aes(x=c, y=stat)) + 
       geom_violin() +
-      geom_sina(aes(colour=psubclass), method='counts') +
+      geom_sina(aes(colour=subc), method='counts') +
       scale_colour_manual('Protein subclass', values=DIV_PALETTE_768X)
   }) 
   
