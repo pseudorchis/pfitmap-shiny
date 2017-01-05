@@ -73,14 +73,17 @@ classified_proteins = data.table(
     )
 )
 
-# We have problematic organisms, where multiple sequences of the same kind are assigned
-# to the same taxon, probably always a species. Trying to get rid of those by filtering
-# non-strain taxa from species with at least one strain.
+# We have problematic organisms, where multiple sequences of the same kind are
+# assigned to the same taxon, a species or a genus. Trying to get rid of the
+# species cases by filtering non-strain taxa from species with at least one
+# strain. At the same time, delete all taxa with tgenus == tstrain and no
+# tspecies.
 
 # Step 1. Get all unique taxa
 taxa = classified_proteins %>% 
   select(ncbi_taxon_id, tdomain, tkingdom, tphylum, tclass, torder, tfamily, tgenus, tspecies, tstrain) %>% 
   distinct() %>% 
+  filter( ! ( tgenus == tstrain & is.na(tspecies) ) ) %>%
   mutate(tspecies = ifelse(is.na(tspecies) & ! is.na(tgenus), sprintf("%s sp.", tgenus), tspecies))
 
 # Step 2. Left join with a list of species that have strains, and then filter.
