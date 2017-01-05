@@ -132,9 +132,16 @@ dbs = (classified_proteins %>% select(db) %>% distinct() %>% arrange(db))$db
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-   
   sidebarLayout(
     sidebarPanel( 
+      radioButtons(
+        'protstattype', 'Type of protein statistic',
+        list(
+          'Individual proteins' = 'indproteins',
+          'Combinations of proteins' = 'combproteins'
+        ),
+        selected = 'indprotein'
+      ),
       selectInput(
         'db', 'Database',
         dbs, selected = 'ref'
