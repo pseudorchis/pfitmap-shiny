@@ -341,7 +341,9 @@ server <- function(input, output) {
     ggplot(d, aes(x=c, y=stat)) + 
       geom_violin() +
       geom_sina(aes(colour=subc), method='counts') +
-      scale_colour_manual('Protein subclass', values=DIV_PALETTE_768X)
+      scale_colour_manual(sprintf('Protein %s', sub('^p', '', subc)), values=DIV_PALETTE_768X) +
+      xlab(sprintf("Protein %s", sub('^p', '', input$proteinrank))) +
+      ylab('Statistic')
   }) 
   
   output$ssversion = renderText(
