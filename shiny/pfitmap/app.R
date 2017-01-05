@@ -7,6 +7,7 @@
 #    http://shiny.rstudio.com/
 #
 
+library(Hmisc)       # Place early; it masks summarize from dplyr!
 library(shiny)
 library(readr)
 library(dplyr)
@@ -17,25 +18,35 @@ library(ggplot2)
 library(ggforce)
 library(stringr)
 library(DT)
-library(Hmisc)
 
 # Some constants
 TAXON_HIERARCHY = c( 'tdomain', 'tkingdom', 'tphylum', 'tclass', 'torder', 'tfamily', 'tgenus', 'tspecies', 'tstrain' )
 
 DIV_PALETTE = c('#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928')
-DIV_PALETTE_8X = c(
+DIV_PALETTE_96X = c(
   DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE, DIV_PALETTE
 )
-DIV_PALETTE_256X = c(
-  DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X, DIV_PALETTE_8X
+DIV_PALETTE_768X = c(
+  DIV_PALETTE_96X, DIV_PALETTE_96X, DIV_PALETTE_96X, DIV_PALETTE_96X, DIV_PALETTE_96X, DIV_PALETTE_96X, DIV_PALETTE_96X, DIV_PALETTE_96X
+)
+DIV_PALETTE_6144X = c(
+  DIV_PALETTE_768X, DIV_PALETTE_768X, DIV_PALETTE_768X, DIV_PALETTE_768X, DIV_PALETTE_768X, DIV_PALETTE_768X, DIV_PALETTE_768X, DIV_PALETTE_768X
 )
 
 LIGHT_PALETTE = c('#a6cee3','#b2df8a','#fb9a99','#fdbf6f','#cab2d6','#ffff99')
-LIGHT_PALETTE_8X = c(
+LIGHT_PALETTE_96X = c(
+  LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE,
   LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE, LIGHT_PALETTE
 )
-LIGHT_PALETTE_256X = c(
-  LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X, LIGHT_PALETTE_8X
+LIGHT_PALETTE_768X = c(
+  LIGHT_PALETTE_96X, LIGHT_PALETTE_96X, LIGHT_PALETTE_96X, LIGHT_PALETTE_96X, LIGHT_PALETTE_96X, LIGHT_PALETTE_96X, LIGHT_PALETTE_96X, LIGHT_PALETTE_96X
+)
+LIGHT_PALETTE_6144X = c(
+  LIGHT_PALETTE_768X, LIGHT_PALETTE_768X, LIGHT_PALETTE_768X, LIGHT_PALETTE_768X, LIGHT_PALETTE_768X, LIGHT_PALETTE_768X, LIGHT_PALETTE_768X, LIGHT_PALETTE_768X
+)
+LIGHT_PALETTE_98304X = c(
+  LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X,
+  LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X, LIGHT_PALETTE_6144X
 )
 
 # Reading data and transforming
@@ -294,7 +305,7 @@ server <- function(input, output) {
         formatStyle(
           'Taxon', 'tcolour',
           backgroundColor = styleEqual(
-            unique(t$tcolour), LIGHT_PALETTE_256X[1:length(unique(t$tcolour))]
+            unique(t$tcolour), LIGHT_PALETTE_98304X[1:length(unique(t$tcolour))]
           )
         )
     }
@@ -308,7 +319,7 @@ server <- function(input, output) {
     ggplot(d, aes(x=pclass, y=stat)) + 
       geom_violin() +
       geom_sina(aes(colour=psubclass), method='counts') +
-      scale_colour_manual('Protein subclass', values=DIV_PALETTE_256X)
+      scale_colour_manual('Protein subclass', values=DIV_PALETTE_768X)
   }) 
   
   output$ssversion = renderText(
